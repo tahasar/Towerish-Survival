@@ -396,8 +396,8 @@ GameObject:
   - component: {fileID: 35951475}
   - component: {fileID: 35951474}
   - component: {fileID: 35951473}
-  - component: {fileID: 35951472}
   - component: {fileID: 35951478}
+  - component: {fileID: 35951479}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -405,24 +405,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &35951472
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 35951471}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28ce9ce055541164c84ade766e965963, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  xpBar: {fileID: 1175114084}
-  level: 1
-  skillPoints: 0
-  experience: 0
-  skillTree: {fileID: 109186571}
-  skillTreeScript: {fileID: 109186573}
 --- !u!70 &35951473
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -468,9 +450,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 5000
-  currentHealth: 0
-  armor:
-    baseValue: 0
   HealthBar: {fileID: 1229147012}
 --- !u!50 &35951476
 Rigidbody2D:
@@ -530,6 +509,24 @@ MonoBehaviour:
   targetEnemy: {fileID: 0}
   enemies: []
   target: {fileID: 0}
+--- !u!114 &35951479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 35951471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28ce9ce055541164c84ade766e965963, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xpBar: {fileID: 1175114084}
+  level: 1
+  skillPoints: 3
+  experience: 0
+  skillTree: {fileID: 109186571}
+  skillTreeScript: {fileID: 109186573}
 --- !u!1001 &44509744
 PrefabInstance:
   m_ObjectHideFlags: 0
