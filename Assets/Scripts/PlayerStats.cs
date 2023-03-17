@@ -7,7 +7,7 @@ public class PlayerStats : Player
 {
     void Start()
     {
-        UpgradeManager
+       
     }
     
 }
