@@ -5,7 +5,7 @@ using Kryz.CharacterStats;
 public class Player : MonoBehaviour
 {
     public float maxHealth;
-    public float currentHealth { get; private set; }
+    public float currentHealth;
 
     public HealthBar HealthBar;
 
