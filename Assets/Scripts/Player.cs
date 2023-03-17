@@ -4,20 +4,20 @@ using Kryz.CharacterStats;
 
 public class Player : MonoBehaviour
 {
-    public Stat maxHealth;
-    public Stat currentHealth { get; private set; }
+    public float maxHealth;
+    public float currentHealth { get; private set; }
 
     public HealthBar HealthBar;
 
     private void Start()
     {
-        currentHealth.BaseValue = maxHealth.BaseValue;
-        HealthBar.SetMaxHealth(maxHealth.BaseValue);
+        currentHealth = maxHealth;
+        HealthBar.SetMaxHealth(maxHealth);
     }
 
     private void Update()
     {
-        if (currentHealth.BaseValue <= 0)
+        if (currentHealth <= 0)
         {
             Destroy(gameObject);
         }
@@ -25,15 +25,15 @@ public class Player : MonoBehaviour
 
     public void Heal(float heal)
     {
-        currentHealth.BaseValue += heal;
+        currentHealth += heal;
         
-        HealthBar.SetHealth(currentHealth.BaseValue);
+        HealthBar.SetHealth(currentHealth);
     }
 
     public void TakeDamage(float damage)
     {
-        currentHealth.BaseValue -= damage;
+        currentHealth -= damage;
         
-        HealthBar.SetHealth(currentHealth.BaseValue);
+        HealthBar.SetHealth(currentHealth);
     }
 }
