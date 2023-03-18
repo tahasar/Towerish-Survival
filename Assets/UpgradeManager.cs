@@ -38,4 +38,6 @@ public class UpgradeManager : MonoBehaviour
     // rotateAroundSpeed
     // rotationSpeed
     // damage
+    
+    
 }

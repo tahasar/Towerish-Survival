@@ -1,6 +1,5 @@
 using System;
 using UnityEngine;
-using Kryz.CharacterStats;
 
 public class Player : MonoBehaviour
 {

@@ -32,6 +32,7 @@ public class Skill : MonoBehaviour
     public void Buy()
     {
         if (skillTree.SkillPoint < 1 || skillTree.SkillLevels[id] >= skillTree.SkillCaps[id]) return;
+        
         skillTree.SkillPoint -= 1;
         skillTree.SkillLevels[id]++;
         skillTree.UpdateAllSkillUI();
