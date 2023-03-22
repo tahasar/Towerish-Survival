@@ -15,7 +15,7 @@ public class RotatingBladesManager : MonoBehaviour
     private RotatingBlade rotatingBlade;
 
     [VerticalGroup("Split/Properties")]
-    private readonly float AppearWaitDuration = 0.3f;
+    //private readonly float AppearWaitDuration = 0.3f;
     [VerticalGroup("Split/Properties")]
     private bool inCooldown = false;
 

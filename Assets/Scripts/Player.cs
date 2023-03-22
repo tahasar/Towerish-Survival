@@ -1,22 +1,28 @@
-using System;
 using UnityEngine;
+using StatSystem;
+using Attribute = StatSystem.Attribute;
 
 public class Player : MonoBehaviour
 {
     public float maxHealth;
     public float currentHealth;
+    public Attribute Health;
 
     public HealthBar HealthBar;
-
+    
     private void Start()
     {
-        currentHealth = maxHealth;
-        HealthBar.SetMaxHealth(maxHealth);
+        StatController statController = GetComponent<StatController>();
+        Health = statController.stats["Health"] as Attribute;
+        maxHealth = Health.value;
+
+
+        HealthBar.SetMaxHealth(Health.value);
     }
 
     private void Update()
     {
-        if (currentHealth <= 0)
+        if (Health.value <= 0)
         {
             Destroy(gameObject);
         }
@@ -24,15 +30,23 @@ public class Player : MonoBehaviour
 
     public void Heal(float heal)
     {
-        currentHealth += heal;
+        Health.AddModifier(new StatModifier
+        {
+            magnitude = heal,
+            type = ModifierOperationType.Additive
+        });
         
-        HealthBar.SetHealth(currentHealth);
+        HealthBar.SetHealth(Health.value);
     }
 
     public void TakeDamage(float damage)
     {
-        currentHealth -= damage;
+        Health.AddModifier(new StatModifier
+        {
+            magnitude = -damage,
+            type = ModifierOperationType.Additive
+        });
         
-        HealthBar.SetHealth(currentHealth);
+        HealthBar.SetHealth(Health.value);
     }
 }
