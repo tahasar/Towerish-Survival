@@ -393,9 +393,9 @@ GameObject:
   m_Component:
   - component: {fileID: 35951477}
   - component: {fileID: 35951476}
-  - component: {fileID: 35951473}
   - component: {fileID: 35951475}
   - component: {fileID: 35951474}
+  - component: {fileID: 35951473}
   - component: {fileID: 35951478}
   - component: {fileID: 35951479}
   m_Layer: 6
@@ -450,7 +450,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 5000
-  currentHealth: 0
   HealthBar: {fileID: 1229147012}
 --- !u!50 &35951476
 Rigidbody2D:
@@ -508,8 +507,7 @@ MonoBehaviour:
   sprite: {fileID: 3184376472387037939}
   enemyPosition: {x: 0, y: 0, z: 0}
   targetEnemy: {fileID: 0}
-  enemies:
-  - {fileID: 0}
+  enemies: []
   target: {fileID: 0}
 --- !u!114 &35951479
 MonoBehaviour:
