@@ -1,27 +1,32 @@
 using UnityEngine;
 
-public class Collectable : MonoBehaviour
+namespace Tahasar.PlayerStats
 {
-    public string lootType;
-    public float xpAmount;
-    public float healAmount;
-    public Level level;
-    public Player player;
-
-    private void OnTriggerEnter2D(Collider2D other)
+    public class Collectable : MonoBehaviour
     {
-        if(other.CompareTag("Player"))
+        public string lootType;
+        public float xpAmount;
+        public float healAmount;
+        public Level level;
+        public Player player;
+
+        private void OnTriggerEnter2D(Collider2D other)
         {
-            if (lootType == "XP")
+            if(other.CompareTag("Player"))
             {
-                level.AddExperience(xpAmount);
+                if (lootType == "XP")
+                {
+                    level.AddExperience(xpAmount);
+                }
+                else if (lootType == "HEAL")
+                {
+                    player.Heal(healAmount);
+                }
+                
+                Destroy(gameObject);
             }
-            else if (lootType == "HEAL")
-            {
-                player.Heal(healAmount);
-            }
-            
-            Destroy(gameObject);
         }
     }
 }
+
+

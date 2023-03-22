@@ -398,6 +398,7 @@ GameObject:
   - component: {fileID: 35951474}
   - component: {fileID: 35951478}
   - component: {fileID: 35951479}
+  - component: {fileID: 35951480}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -449,7 +450,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95bd33248e63c7949b9b54b0b6cba874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 5000
+  maxHealth: 0
   currentHealth: 0
   HealthBar: {fileID: 1229147012}
 --- !u!50 &35951476
@@ -529,6 +530,19 @@ MonoBehaviour:
   experience: 0
   skillTree: {fileID: 109186571}
   skillTreeScript: {fileID: 109186573}
+--- !u!114 &35951480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 35951471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd745fd5a6fa4c9291072231eb444df6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StatDatabase: {fileID: 11400000, guid: 5f4b3e5f03758be4fa5e2efd79f91531, type: 2}
 --- !u!1001 &44509744
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3085,7 +3099,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &840637666
 Transform:
   m_ObjectHideFlags: 0
@@ -5146,7 +5160,7 @@ MonoBehaviour:
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 4087
 --- !u!114 &1634409645
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6120,7 +6134,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1926543901
 Transform:
   m_ObjectHideFlags: 0

@@ -1,4 +1,5 @@
 using System;
+using Tahasar.PlayerStats;
 using Unity.Mathematics;
 using Unity.VisualScripting;
 using UnityEngine;

@@ -28,7 +28,7 @@ public class Enemy : MonoBehaviour
     public GameObject explotionEffect;
     private AudioSource deathSound;
     private SpriteRenderer enemySprite;
-    private Collider2D collider2D;
+    private new Collider2D collider2D; // bir sorun çıkarsa "new" kaldır.
 
     private Vector2 damageTextLocation;
     public GameObject damageText;
