@@ -1,334 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="55ee880b-bbfd-4fd9-8b1a-5588a8d663f0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.KuleKoruSurvival/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.KuleKoruSurvival/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ChooseScreen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ChooseScreen.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeMonkey.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeMonkey/Assets.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeMonkey/Assets.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeMonkey/Assets.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeMonkey/Assets/Circle.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeMonkey/Assets/Circle.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeMonkey/Assets/White_1x1.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeMonkey/Assets/White_1x1.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeMonkey/Assets/White_1x1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeMonkey/Assets/White_1x1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeMonkey/CMDebug.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeMonkey/CMDebug.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeMonkey/MonoBehaviours.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeMonkey/MonoBehaviours/CameraFollow.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeMonkey/MonoBehaviours/CameraFollow.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeMonkey/MonoBehaviours/CameraFollowSetup.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeMonkey/MonoBehaviours/CameraFollowSetup.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeMonkey/MonoBehaviours/ComponentActions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeMonkey/MonoBehaviours/ComponentActions.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeMonkey/MonoBehaviours/PositionRendererSorter.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeMonkey/MonoBehaviours/PositionRendererSorter.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeMonkey/README.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeMonkey/README.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeMonkey/Resources.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeMonkey/Resources/CodeMonkeyAssets.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeMonkey/Resources/CodeMonkeyAssets.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeMonkey/Utils.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeMonkey/Utils/Button_Sprite.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeMonkey/Utils/Button_Sprite.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeMonkey/Utils/Button_UI.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeMonkey/Utils/Button_UI.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeMonkey/Utils/FunctionPeriodic.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeMonkey/Utils/FunctionPeriodic.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeMonkey/Utils/FunctionTimer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeMonkey/Utils/FunctionTimer.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeMonkey/Utils/FunctionUpdater.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeMonkey/Utils/FunctionUpdater.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeMonkey/Utils/UI_Bar.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeMonkey/Utils/UI_Bar.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeMonkey/Utils/UI_BarMultiple.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeMonkey/Utils/UI_BarMultiple.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeMonkey/Utils/UI_Sprite.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeMonkey/Utils/UI_Sprite.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeMonkey/Utils/UI_TextComplex.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeMonkey/Utils/UI_TextComplex.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeMonkey/Utils/UtilsClass.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeMonkey/Utils/UtilsClass.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeMonkey/Utils/World_Bar.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeMonkey/Utils/World_Bar.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeMonkey/Utils/World_Mesh.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeMonkey/Utils/World_Mesh.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeMonkey/Utils/World_Sprite.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CodeMonkey/Utils/World_Sprite.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Enemies.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Enemies/Zombie Yellow.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Enemies/Zombie Yellow.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Items.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Items/10 HEAL.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Items/10 HEAL.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Items/10 XP.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Items/10 XP.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Items/2 XP.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Items/2 XP.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Items/25 XP.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Items/25 XP.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Materials/Gtass_mobile.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Materials/Gtass_mobile.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Materials/Laser1.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Materials/Laser1.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Prefabs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Prefabs/Büyüler.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Prefabs/Büyüler/PurpleBaseAttack.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Prefabs/Büyüler/PurpleBaseAttack.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Prefabs/Büyüler/RotatingBlades.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Prefabs/Büyüler/RotatingBlades.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Prefabs/DamageText.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Prefabs/DamageText.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Prefabs/Düşmanlar.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Prefabs/Düşmanlar/Zombie_Yellow.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Prefabs/Düşmanlar/Zombie_Yellow.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Prefabs/Effects.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Prefabs/Effects/Explotion Effect.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Prefabs/Effects/Explotion Effect.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Prefabs/Enemy.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Prefabs/Enemy.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Prefabs/Ground.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Prefabs/Ground.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Prefabs/Item.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Prefabs/Item.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Prefabs/Skill.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Prefabs/Skill.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Prefabs/Test_Square.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Prefabs/Test_Square.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Prefabs/Wraith.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Prefabs/Wraith.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Sprites.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Sprites/Asset 1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Sprites/Asset 1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Sprites/HealthBarBorder.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Sprites/HealthBarBorder.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LevelLoader.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LevelLoader.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MainMenu-Buttons-Gradient.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MainMenu-Buttons-Gradient.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MainMenu-Play-Gradient.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MainMenu-Play-Gradient.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AttackCaster.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AttackCaster.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AttackManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AttackManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Attractor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Attractor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HealthBar.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HealthBar.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LaserCaster.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LaserCaster.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PurpleBaseAttack.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PurpleBaseAttack.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RotatingBlade.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RotatingBlade.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RotatingBladesManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RotatingBladesManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Wraith_Attack.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Wraith_Attack.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/XpBar.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/XpBar.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Zombie_Yellow_Attack1.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Zombie_Yellow_Attack1.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Zombie_Yellow_Walk.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Zombie_Yellow_Walk.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Skill.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Skill.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkillTree.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkillTree.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Demo.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Demo.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava01.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava01/M_Lava01.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava01/M_Lava01.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava01/M_Lava01_Variant01.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava01/M_Lava01_Variant01.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava01/T_Lava01_ao.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava01/T_Lava01_ao.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava01/T_Lava01_basecolor.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava01/T_Lava01_basecolor.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava01/T_Lava01_emissive.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava01/T_Lava01_emissive.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava01/T_Lava01_height.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava01/T_Lava01_height.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava01/T_Lava01_metallic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava01/T_Lava01_metallic.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava01/T_Lava01_normal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava01/T_Lava01_normal.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava02.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava02/M_Lava02.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava02/M_Lava02.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava02/T_Lava02_basecolor.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava02/T_Lava02_basecolor.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava02/T_Lava02_emissive.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava02/T_Lava02_emissive.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava02/T_Lava02_height.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava02/T_Lava02_height.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava02/T_Lava02_metallic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava02/T_Lava02_metallic.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava02/T_Lava02_normal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava02/T_Lava02_normal.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava03.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava03/M_Lava03.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava03/M_Lava03.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava03/T_Lava03_basecolor.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava03/T_Lava03_basecolor.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava03/T_Lava03_emissive.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava03/T_Lava03_emissive.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava03/T_Lava03_height.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava03/T_Lava03_height.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava03/T_Lava03_metallic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava03/T_Lava03_metallic.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava03/T_Lava03_normal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava03/T_Lava03_normal.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava04.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava04/M_Lava04.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava04/M_Lava04.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava04/T_Lava04_basecolor.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava04/T_Lava04_basecolor.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava04/T_Lava04_height.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava04/T_Lava04_height.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava04/T_Lava04_metallic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava04/T_Lava04_metallic.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava04/T_Lava04_normal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava04/T_Lava04_normal.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava05.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava05/M_Lava05.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava05/M_Lava05.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava05/T_Lava0_basecolor.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava05/T_Lava0_basecolor.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava05/T_Lava0_height.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava05/T_Lava0_height.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava05/T_Lava0_metallic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava05/T_Lava0_metallic.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava05/T_Lava0_normal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Lava Materials/Lava05/T_Lava0_normal.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/03.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/03.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Animations.scml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Animations.scml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Animations_000.scml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Animations_000.scml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Animations_001.autosave.scml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Animations_001.autosave.scml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Body.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Body.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Face 01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Face 01.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Face 02.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Face 02.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Face 03.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Face 03.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Head.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Head.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Left Arm.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Left Arm.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Left Hand.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Left Hand.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Right Arm.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Right Arm.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Right Hand.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Right Hand.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Spells-Effect.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Spells-Effect.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Spriter2UnityDX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Spriter2UnityDX/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Spriter2UnityDX/Editor/AnimationBuilder.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Spriter2UnityDX/Editor/AnimationBuilder.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Spriter2UnityDX/Editor/CustomEditors.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Spriter2UnityDX/Editor/CustomEditors.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Spriter2UnityDX/Editor/PrefabBuilder.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Spriter2UnityDX/Editor/PrefabBuilder.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Spriter2UnityDX/Editor/S2USettings.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Spriter2UnityDX/Editor/S2USettings.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Spriter2UnityDX/Editor/ScmlImportOptions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Spriter2UnityDX/Editor/ScmlImportOptions.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Spriter2UnityDX/Editor/ScmlPostProcessor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Spriter2UnityDX/Editor/ScmlPostProcessor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Spriter2UnityDX/Editor/ScmlSupport.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Spriter2UnityDX/Editor/ScmlSupport.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Spriter2UnityDX/Editor/Settings.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Spriter2UnityDX/Editor/Settings.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Spriter2UnityDX/Runtime.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Spriter2UnityDX/Runtime/EntityRenderer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Spriter2UnityDX/Runtime/EntityRenderer.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Spriter2UnityDX/Runtime/SortingOrderUpdater.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Spriter2UnityDX/Runtime/SortingOrderUpdater.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Spriter2UnityDX/Runtime/TextureController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Spriter2UnityDX/Runtime/TextureController.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Yeni klasör.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Yeni klasör/Body - Kopya.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Yeni klasör/Body - Kopya.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Yeni klasör/Body - Kopya_000.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Yeni klasör/Body - Kopya_000.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Yeni klasör/Body - Kopya_001.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Yeni klasör/Body - Kopya_001.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Yeni klasör/Body - Kopya_002.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Yeni klasör/Body - Kopya_002.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Yeni klasör/Body - Kopya_003.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Yeni klasör/Body - Kopya_003.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Yeni klasör/Body - Kopya_004.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Yeni klasör/Body - Kopya_004.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Yeni klasör/Body - Kopya_005.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Yeni klasör/Body - Kopya_005.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Yeni klasör/Body - Kopya_006.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Yeni klasör/Body - Kopya_006.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Yeni klasör/Body - Kopya_007.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Yeni klasör/Body - Kopya_007.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Yeni klasör/Body - Kopya_008.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Yeni klasör/Body - Kopya_008.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Yeni klasör/Body - Kopya_009.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Yeni klasör/Body - Kopya_009.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Yeni klasör/Body - Kopya_010.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Yeni klasör/Body - Kopya_010.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Yeni klasör/Body - Kopya_011.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Yeni klasör/Body - Kopya_011.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Yeni klasör/Body - Kopya_012.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Yeni klasör/Body - Kopya_012.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Yeni klasör/Body - Kopya_013.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Yeni klasör/Body - Kopya_013.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Yeni klasör/Body - Kopya_014.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Yeni klasör/Body - Kopya_014.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Yeni klasör/Body - Kopya_015.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Yeni klasör/Body - Kopya_015.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Yeni klasör/Body - Kopya_016.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Yeni klasör/Body - Kopya_016.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Yeni klasör/Body - Kopya_017.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Yeni klasör/Body - Kopya_017.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Yeni klasör/Body - Kopya_018.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Yeni klasör/Body - Kopya_018.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Yeni klasör/Body - Kopya_019.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Yeni klasör/Body - Kopya_019.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Yeni klasör/Body - Kopya_020.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Yeni klasör/Body - Kopya_020.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Yeni klasör/Body - Kopya_021.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Yeni klasör/Body - Kopya_021.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Yeni klasör/Body - Kopya_022.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Yeni klasör/Body - Kopya_022.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Yeni klasör/Body - Kopya_023.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Yeni klasör/Body - Kopya_023.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Yeni klasör/Body - Kopya_024.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wraith Karakteri/Vector Parts/Yeni klasör/Body - Kopya_024.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+    <list default="true" id="55ee880b-bbfd-4fd9-8b1a-5588a8d663f0" name="Changes" comment="InventorySystem Added.">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.KuleKoruSurvival/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameInput.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameInput/InputActions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameInput/InputActions.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameInput/InputActions.ext.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameInput/InputActions.ext.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/InventorySystem/GameItemSpawner.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/InventorySystem/GameItemSpawner.cs.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -357,27 +38,33 @@
     <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2NJ0zttajH1rG2R44cXbUebs7TX" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Discover.Launch.Via.Unity": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\Tahasar\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\Tahasar\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\Tahasar\\AppData\\Local\\Symbols\\src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\Tahasar\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache",
+      "C:\\Users\\Tahasar\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache",
+      "C:\\Users\\Tahasar\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RiderProblemsViewState">
     <option name="showPreview" value="true" />
   </component>
@@ -433,8 +120,16 @@
       <workItem from="1679413306555" duration="9801000" />
       <workItem from="1679437761945" duration="1150000" />
       <workItem from="1679486813008" duration="2261000" />
-      <workItem from="1679585916950" duration="8892000" />
+      <workItem from="1679585916950" duration="9237000" />
     </task>
+    <task id="LOCAL-00001" summary="InventorySystem Added.">
+      <created>1679596692288</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1679596692288</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -454,6 +149,9 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="InventorySystem Added." />
+    <option name="LAST_COMMIT_MESSAGE" value="InventorySystem Added." />
   </component>
 </project>
