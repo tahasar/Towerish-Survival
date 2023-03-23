@@ -11,12 +11,6 @@ public class AttackManager : MonoBehaviour
     public GameObject[] enemies;
     public Transform target;
 
-
-    private void Start()
-    {
-        InvokeRepeating("FindClosestEnemy",0f,0.2f);
-    }
-    
     private void Update()
     {
         

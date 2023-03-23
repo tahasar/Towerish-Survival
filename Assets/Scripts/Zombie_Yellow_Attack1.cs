@@ -23,6 +23,5 @@ public class Zombie_Yellow_Attack1 : StateMachineBehaviour
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         enemy.isAttacking = false;
-        //araba
     }
 }
