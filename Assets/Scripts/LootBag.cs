@@ -46,7 +46,6 @@ public class LootBag : MonoBehaviour
         }
         else if (item.lootType == "HEAL")
         {
-            
             collectable.lootType = item.lootType;
             collectable.healAmount = item.healAmount;
         }

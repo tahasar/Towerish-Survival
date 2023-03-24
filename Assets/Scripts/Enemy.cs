@@ -18,6 +18,9 @@ public class Enemy : MonoBehaviour
     
     public bool isAttacking;
     
+    [Range(0f, 100f)] public float chance = 100;
+    [HideInInspector] public double _weight;
+    
     private bool isFlipped;
     private bool inRange;
     private bool isDead = false;

@@ -2456,6 +2456,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1020224911}
   - component: {fileID: 1020224912}
+  - component: {fileID: 1020224913}
   m_Layer: 8
   m_Name: ENEMIES
   m_TagString: Untagged
@@ -2495,6 +2496,36 @@ MonoBehaviour:
   spawnTimer: 1
   enemyCount: 0
   player: {fileID: 35951471}
+--- !u!114 &1020224913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020224910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecf8f5bb721949518afe523440a686c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemies:
+  - Name: 
+    Prefab: {fileID: 8798559775119078714, guid: 3795f459fdd2cb64188eb140e038e786, type: 3}
+    chance: 1
+    _weight: 0
+  - Name: 
+    Prefab: {fileID: 407418536726590295, guid: 42f3ed3ab47fb564d81359b2771ea186, type: 3}
+    chance: 1
+    _weight: 0
+  - Name: 
+    Prefab: {fileID: 610453262585816631, guid: 405564c3a61f4544e9416b773d4afed4, type: 3}
+    chance: 50.4
+    _weight: 0
+  - Name: 
+    Prefab: {fileID: 1981131855061102, guid: 7ec354ef3daae7641b7a3fa5e1fe0c81, type: 3}
+    chance: 1
+    _weight: 0
+  isNight: 1
 --- !u!224 &1053443847 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3427341571565015351, guid: 628b5aaf803affc42aed8f3fbb79c49a, type: 3}
