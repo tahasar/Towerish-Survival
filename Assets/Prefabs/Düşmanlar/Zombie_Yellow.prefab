@@ -132,7 +132,7 @@ Rigidbody2D:
   m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 3
 --- !u!70 &3425611407103390833
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -171,6 +171,8 @@ MonoBehaviour:
   animator: {fileID: 3425611407103390839}
   xpReward: 0
   isAttacking: 0
+  chance: 100
+  _weight: 0
   explotionEffect: {fileID: 8233841665134959326, guid: 51dd64d2bd2a5984096d648b7636e82c, type: 3}
   damageText: {fileID: 0}
 --- !u!114 &3425611407103390834
