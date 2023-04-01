@@ -76,10 +76,15 @@ public class PurpleBaseAttack : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Enemy enemy = other.GetComponent<Enemy>();
-        enemy.TakeDamage(damage);
-        speed = 0;
-        spellSprite.enabled = false;
-        Destroy(gameObject, 1f);
+        //Enemy enemy = other.GetComponent<Enemy>();
+        //enemy.TakeDamage(damage);
+
+        if(other.TryGetComponent(out Enemy enemy))
+        {
+            enemy.TakeDamage(damage);
+            speed = 0;
+            spellSprite.enabled = false;
+            Destroy(gameObject, 1f);
+        }
     }
 }

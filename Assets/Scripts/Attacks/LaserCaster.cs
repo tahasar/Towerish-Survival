@@ -1,8 +1,4 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
-using Sirenix.OdinInspector;
-using Unity.Mathematics;
 using UnityEngine;
 
 public class LaserCaster : MonoBehaviour
@@ -16,14 +12,10 @@ public class LaserCaster : MonoBehaviour
     private Transform enemy;
     private bool canDamage = true;
     
-    [HorizontalGroup("Split", Width = 50), HideLabel, PreviewField(50)]
     public Texture2D Icon;
     
-    [VerticalGroup("Split/Properties")]
     public float range = 5;
-    [VerticalGroup("Split/Properties")]
     public float damage = 50;
-    [VerticalGroup("Split/Properties")]
     public float damageTime = 0.5f;
 
     

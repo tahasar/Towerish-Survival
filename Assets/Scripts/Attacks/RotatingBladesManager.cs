@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using Sirenix.OdinInspector;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -14,9 +13,7 @@ public class RotatingBladesManager : MonoBehaviour
     public float rotateAroundSpeed;
     private RotatingBlade rotatingBlade;
 
-    [VerticalGroup("Split/Properties")]
-    private readonly float AppearWaitDuration = 0.3f;
-    [VerticalGroup("Split/Properties")]
+    //private readonly float AppearWaitDuration = 0.3f;
     private bool inCooldown = false;
 
     void Start()

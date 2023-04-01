@@ -11,6 +11,9 @@ TagManager:
   - Collectable
   - Attractor
   - RotatingBlade
+  - AttackCaster
+  - LaserCaster
+  - ItemDetector
   layers:
   - Default
   - TransparentFX

@@ -13,4 +13,5 @@ public class EnemyBase : ScriptableObject
     public float speedMultiplier = 1;
     public float xpReward;
     public Sprite sprite;
+    public Animator animator;
 }

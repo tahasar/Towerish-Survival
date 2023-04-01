@@ -1,3 +1,4 @@
+using System;
 using NaughtyAttributes;
 using TMPro;
 using Unity.Mathematics;
@@ -5,85 +6,84 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    [Expandable] public EnemyBase enemyBase;
-    public float health;
     
     [Header("Hedefler")]
     public GameObject[] target; // Oyuncu karakteri
     public Player player;
-    public DropOnDestroy dropOnDestroy;
-
-    public Animator animator;
-    public float xpReward;
     
+    protected float health;
+    protected float xpReward;
+    protected float range;
+    protected float attackDamage;
+    protected Animator animator;
+    protected string enemyName;
+    protected string enemyInfo;
+    protected float maxHealth;
+    protected float speed;
+    protected float speedMultiplier = 1;
+    protected Sprite sprite;
+    protected Transform enemyTransform;
+    protected bool isFlipped;
+    protected bool inRange;
+    protected bool isDead = false;
+    protected int mainTarget;
+    protected Vector2 movement;
+    protected float kuleMesafesi;
+    protected float adamMesafesi;
+    protected AudioSource deathSound;
+    protected SpriteRenderer enemySprite;
+    protected Collider2D collider2D;
+
     public bool isAttacking;
-    
-    [Range(0f, 100f)] public float chance = 100;
-    [HideInInspector] public double _weight;
-    
-    private bool isFlipped;
-    private bool inRange;
-    private bool isDead = false;
-    private int mainTarget;
-    private Vector2 movement;
-    private float kuleMesafesi;
-    private float adamMesafesi;
-    public GameObject explotionEffect;
-    private AudioSource deathSound;
-    private SpriteRenderer enemySprite;
-    private Collider2D collider2D;
-
-    private Vector2 damageTextLocation;
+    public Vector2 damageTextLocation;
     public GameObject damageText;
 
-    private void Start()
-    {
-        target = GameObject.FindGameObjectsWithTag("Player");
-        health = enemyBase.health;
-        xpReward = enemyBase.xpReward;
-        player = target[mainTarget].GetComponent<Player>();
-        deathSound = GetComponent<AudioSource>();
-        enemySprite = GetComponent<SpriteRenderer>();
-        collider2D = GetComponent<Collider2D>();
-    }
-    
-    public void FixedUpdate()
-    {
+    public DropOnDestroy dropOnDestroy;
+    public GameObject explotionEffect;
 
+    public void Update()
+    {
         ChooseTarget();
 
-        // Hedef takibini sağlar.
-        Vector3 direction = target[mainTarget].transform.position - transform.position;
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        direction.Normalize();
-        movement = direction;
+        TargetDetect(); // Hedef takibini sağlar.
 
-        // Hedef ile düşman arasındaki mesafeyi ölçer.
-        inRange = Vector2.Distance(target[mainTarget].transform.position, transform.position) <= enemyBase.range;
-        
+        GetTargetDistance(); // Hedef ile düşman arasındaki mesafeyi ölçer.
+
         LookAtTarget(); // Düşmanın yönünü hedefe çevirir.
         
         if(!isAttacking)
         {
-            MoveCharacter(movement);
+            Move(movement);
         }
 
         if (isDead)
         {
             player.GetComponent<Level>().AddExperience(xpReward);
-            Instantiate(explotionEffect, transform.position, quaternion.identity);
+            Instantiate(explotionEffect, enemyTransform.position, quaternion.identity);
             deathSound.Play();
             dropOnDestroy.Drop();
             Destroy(gameObject, 0.15f);
             isDead = false;
         }
     }
-    
-    void ChooseTarget()
-    {
-        kuleMesafesi = Vector2.Distance(target[1].transform.position, transform.position);
 
-        adamMesafesi = Vector2.Distance(target[0].transform.position, transform.position);
+    private void GetTargetDistance()        // Hedef ile düşman arasındaki mesafeyi ölçer.
+    {
+        inRange = Vector2.Distance(target[mainTarget].transform.position, enemyTransform.position) <= range;
+    }
+
+    private void TargetDetect()        // Hedef takibini sağlar.
+    {
+        Vector3 direction = target[mainTarget].transform.position - enemyTransform.position;
+        direction.Normalize();
+        movement = direction;
+    }
+
+    public virtual void ChooseTarget()
+    {
+        kuleMesafesi = Vector2.Distance(target[1].transform.position, enemyTransform.position);
+
+        adamMesafesi = Vector2.Distance(target[0].transform.position, enemyTransform.position);
 
         if (kuleMesafesi > adamMesafesi)
         {
@@ -95,14 +95,14 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    public void TakeDamage(float damageAmount)
+    public virtual void TakeDamage(float damageAmount)
     {
         health -= damageAmount;
         
         if (health <= 0)
         {
             Destroy(enemySprite);
-            Destroy(collider2D);
+            collider2D.enabled = false;
             isDead = true;
         }
     }
@@ -111,7 +111,7 @@ public class Enemy : MonoBehaviour
     {
         if(inRange)
         {
-            player.TakeDamage(enemyBase.attackDamage);
+            player.TakeDamage(attackDamage);
         }
     }
 
@@ -120,21 +120,21 @@ public class Enemy : MonoBehaviour
         Vector3 flipped = transform.localScale;
         flipped.z *= -1f;
 
-        if (transform.position.x < target[mainTarget].transform.position.x && isFlipped)
+        if (enemyTransform.position.x < target[mainTarget].transform.position.x && isFlipped)
         {
-            transform.localScale = flipped;
-            transform.Rotate(0f, 180f, 0f);
+            enemyTransform.localScale = flipped;
+            enemyTransform.Rotate(0f, 180f, 0f);
             isFlipped = false;
         }
-        else if (transform.position.x > target[mainTarget].transform.position.x && !isFlipped)
+        else if (enemyTransform.position.x > target[mainTarget].transform.position.x && !isFlipped)
         {
-            transform.localScale = flipped;
-            transform.Rotate(0f, 180f, 0f);
+            enemyTransform.localScale = flipped;
+            enemyTransform.Rotate(0f, 180f, 0f);
             isFlipped = true;
         }
     }
 
-    public void MoveCharacter(Vector2 direction) // Hedef menzilde(inRange) değilse hareket eder.
+    public void Move(Vector2 direction) // Hedef menzilde(inRange) değilse hareket eder.
     {
         if (inRange)
         {
@@ -142,7 +142,7 @@ public class Enemy : MonoBehaviour
         }
         else
         {
-            transform.position = ((Vector2)transform.position + (direction * (enemyBase.speed * Time.deltaTime)));
+            enemyTransform.position = ((Vector2)enemyTransform.position + (direction * (speed * Time.deltaTime)));
         }
     }
 }

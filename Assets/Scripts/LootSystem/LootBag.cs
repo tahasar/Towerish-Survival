@@ -22,7 +22,7 @@ public class LootBag : MonoBehaviour
     public void InstantiateLoot(Vector2 spawnPosition)
     {
         
-        // Item'in oluşumnu sağlar.
+        // Item'in oluşumunu sağlar.
         Loot item = list.GetRandomItem();
         GameObject lootGameObject = Instantiate(droppedItemPrefab, spawnPosition, quaternion.identity);
         
@@ -56,30 +56,5 @@ public class LootBag : MonoBehaviour
         Vector2 dropDirection = new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f));
         lootGameObject.GetComponent<Rigidbody2D>().AddForce(dropDirection * dropForce, ForceMode2D.Impulse);
     }
-    
-    //public List<Loot> lootList = new List<Loot>();
-//
-    //Loot GetDroppedItem()
-    //{
-    //    int randomNumber = Random.Range(1, 101); //1-100
-    //    List<Loot> possibleItems = new List<Loot>();
-    //    foreach (Loot item in lootList)
-    //    {
-    //        if (randomNumber <= item.dropChance)
-    //        {
-    //            possibleItems.Add(item);
-    //        }
-    //    }
-//
-    //    if (possibleItems.Count > 0)
-    //    {
-    //        Loot droppedItem = possibleItems[Random.Range(0, possibleItems.Count)];
-    //        return droppedItem;
-    //            
-    //    }
-    //    Debug.Log("No loot dropped.");
-    //    return null;
-    //}
-//
 }
 
