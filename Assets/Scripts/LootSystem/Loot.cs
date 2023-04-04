@@ -3,7 +3,7 @@ using UnityEngine;
 [CreateAssetMenu]
 public class Loot : ScriptableObject
 {
-    private string lootName;
+    public string name;
     public float dropChance;
     [Space]
     public Sprite lootSprite;

@@ -27,8 +27,6 @@ public class EnemySpawnManager : MonoBehaviour
     private System.Random rand = new System.Random();
     
     [SerializeField] Vector2 spawnArea;
-    [SerializeField] public float spawnTimer;
-    public float timeToSpawn;
     GameObject player;
 
     private void Awake()
@@ -41,7 +39,7 @@ public class EnemySpawnManager : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         if (isNight)
         {
-            InvokeRepeating("SpawnRandomEnemy",2,spawnTime);
+            InvokeRepeating("SpawnRandomEnemy", 2, spawnTime);
         }
     }
 

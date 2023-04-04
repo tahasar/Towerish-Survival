@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using Unity.Mathematics;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -6,48 +7,51 @@ using Random = UnityEngine.Random;
 
 public class LootBag : MonoBehaviour
 {
-    public WeightedRandomList<Loot> list;
     public GameObject droppedItemPrefab;
     public GameObject player;
     public Level level;
     public Player playerScript;
+    public GameObject enemyManager;
+    public WeightedRandomList weightedRandomList;
 
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
         level = player.GetComponent<Level>();
         playerScript = player.GetComponent<Player>();
+        enemyManager = GameObject.FindGameObjectWithTag("EnemyManager");
+        weightedRandomList = enemyManager.GetComponent<WeightedRandomList>();
     }
 
     public void InstantiateLoot(Vector2 spawnPosition)
     {
         
         // Item'in oluşumunu sağlar.
-        Loot item = list.GetRandomItem();
+        LootProbabilities item = weightedRandomList.SpawnRandomLoot();
+        Loot loot = item.loot;
+
         GameObject lootGameObject = Instantiate(droppedItemPrefab, spawnPosition, quaternion.identity);
         
         
         // Item'in özelliklerini ScriptableObject üzerinden çeker.
         SpriteRenderer itemSprite = lootGameObject.GetComponent<SpriteRenderer>();
-        itemSprite.sprite = item.lootSprite;
-        itemSprite.color = item.color;
-        
-        lootGameObject.name = item.name;
+        itemSprite.sprite = loot.lootSprite;
+        itemSprite.color = loot.color;
 
         Collectable collectable = lootGameObject.GetComponent<Collectable>();
 
         collectable.level = level;
         collectable.player = playerScript;
         
-        if (item.lootType == "XP") //Eğer obje türü XP ise,
+        if (loot.lootType == "XP") //Eğer obje türü XP ise,
         {
-            collectable.lootType = item.lootType;
-            collectable.xpAmount = item.xpAmount;
+            collectable.lootType = loot.lootType;
+            collectable.xpAmount = loot.xpAmount;
         }
-        else if (item.lootType == "HEAL")
+        else if (loot.lootType == "HEAL")
         {
-            collectable.lootType = item.lootType;
-            collectable.healAmount = item.healAmount;
+            collectable.lootType = loot.lootType;
+            collectable.healAmount = loot.healAmount;
         }
 
 

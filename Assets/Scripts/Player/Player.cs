@@ -1,4 +1,7 @@
 using System;
+using System.Data;
+using NaughtyAttributes;
+using UnityEditor;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -8,10 +11,16 @@ public class Player : MonoBehaviour
 
     public HealthBar HealthBar;
     
-
+    
     private void Start()
     {
+        //maxHealth = StatsManager.Instance.playerMaxHealth;
+        //currentHealth = maxHealth;
+        //HealthBar.SetMaxHealth(maxHealth);
+
+
         currentHealth = maxHealth;
+        //maxHealth = StatsManager.Instance.playerMaxHealth;
         HealthBar.SetMaxHealth(maxHealth);
     }
 

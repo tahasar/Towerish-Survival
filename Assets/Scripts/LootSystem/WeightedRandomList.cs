@@ -1,57 +1,91 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
-[System.Serializable]
-public class WeightedRandomList<T>
+
+[Serializable]
+public class LootProbabilities
 {
-    public List<Loot> list = new List<Loot>();
+    [Range(0f, 100f)] public float chance = 100;
+
+    [HideInInspector] public double _weight;
+
+    public Loot loot;
+}
+
+public class WeightedRandomList : MonoBehaviour
+{
     
-    //[System.Serializable]
-    //public struct Loot
-    //{
-    //    public string lootName;
-    //    public float dropChance;
-//
-    //    public Loot(string lootName, float dropChance)
-    //    {
-    //        this.lootName = lootName;
-    //        this.dropChance = dropChance;
-    //    }
-    //}
-//
-    //public int Count
-    //{
-    //    get => list.Count;
-    //}
-//
-    //public void Add(string lootName, float dropChance)
-    //{
-    //    list.Add(new Loot(lootName, dropChance));
-    //}
+    [SerializeField] private LootProbabilities[] loots;
+    
+    private float accumulatedWeights;
+    private System.Random rand = new System.Random();
 
-    public Loot GetRandomItem()
+    private void Awake()
     {
-        float totalWeight = 0;
+        CalculateWeights();
+    }
 
-        foreach (Loot item in list)
+    public LootProbabilities SpawnRandomLoot()
+    {
+        LootProbabilities randomLoot = loots[GetRandomLootIndex()];
+
+        return randomLoot;
+    }
+
+    private int GetRandomLootIndex()
+    {
+        double r = rand.NextDouble() * accumulatedWeights;
+
+        for (int i = 0; i < loots.Length; i++)
         {
-            totalWeight += item.dropChance;
+            if (loots[i].chance >= r)
+                return i;
         }
 
-        float value = Random.value * totalWeight;
+        return 0;
+    }
 
-        float sumWeight = 0;
-
-        foreach (Loot item in list)
+    private void CalculateWeights()
+    {
+        accumulatedWeights = 0f;
+        foreach (LootProbabilities loot in loots)
         {
-            sumWeight += item.dropChance;
-
-            if (sumWeight >= value)
-            {
-                return item;
-            }
+            accumulatedWeights += loot.chance;
+            loot.chance = accumulatedWeights;
         }
-
-        return null;
     }
 }
+
+//[System.Serializable]
+//public class WeightedRandomList<T>
+//{
+//    public List<Loot> list = new List<Loot>();
+//
+//    public Loot GetRandomItem()
+//    {
+//        float totalWeight = 0;
+//
+//        foreach (Loot item in list)
+//        {
+//            totalWeight += item.dropChance;
+//        }
+//
+//        float value = Random.value * totalWeight;
+//
+//        float sumWeight = 0;
+//
+//        foreach (Loot item in list)
+//        {
+//            sumWeight += item.dropChance;
+//
+//            if (sumWeight >= value)
+//            {
+//                return item;
+//            }
+//        }
+//
+//        return null;
+//    }
+//}

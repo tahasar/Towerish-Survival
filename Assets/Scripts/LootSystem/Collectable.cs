@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Collectable : MonoBehaviour
@@ -19,8 +20,7 @@ public class Collectable : MonoBehaviour
             else if (lootType == "HEAL")
             {
                 player.Heal(healAmount);
-            }
-            
+            } 
             Destroy(gameObject);
         }
     }
