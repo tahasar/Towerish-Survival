@@ -26,7 +26,7 @@ namespace GameInput
     ""name"": ""GameInputActions"",
     ""maps"": [
         {
-            ""name"": ""Player"",
+            ""name"": ""CharacterStats"",
             ""id"": ""17fa0e01-5c45-4a44-b508-2ff6bfcdf2f6"",
             ""actions"": [
                 {
@@ -246,8 +246,8 @@ namespace GameInput
     ],
     ""controlSchemes"": []
 }");
-            // Player
-            m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
+            // CharacterStats
+            m_Player = asset.FindActionMap("CharacterStats", throwIfNotFound: true);
             m_Player_Walk = m_Player.FindAction("Walk", throwIfNotFound: true);
             m_Player_Attack = m_Player.FindAction("Attack", throwIfNotFound: true);
             m_Player_PreviousItem = m_Player.FindAction("PreviousItem", throwIfNotFound: true);
@@ -309,7 +309,7 @@ namespace GameInput
             return asset.FindBinding(bindingMask, out action);
         }
 
-        // Player
+        // CharacterStats
         private readonly InputActionMap m_Player;
         private IPlayerActions m_PlayerActionsCallbackInterface;
         private readonly InputAction m_Player_Walk;

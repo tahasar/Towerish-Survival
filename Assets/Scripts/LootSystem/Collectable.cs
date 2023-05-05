@@ -7,7 +7,7 @@ public class Collectable : MonoBehaviour
     public float xpAmount;
     public float healAmount;
     public Level level;
-    public Player player;
+    public CharacterStats characterStats;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -19,7 +19,7 @@ public class Collectable : MonoBehaviour
             }
             else if (lootType == "HEAL")
             {
-                player.Heal(healAmount);
+                characterStats.Heal(healAmount);
             } 
             Destroy(gameObject);
         }

@@ -28,6 +28,16 @@ public class Inventory : MonoBehaviour
     public List<Item> items = new List<Item>();
     public int inventorySize = 20;
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+            if(onItemChangedCallback != null){
+                onItemChangedCallback.Invoke();
+            }
+        }
+    }
+
     public bool Add(Item item)
     {
         if (items.Count >= inventorySize)

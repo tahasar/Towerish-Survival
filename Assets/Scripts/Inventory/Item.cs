@@ -1,30 +1,20 @@
 using System;
 using System.Collections.Generic;
+using Sirenix.OdinInspector;
+using Unity.VisualScripting;
+using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "New Item", menuName = "Inventory/Item")]
-public class Item : ScriptableObject
+public class Item : SerializedScriptableObject
 {
     new public string name = "New Item";
-    public StatType ItemType;
+    public string ItemType;
     public Sprite icon = null;
     public bool isStackable = false;
-    
-    [SerializeField]
-    public List<Dictionary1> stats;
-}
 
-[Serializable]
-public struct Dictionary1
-{
-    public string stat;
-    public float statValue;
-}
-
-public enum StatType
-{
-        Health,
-        Armour,
-        Magic,
-        Potency
+    public void SetStat()
+    {
+        //UpgradeManager.instance.armor.AddModifier(10);
+    }
 }

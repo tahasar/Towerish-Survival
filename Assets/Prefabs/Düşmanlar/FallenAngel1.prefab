@@ -120,16 +120,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55c065b3d2489764c8c7d48209b48f5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  list:
-    list:
-    - {fileID: 11400000, guid: 4ef0d88a71beb264f8ef2b875075aa36, type: 2}
-    - {fileID: 11400000, guid: 661c069bfdd052a4c8d186ede963c92f, type: 2}
-    - {fileID: 11400000, guid: 1f55ef3b06c933246a21121f68caf5b8, type: 2}
-    - {fileID: 11400000, guid: 4bd74d98ccb775b4ba8b645757d642b9, type: 2}
   droppedItemPrefab: {fileID: 407418536726590295, guid: 42f3ed3ab47fb564d81359b2771ea186, type: 3}
   player: {fileID: 0}
   level: {fileID: 0}
   playerScript: {fileID: 0}
+  enemyManager: {fileID: 0}
+  weightedRandomList: {fileID: 0}
 --- !u!82 &7647931025036014393
 AudioSource:
   m_ObjectHideFlags: 0

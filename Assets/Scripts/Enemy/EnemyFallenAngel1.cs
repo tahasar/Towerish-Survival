@@ -14,9 +14,9 @@ public class EnemyFallenAngel1 : Enemy
     {
         enemyTransform = gameObject.GetComponent<Transform>();
         target = GameObject.FindGameObjectsWithTag("Player");
-        player = target[mainTarget].GetComponent<Player>();
+        characterStats = target[mainTarget].GetComponent<PlayerStats>();
         deathSound = GetComponent<AudioSource>();
-        enemySprite = GetComponent<SpriteRenderer>();
+        enemySprite = gameObject.GetComponent<SpriteRenderer>();
         collider2D = GetComponent<Collider2D>();
         enemyName = enemyBase.enemyName;
         enemyInfo = enemyBase.enemyInfo;

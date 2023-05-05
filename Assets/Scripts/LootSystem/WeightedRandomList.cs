@@ -57,35 +57,3 @@ public class WeightedRandomList : MonoBehaviour
         }
     }
 }
-
-//[System.Serializable]
-//public class WeightedRandomList<T>
-//{
-//    public List<Loot> list = new List<Loot>();
-//
-//    public Loot GetRandomItem()
-//    {
-//        float totalWeight = 0;
-//
-//        foreach (Loot item in list)
-//        {
-//            totalWeight += item.dropChance;
-//        }
-//
-//        float value = Random.value * totalWeight;
-//
-//        float sumWeight = 0;
-//
-//        foreach (Loot item in list)
-//        {
-//            sumWeight += item.dropChance;
-//
-//            if (sumWeight >= value)
-//            {
-//                return item;
-//            }
-//        }
-//
-//        return null;
-//    }
-//}

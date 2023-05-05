@@ -2,281 +2,248 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55ee880b-bbfd-4fd9-8b1a-5588a8d663f0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/CharacterStat.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/CharacterStat.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Fonts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Fonts/OLDTYPE PERSONAL USE___.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Fonts/OLDTYPE PERSONAL USE___.otf.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/armor.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/armor.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/axe.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/axe.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/axe2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/axe2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/axeDouble.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/axeDouble.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/axeDouble2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/axeDouble2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/backpack.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/backpack.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/bow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/bow.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/coin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/coin.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/dagger.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/dagger.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/envelope.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/envelope.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/gemBlue.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/gemBlue.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/gemGreen.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/gemGreen.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/gemRed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/gemRed.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/hammer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/hammer.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/heart.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/heart.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/helmet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/helmet.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/map.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/map.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/potionBlue.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/potionBlue.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/potionGreen.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/potionGreen.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/potionRed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/potionRed.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/scroll.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/scroll.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/shield.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/shield.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/shieldSmall.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/shieldSmall.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/tome.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/tome.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/tools.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/tools.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/upg_armor.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/upg_armor.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/upg_axe.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/upg_axe.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/upg_axeDouble.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/upg_axeDouble.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/upg_bow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/upg_bow.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/upg_dagger.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/upg_dagger.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/upg_hammer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/upg_hammer.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/upg_helmet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/upg_helmet.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/upg_shield.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/upg_shield.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/upg_shieldSmall.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/upg_shieldSmall.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/upg_spear.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/upg_spear.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/upg_sword.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/upg_sword.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/upg_wand.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/upg_wand.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/wand.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/wand.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/woodSword.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/woodSword.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/x.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/UI.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/UI/Button.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/UI/Button.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/UI/Details.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/UI/Details.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/UI/InventoryNoText.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/UI/InventoryNoText.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/UI/Section Divider.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/UI/Section Divider.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/UI/Stats with Text.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/UI/Stats with Text.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/UI/Stats with TextII.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/UI/Stats with TextII.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/UI/Stats.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/UI/Stats.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/UI/Text Line.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/UI/Text Line.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Items &amp; Inventory.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Items &amp; Inventory.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Items.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Items/Axe.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Items/Axe.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Items/Bow.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Items/Bow.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Items/Chest Amor.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Items/Chest Amor.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Items/Gem.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Items/Gem.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Items/Helmet.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Items/Helmet.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Items/Potion.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Items/Potion.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Items/Shield.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Items/Shield.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Items/Sword.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Items/Sword.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Prefabs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Prefabs/Character Panel.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Prefabs/Character Panel.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Prefabs/Character.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Prefabs/Character.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Prefabs/Item Tooltip.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Prefabs/Item Tooltip.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Prefabs/Item.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Prefabs/Item.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Prefabs/Stat Tooltip.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Prefabs/Stat Tooltip.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Scripts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Scripts/Character.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Scripts/Character.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Scripts/EquipmentPanel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Scripts/EquipmentPanel.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Scripts/EquipmentSlot.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Scripts/EquipmentSlot.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Scripts/EquippableItem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Scripts/EquippableItem.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Scripts/Inventory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Scripts/Inventory.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Scripts/Item.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Scripts/Item.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Scripts/ItemSlot.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Scripts/ItemSlot.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Scripts/ItemTooltip.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Scripts/ItemTooltip.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Scripts/StatDisplay.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Scripts/StatDisplay.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Scripts/StatPanel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Scripts/StatPanel.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Scripts/StatTooltip.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Scripts/StatTooltip.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Power Ups.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Power Ups/Materials.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Power Ups/Materials/Purple.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Power Ups/Materials/Purple.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Power Ups/Materials/Yellow.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Power Ups/Materials/Yellow.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Power Ups/Power Ups.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Power Ups/Power Ups.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Power Ups/Prefabs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Power Ups/Prefabs/Platform.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Power Ups/Prefabs/Platform.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Power Ups/Scripts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Power Ups/Scripts/DeathZone.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Power Ups/Scripts/DeathZone.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Power Ups/Scripts/MouseLook.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Power Ups/Scripts/MouseLook.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Power Ups/Scripts/Movement.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Power Ups/Scripts/Movement.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Power Ups/Scripts/Platform.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Power Ups/Scripts/Platform.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Power Ups/Scripts/PlatformGenerator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Power Ups/Scripts/PlatformGenerator.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Power Ups/Scripts/Player.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Power Ups/Scripts/Player.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Power Ups/Scripts/PlayerBarUI.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Power Ups/Scripts/PlayerBarUI.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Power Ups/Scripts/PlayerTextUI.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Power Ups/Scripts/PlayerTextUI.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Power Ups/Scripts/Powerup.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/Examples/Power Ups/Scripts/Powerup.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/StatModifier.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character Stats/StatModifier.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Animation/FallanAngel1_Attack.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Animation/FallanAngel1_Attack.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Animation/FallanAngel2_Attack.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Animation/FallanAngel2_Attack.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Animation/FallanAngel3_Attack.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Animation/FallanAngel3_Attack.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/Inventory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/Inventory.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/InventorySlot.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/InventorySlot.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/InventorySlot.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/InventorySlot.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/InventoryUI.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/InventoryUI.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/Item.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/Item.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Stats.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/CharacterStats.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/CharacterStats.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/Stat.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/Stat.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UpgradeManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UpgradeManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Item 1.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Item 1.asset.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.KuleKoruSurvival/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.KuleKoruSurvival/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FallanAngel1_Attack.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FallanAngel1_Attack.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FallanAngel2_Attack.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FallanAngel2_Attack.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FallanAngel3_Attack.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FallanAngel3_Attack.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InventorySlot.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InventorySlot.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/CharacterStat.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/CharacterStat.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Fonts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Fonts/OLDTYPE PERSONAL USE___.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Fonts/OLDTYPE PERSONAL USE___.otf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/armor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/armor.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/axe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/axe.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/axe2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/axe2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/axeDouble.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/axeDouble.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/axeDouble2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/axeDouble2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/backpack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/backpack.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/bow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/bow.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/coin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/coin.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/dagger.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/dagger.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/envelope.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/envelope.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/gemBlue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/gemBlue.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/gemGreen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/gemGreen.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/gemRed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/gemRed.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/hammer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/hammer.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/heart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/heart.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/helmet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/helmet.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/map.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/map.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/potionBlue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/potionBlue.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/potionGreen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/potionGreen.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/potionRed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/potionRed.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/scroll.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/scroll.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/shield.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/shield.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/shieldSmall.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/shieldSmall.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/tome.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/tome.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/tools.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/tools.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/upg_armor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/upg_armor.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/upg_axe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/upg_axe.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/upg_axeDouble.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/upg_axeDouble.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/upg_bow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/upg_bow.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/upg_dagger.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/upg_dagger.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/upg_hammer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/upg_hammer.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/upg_helmet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/upg_helmet.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/upg_shield.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/upg_shield.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/upg_shieldSmall.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/upg_shieldSmall.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/upg_spear.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/upg_spear.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/upg_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/upg_sword.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/upg_wand.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/upg_wand.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/wand.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/wand.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/woodSword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/woodSword.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/Item Icons/x.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/UI.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/UI/Button.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/UI/Button.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/UI/Details.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/UI/Details.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/UI/InventoryNoText.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/UI/InventoryNoText.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/UI/Section Divider.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/UI/Section Divider.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/UI/Stats with Text.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/UI/Stats with Text.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/UI/Stats with TextII.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/UI/Stats with TextII.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/UI/Stats.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/UI/Stats.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/UI/Text Line.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Images/UI/Text Line.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Items &amp; Inventory.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Items &amp; Inventory.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Items.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Items/Axe.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Items/Axe.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Items/Bow.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Items/Bow.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Items/Chest Amor.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Items/Chest Amor.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Items/Gem.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Items/Gem.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Items/Helmet.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Items/Helmet.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Items/Potion.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Items/Potion.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Items/Shield.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Items/Shield.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Items/Sword.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Items/Sword.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Prefabs/Character Panel.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Prefabs/Character Panel.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Prefabs/Character.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Prefabs/Character.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Prefabs/Item Tooltip.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Prefabs/Item Tooltip.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Prefabs/Item.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Prefabs/Item.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Prefabs/Stat Tooltip.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Prefabs/Stat Tooltip.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Scripts/Character.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Scripts/Character.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Scripts/EquipmentPanel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Scripts/EquipmentPanel.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Scripts/EquipmentSlot.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Scripts/EquipmentSlot.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Scripts/EquippableItem.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Scripts/EquippableItem.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Scripts/Inventory.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Scripts/Inventory.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Scripts/Item.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Scripts/Item.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Scripts/ItemSlot.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Scripts/ItemSlot.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Scripts/ItemTooltip.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Scripts/ItemTooltip.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Scripts/StatDisplay.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Scripts/StatDisplay.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Scripts/StatPanel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Scripts/StatPanel.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Scripts/StatTooltip.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Items &amp; Inventory/Scripts/StatTooltip.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Power Ups.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Power Ups/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Power Ups/Materials/Purple.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Power Ups/Materials/Purple.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Power Ups/Materials/Yellow.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Power Ups/Materials/Yellow.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Power Ups/Power Ups.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Power Ups/Power Ups.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Power Ups/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Power Ups/Prefabs/Platform.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Power Ups/Prefabs/Platform.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Power Ups/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Power Ups/Scripts/DeathZone.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Power Ups/Scripts/DeathZone.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Power Ups/Scripts/MouseLook.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Power Ups/Scripts/MouseLook.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Power Ups/Scripts/Movement.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Power Ups/Scripts/Movement.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Power Ups/Scripts/Platform.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Power Ups/Scripts/Platform.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Power Ups/Scripts/PlatformGenerator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Power Ups/Scripts/PlatformGenerator.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Power Ups/Scripts/Player.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Power Ups/Scripts/Player.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Power Ups/Scripts/PlayerBarUI.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Power Ups/Scripts/PlayerBarUI.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Power Ups/Scripts/PlayerTextUI.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Power Ups/Scripts/PlayerTextUI.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Power Ups/Scripts/Powerup.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/Examples/Power Ups/Scripts/Powerup.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/StatModifier.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Character Stats/StatModifier.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Item.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/New Item.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Item.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/New Item.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Collectables/Item.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Collectables/Item.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Collectables/Loot.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Collectables/Loot.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Düşmanlar/FallenAngel1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Düşmanlar/FallenAngel1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Skill.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Skill.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Test_Square.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Test_Square.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Items.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Items/10 HEAL.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Items/10 HEAL.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Items/10 XP.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Items/10 XP.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Items/2 XP.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Items/2 XP.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Items/25 XP.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Items/25 XP.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemySpawnManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemySpawnManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InventorySystem.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InventorySystem/GameItem.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InventorySystem/GameItem.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InventorySystem/GameItemSpawner.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InventorySystem/GameItemSpawner.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InventorySystem/Inventory.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InventorySystem/Inventory.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InventorySystem/InventoryException.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InventorySystem/InventoryException.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InventorySystem/InventoryInputHandler.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InventorySystem/InventoryInputHandler.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InventorySystem/InventorySlot.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InventorySystem/InventorySlot.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InventorySystem/InventorySlotStateChangeArgs.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InventorySystem/InventorySlotStateChangeArgs.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InventorySystem/ItemCollisionHandler.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InventorySystem/ItemCollisionHandler.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InventorySystem/ItemDefinition.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InventorySystem/ItemDefinition.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InventorySystem/ItemStack.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InventorySystem/ItemStack.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InventorySystem/UI.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InventorySystem/UI/UI_InventorySlot.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InventorySystem/UI/UI_InventorySlot.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InventorySystem/UI/UI_inventory.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InventorySystem/UI/UI_inventory.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Enemies/FallenAngel2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Enemies/FallenAngel2.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/ItemDefinitions.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/ItemDefinitions/HealthPosion.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/ItemDefinitions/HealthPosion.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/ItemDefinitions/Nail.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/ItemDefinitions/Nail.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/ItemDefinitions/Plank.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/ItemDefinitions/Plank.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/ItemDefinitions/RedFlower.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/ItemDefinitions/RedFlower.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Loots/10 HEAL.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Loots/10 HEAL.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyFallenAngel1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyFallenAngel1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameInput/InputActions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameInput/InputActions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/Inventory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/InventorySlot.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/InventorySlot.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/InventoryUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/InventoryUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/Item.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/Item.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/armor1.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/armor1.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/damage1.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/damage1.asset.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/LootSystem/Collectable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LootSystem/Collectable.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/LootSystem/Loot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LootSystem/Loot.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/LootSystem/LootBag.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LootSystem/LootBag.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/LootSystem/WeightedRandomList.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LootSystem/WeightedRandomList.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Attractor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Attractor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UpgradeManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UpgradeManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Vector Parts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stats/CharacterStats.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/CharacterStats.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stats/PlayerStats.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/PlayerStats.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stats/Stat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/Stat.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UpgradeManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UpgradeManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -289,13 +256,13 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c399efc08928422d8828d74a2b19ffba158600/5c/6a549715/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3ea01e77be99618395f448b16bd7cc2bd4248bd9e5d8474964b2d97f39c5d74/System.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d44b17e136d09081da1e8fd0e8c83fde60e11818b9f2442d7ed8cb733fae895e/System.Collections.Generic.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Character Stats/StatModifier.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyFallenAngel1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameInput/InputActions.ext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/InputProvider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/Inventory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/InventoryUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/Item.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LootSystem/ItemCollectable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Stats/PlayerStats.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -405,6 +372,15 @@
       <workItem from="1680273932354" duration="11482000" />
       <workItem from="1680457018179" duration="8633000" />
       <workItem from="1680507783873" duration="25638000" />
+      <workItem from="1680616052724" duration="10709000" />
+      <workItem from="1680684412188" duration="16473000" />
+      <workItem from="1680947807715" duration="10000" />
+      <workItem from="1680950768038" duration="1576000" />
+      <workItem from="1680956742483" duration="634000" />
+      <workItem from="1681016040846" duration="8128000" />
+      <workItem from="1681298293387" duration="8000" />
+      <workItem from="1681760464378" duration="1228000" />
+      <workItem from="1681924760822" duration="7965000" />
     </task>
     <task id="LOCAL-00001" summary="InventorySystem Added.">
       <created>1679596692288</created>
@@ -437,6 +413,6 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="InventorySystem Added." />
-    <option name="LAST_COMMIT_MESSAGE" value="InventorySystem Added." />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
 </project>

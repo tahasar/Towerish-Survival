@@ -19,7 +19,7 @@ MonoBehaviour:
   maxHealth: 600
   attackDamage: 60
   range: 1
-  speed: 5
+  speed: 4
   speedMultiplier: 1
   xpReward: 3
   sprite: {fileID: 21300000, guid: 2327139bdca9358439d709658ad674c7, type: 3}

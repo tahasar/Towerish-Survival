@@ -1,13 +1,15 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class InventoryUI : MonoBehaviour
 {
+    public GameObject inventoryHolder;
     public Transform itemsParent;
     
     Inventory inventory;
 
     private InventorySlot[] slots;
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +22,17 @@ public class InventoryUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(Input.GetKeyDown(KeyCode.Tab))
+        {
+            if (inventoryHolder.activeSelf)
+            {
+                inventoryHolder.SetActive(false);
+            }
+            else
+            {
+                inventoryHolder.SetActive(true);
+            }
+        }
     }
 
     void UpdateUI()

@@ -12,9 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09368961781c1cf45be595869947ede5, type: 3}
   m_Name: New Item
   m_EditorClassIdentifier: 
-  name: ararar
-  icon: {fileID: 21300000, guid: 2015b700d95c34d42998c89e1618b444, type: 3}
+  Test: 0
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  name: New Item
+  ItemType: 0
+  icon: {fileID: 21300000, guid: 3d158510c7f748249ac4ae73c1181e89, type: 3}
   isStackable: 0
-  stats:
-  - stat: araba
-    statValue: 20

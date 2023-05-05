@@ -2,6 +2,7 @@ using System;
 using NaughtyAttributes;
 using TMPro;
 using Unity.Mathematics;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
@@ -9,7 +10,7 @@ public class Enemy : MonoBehaviour
     
     [Header("Hedefler")]
     public GameObject[] target; // Oyuncu karakteri
-    public Player player;
+    public CharacterStats characterStats;
     
     protected float health;
     protected float xpReward;
@@ -41,6 +42,11 @@ public class Enemy : MonoBehaviour
     public DropOnDestroy dropOnDestroy;
     public GameObject explotionEffect;
 
+    private void Start()
+    {
+        deathSound = GetComponent<AudioSource>();
+    }
+
     public void Update()
     {
         ChooseTarget();
@@ -58,11 +64,10 @@ public class Enemy : MonoBehaviour
 
         if (isDead)
         {
-            player.GetComponent<Level>().AddExperience(xpReward);
+            characterStats.GetComponent<Level>().AddExperience(xpReward);
             Instantiate(explotionEffect, enemyTransform.position, quaternion.identity);
-            deathSound.Play();
             dropOnDestroy.Drop();
-            Destroy(gameObject, 0.15f);
+            Destroy(gameObject, 0.12f);
             isDead = false;
         }
     }
@@ -102,6 +107,7 @@ public class Enemy : MonoBehaviour
         if (health <= 0)
         {
             Destroy(enemySprite);
+            deathSound.Play();
             collider2D.enabled = false;
             isDead = true;
         }
@@ -111,7 +117,7 @@ public class Enemy : MonoBehaviour
     {
         if(inRange)
         {
-            player.TakeDamage(attackDamage);
+            characterStats.TakeDamage(attackDamage);
         }
     }
 

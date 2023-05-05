@@ -10,7 +10,7 @@ public class LootBag : MonoBehaviour
     public GameObject droppedItemPrefab;
     public GameObject player;
     public Level level;
-    public Player playerScript;
+    public CharacterStats characterStatsScript;
     public GameObject enemyManager;
     public WeightedRandomList weightedRandomList;
 
@@ -18,7 +18,7 @@ public class LootBag : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player");
         level = player.GetComponent<Level>();
-        playerScript = player.GetComponent<Player>();
+        characterStatsScript = player.GetComponent<CharacterStats>();
         enemyManager = GameObject.FindGameObjectWithTag("EnemyManager");
         weightedRandomList = enemyManager.GetComponent<WeightedRandomList>();
     }
@@ -41,15 +41,17 @@ public class LootBag : MonoBehaviour
         Collectable collectable = lootGameObject.GetComponent<Collectable>();
 
         collectable.level = level;
-        collectable.player = playerScript;
+        collectable.characterStats = characterStatsScript;
         
         if (loot.lootType == "XP") //Eğer obje türü XP ise,
         {
+            lootGameObject.name = $"XP ({loot.xpAmount})";
             collectable.lootType = loot.lootType;
             collectable.xpAmount = loot.xpAmount;
         }
         else if (loot.lootType == "HEAL")
         {
+            lootGameObject.name = $"Heal ({loot.healAmount})";
             collectable.lootType = loot.lootType;
             collectable.healAmount = loot.healAmount;
         }

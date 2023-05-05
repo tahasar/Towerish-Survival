@@ -1,8 +1,5 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using Kryz.CharacterStats;
-using Kryz.CharacterStats.Examples;
 using UnityEngine;
 
 public class PlayerStats : CharacterStats
@@ -19,7 +16,10 @@ public class PlayerStats : CharacterStats
     {
         foreach (Item item in inventory.items)
         {
-            
+            //foreach (float dict in item.stats)
+            //{
+            //    Debug.Log(dict);
+            //}
         }
     }
 }

@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class CharacterStats : MonoBehaviour
 {
+    public HealthBar HealthBar;
+
     public float maxHealth = 3333;
     public float currentHealth { get; private set; }
     
@@ -11,6 +13,7 @@ public class CharacterStats : MonoBehaviour
     private void Awake()
     {
         currentHealth = maxHealth;
+        HealthBar.SetMaxHealth(maxHealth);
     }
 
     private void Update()
@@ -19,6 +22,19 @@ public class CharacterStats : MonoBehaviour
         {
             TakeDamage(10);
         }
+    }
+    
+    public void Heal(float heal)
+    {
+        currentHealth += heal;
+        
+        HealthBar.SetHealth(currentHealth);
+
+        if (currentHealth > maxHealth) ;
+        {
+            currentHealth = maxHealth;
+        }
+
     }
 
     public void TakeDamage(float damage)
@@ -29,6 +45,8 @@ public class CharacterStats : MonoBehaviour
         
         currentHealth -= damage;
         
+        HealthBar.SetHealth(currentHealth);
+
         if (currentHealth <= 0)
         {
             Die();
@@ -37,6 +55,6 @@ public class CharacterStats : MonoBehaviour
 
     public virtual void Die()
     {
-        //die in somee way
+        Destroy(gameObject);
     }
 }

@@ -5,39 +5,31 @@ using NaughtyAttributes;
 
 public class UpgradeManager : MonoBehaviour
 {
-    public static UpgradeManager Instance;
-    
-    [Header("Temel")]
-    public Attractor attractor;
-    public AttackCaster attackCaster;
-    [Space]
-    [Header("Silahlar")]
-    public PurpleBaseAttack purpleBaseAttack;
-    public LaserCaster laserCaster;
-    public RotatingBladesManager rotatingBlade;
+    #region Singleton
 
-    // PurpleBaseAttack geliştirmeleri;
-    public void Speed()
+    public static UpgradeManager instance;
+
+    private void Awake()
     {
-        purpleBaseAttack.speed *= 3;
+        if (instance != null)
+        {
+            return;
+        }
+
+        instance = this;
     }
-    // rotateSpeed
-    // range
-    // damage
-    
-    
-    // LaserCaster geliştirmeleri;
-    //
-    // range
-    // damage
-    // damageTime
-    
-    
-    // RotatingBlade geliştirmeleri;
-    //
-    // rotateAroundSpeed
-    // rotationSpeed
-    // damage
-    
-    
+
+    #endregion
+
+    public Stat health;
+    public Stat mana;
+    public Stat armor;
+    public Stat energy;
+    public Stat manaPer;
+    public Stat armorPer;
+    public Stat energyPer;
+    public Stat manaPerMax;
+    public Stat armorPerMax;
+    public Stat energyPerMax;
+    public Stat manaPerMaxMax;
 }
