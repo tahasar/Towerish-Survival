@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Level : MonoBehaviour
@@ -10,19 +7,13 @@ public class Level : MonoBehaviour
     public int skillPoints = 3;
     public float experience;
 
-    private float TO_LEVEL_UP
-    {
-        get
-        {
-            return level * 20;
-        }
-    }
+    private float TO_LEVEL_UP => level * 20;
 
     public void AddExperience(float amount)
     {
         experience += amount;
         CheckLevelUp();
-        xpBar.UpdateXpText(experience,TO_LEVEL_UP);
+        xpBar.UpdateXpText(experience, TO_LEVEL_UP);
     }
 
 
@@ -33,7 +24,6 @@ public class Level : MonoBehaviour
             experience -= TO_LEVEL_UP;
             level += 1;
             xpBar.UpdateLevelText(level);
-            
         }
     }
 }

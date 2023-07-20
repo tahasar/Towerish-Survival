@@ -1,8 +1,4 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using NaughtyAttributes;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class EnemyFallenAngel1 : Enemy
@@ -10,7 +6,7 @@ public class EnemyFallenAngel1 : Enemy
     [Expandable] public EnemyBase enemyBase;
     public Animator anim;
 
-    void Start()
+    private void Start()
     {
         enemyTransform = gameObject.GetComponent<Transform>();
         target = GameObject.FindGameObjectsWithTag("Player");

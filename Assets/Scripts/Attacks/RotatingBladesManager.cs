@@ -1,59 +1,39 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class RotatingBladesManager : MonoBehaviour
 {
     public GameObject OriginalSurrounderObject;
     public GameObject newSurrounderObject;
-    public List<GameObject> surrounderObject = new List<GameObject>();
+    public List<GameObject> surrounderObject = new();
     public float distanceFromCenter;
     public float rotateAroundSpeed;
-    private RotatingBlade rotatingBlade;
 
     //private readonly float AppearWaitDuration = 0.3f;
-    private bool inCooldown = false;
+    private bool inCooldown;
+    private RotatingBlade rotatingBlade;
 
-    void Start()
+    private void Start()
     {
         //StartCoroutine(SurroundStepAnimated());
-        
-        AddSurround();
 
+        AddSurround();
     }
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F))
-        {
-            AddSurround();
-        }
-        
-        if (Input.GetKeyDown(KeyCode.G))
-        {
-            SurroundOn();
-        }
-        
-        if (Input.GetKeyDown(KeyCode.H))
-        {
-            SurroundOff();
-        }
-        
-        if (Input.GetKeyDown(KeyCode.V))
-        {
-            RemoveSurround();
-        }
-        
+        if (Input.GetKeyDown(KeyCode.F)) AddSurround();
+
+        if (Input.GetKeyDown(KeyCode.G)) SurroundOn();
+
+        if (Input.GetKeyDown(KeyCode.H)) SurroundOff();
+
+        if (Input.GetKeyDown(KeyCode.V)) RemoveSurround();
     }
 
     private void FixedUpdate()
     {
-        if (!inCooldown)
-        {
-            inCooldown = true;
-        }
+        if (!inCooldown) inCooldown = true;
     }
 
     //IEnumerator SurroundStepAnimated()
@@ -72,44 +52,40 @@ public class RotatingBladesManager : MonoBehaviour
     //        yield return new WaitForSeconds(AppearWaitDuration);
     //    }
     //}
-    
-    
-    void AddSurround()
+
+
+    private void AddSurround()
     {
         newSurrounderObject = Instantiate(OriginalSurrounderObject, transform);
         newSurrounderObject.SetActive(false);
-        
+
         surrounderObject.Add(newSurrounderObject);
         SurroundOn();
     }
 
-    void RemoveSurround()
+    private void RemoveSurround()
     {
         Destroy(surrounderObject[^1]);
         surrounderObject.Remove(surrounderObject[^1]);
         SurroundOn();
     }
 
-    void SurroundOn()
+    private void SurroundOn()
     {
         float AngleStep = 360 / surrounderObject.Count;
-        
-        for (int i = 0; i < surrounderObject.Count; i++)
+
+        for (var i = 0; i < surrounderObject.Count; i++)
         {
-            surrounderObject[i].transform.localPosition = new Vector2(distanceFromCenter,0);
-            surrounderObject[i].transform.RotateAround(transform.position, Vector3.forward,AngleStep * i);
+            surrounderObject[i].transform.localPosition = new Vector2(distanceFromCenter, 0);
+            surrounderObject[i].transform.RotateAround(transform.position, Vector3.forward, AngleStep * i);
             surrounderObject[i].SetActive(true);
 
             surrounderObject[i].GetComponent<RotatingBlade>().rotateAroundSpeed = rotateAroundSpeed;
         }
     }
 
-    void SurroundOff()
+    private void SurroundOff()
     {
-        for (int i = 0; i < surrounderObject.Count; i++)
-        {
-            surrounderObject[i].SetActive(false);
-        }
+        for (var i = 0; i < surrounderObject.Count; i++) surrounderObject[i].SetActive(false);
     }
-
 }

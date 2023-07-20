@@ -1,7 +1,4 @@
-using System;
-using System.Collections.Generic;
 using Unity.Mathematics;
-using Unity.VisualScripting;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -25,24 +22,23 @@ public class LootBag : MonoBehaviour
 
     public void InstantiateLoot(Vector2 spawnPosition)
     {
-        
         // Item'in oluşumunu sağlar.
-        LootProbabilities item = weightedRandomList.SpawnRandomLoot();
-        Loot loot = item.loot;
+        var item = weightedRandomList.SpawnRandomLoot();
+        var loot = item.loot;
 
-        GameObject lootGameObject = Instantiate(droppedItemPrefab, spawnPosition, quaternion.identity);
-        
-        
+        var lootGameObject = Instantiate(droppedItemPrefab, spawnPosition, quaternion.identity);
+
+
         // Item'in özelliklerini ScriptableObject üzerinden çeker.
-        SpriteRenderer itemSprite = lootGameObject.GetComponent<SpriteRenderer>();
+        var itemSprite = lootGameObject.GetComponent<SpriteRenderer>();
         itemSprite.sprite = loot.lootSprite;
         itemSprite.color = loot.color;
 
-        Collectable collectable = lootGameObject.GetComponent<Collectable>();
+        var collectable = lootGameObject.GetComponent<Collectable>();
 
         collectable.level = level;
         collectable.characterStats = characterStatsScript;
-        
+
         if (loot.lootType == "XP") //Eğer obje türü XP ise,
         {
             lootGameObject.name = $"XP ({loot.xpAmount})";
@@ -58,9 +54,8 @@ public class LootBag : MonoBehaviour
 
 
         // Item'in oluşumundan sonra rastgele bi yöne saçılmasını sağlar.
-        float dropForce = 300f;
-        Vector2 dropDirection = new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f));
+        var dropForce = 300f;
+        var dropDirection = new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f));
         lootGameObject.GetComponent<Rigidbody2D>().AddForce(dropDirection * dropForce, ForceMode2D.Impulse);
     }
 }
-

@@ -3,22 +3,21 @@ using UnityEngine;
 
 public class LaserCaster : MonoBehaviour
 {
-    private Rigidbody2D rb;
-    private GameObject player;
-    private AttackManager attackManager;
-    private LineRenderer lineRenderer;
-    
-    private Transform targetEnemy;
-    private Transform enemy;
-    private bool canDamage = true;
-    
     public Texture2D Icon;
-    
+
     public float range = 5;
     public float damage = 50;
     public float damageTime = 0.5f;
+    private AttackManager attackManager;
+    private bool canDamage = true;
+    private Transform enemy;
+    private LineRenderer lineRenderer;
+    private GameObject player;
+    private Rigidbody2D rb;
 
-    
+    private Transform targetEnemy;
+
+
     private void Start()
     {
         lineRenderer = GetComponent<LineRenderer>();
@@ -27,10 +26,10 @@ public class LaserCaster : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         targetEnemy = attackManager.FindClosestEnemy(range);
-        if(targetEnemy != null)
+        if (targetEnemy != null)
         {
             enemy = targetEnemy.GetComponent<Transform>();
             Laser();
@@ -62,7 +61,7 @@ public class LaserCaster : MonoBehaviour
         StartCoroutine(Cooldown());
     }
 
-    IEnumerator Cooldown()
+    private IEnumerator Cooldown()
     {
         yield return new WaitForSeconds(damageTime);
         canDamage = true;

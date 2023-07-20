@@ -1,8 +1,6 @@
 using System;
-using System.Collections.Generic;
 using UnityEngine;
-using Random = UnityEngine.Random;
-
+using Random = System.Random;
 
 [Serializable]
 public class LootProbabilities
@@ -16,11 +14,10 @@ public class LootProbabilities
 
 public class WeightedRandomList : MonoBehaviour
 {
-    
     [SerializeField] private LootProbabilities[] loots;
-    
+
     private float accumulatedWeights;
-    private System.Random rand = new System.Random();
+    private readonly Random rand = new();
 
     private void Awake()
     {
@@ -29,20 +26,18 @@ public class WeightedRandomList : MonoBehaviour
 
     public LootProbabilities SpawnRandomLoot()
     {
-        LootProbabilities randomLoot = loots[GetRandomLootIndex()];
+        var randomLoot = loots[GetRandomLootIndex()];
 
         return randomLoot;
     }
 
     private int GetRandomLootIndex()
     {
-        double r = rand.NextDouble() * accumulatedWeights;
+        var r = rand.NextDouble() * accumulatedWeights;
 
-        for (int i = 0; i < loots.Length; i++)
-        {
+        for (var i = 0; i < loots.Length; i++)
             if (loots[i].chance >= r)
                 return i;
-        }
 
         return 0;
     }
@@ -50,7 +45,7 @@ public class WeightedRandomList : MonoBehaviour
     private void CalculateWeights()
     {
         accumulatedWeights = 0f;
-        foreach (LootProbabilities loot in loots)
+        foreach (var loot in loots)
         {
             accumulatedWeights += loot.chance;
             loot.chance = accumulatedWeights;

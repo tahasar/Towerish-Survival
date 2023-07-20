@@ -2,8 +2,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField]
-    float characterSpeed;
+    [SerializeField] private float characterSpeed;
 
     public Rigidbody2D rb;
     public Animator animator;
@@ -11,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 movement;
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
@@ -28,7 +27,6 @@ public class PlayerMovement : MonoBehaviour
 
         if (animator.GetFloat("Horizontal") < 0)
         {
-            
         }
     }
 

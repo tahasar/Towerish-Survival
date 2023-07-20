@@ -1,26 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using NaughtyAttributes;
 
 public class UpgradeManager : MonoBehaviour
 {
-    #region Singleton
-
-    public static UpgradeManager instance;
-
-    private void Awake()
-    {
-        if (instance != null)
-        {
-            return;
-        }
-
-        instance = this;
-    }
-
-    #endregion
-
     public Stat health;
     public Stat mana;
     public Stat armor;
@@ -32,4 +13,17 @@ public class UpgradeManager : MonoBehaviour
     public Stat armorPerMax;
     public Stat energyPerMax;
     public Stat manaPerMaxMax;
+
+    #region Singleton
+
+    public static UpgradeManager instance;
+
+    private void Awake()
+    {
+        if (instance != null) return;
+
+        instance = this;
+    }
+
+    #endregion
 }

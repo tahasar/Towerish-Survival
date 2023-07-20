@@ -1,4 +1,3 @@
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class ItemCollectable : MonoBehaviour
@@ -10,7 +9,7 @@ public class ItemCollectable : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
             //itemBase.SetStat();
         }

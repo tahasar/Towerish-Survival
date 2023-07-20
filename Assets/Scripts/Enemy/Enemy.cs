@@ -1,39 +1,11 @@
-using System;
-using NaughtyAttributes;
-using TMPro;
 using Unity.Mathematics;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    
-    [Header("Hedefler")]
-    public GameObject[] target; // Oyuncu karakteri
+    [Header("Hedefler")] public GameObject[] target; // Oyuncu karakteri
+
     public CharacterStats characterStats;
-    
-    protected float health;
-    protected float xpReward;
-    protected float range;
-    protected float attackDamage;
-    protected Animator animator;
-    protected string enemyName;
-    protected string enemyInfo;
-    protected float maxHealth;
-    protected float speed;
-    protected float speedMultiplier = 1;
-    protected Sprite sprite;
-    protected Transform enemyTransform;
-    protected bool isFlipped;
-    protected bool inRange;
-    protected bool isDead = false;
-    protected int mainTarget;
-    protected Vector2 movement;
-    protected float kuleMesafesi;
-    protected float adamMesafesi;
-    protected AudioSource deathSound;
-    protected SpriteRenderer enemySprite;
-    protected Collider2D collider2D;
 
     public bool isAttacking;
     public Vector2 damageTextLocation;
@@ -41,6 +13,29 @@ public class Enemy : MonoBehaviour
 
     public DropOnDestroy dropOnDestroy;
     public GameObject explotionEffect;
+    protected float adamMesafesi;
+    protected Animator animator;
+    protected float attackDamage;
+    protected Collider2D collider2D;
+    protected AudioSource deathSound;
+    protected string enemyInfo;
+    protected string enemyName;
+    protected SpriteRenderer enemySprite;
+    protected Transform enemyTransform;
+
+    protected float health;
+    protected bool inRange;
+    protected bool isDead;
+    protected bool isFlipped;
+    protected float kuleMesafesi;
+    protected int mainTarget;
+    protected float maxHealth;
+    protected Vector2 movement;
+    protected float range;
+    protected float speed;
+    protected float speedMultiplier = 1;
+    protected Sprite sprite;
+    protected float xpReward;
 
     private void Start()
     {
@@ -56,11 +51,8 @@ public class Enemy : MonoBehaviour
         GetTargetDistance(); // Hedef ile düşman arasındaki mesafeyi ölçer.
 
         LookAtTarget(); // Düşmanın yönünü hedefe çevirir.
-        
-        if(!isAttacking)
-        {
-            Move(movement);
-        }
+
+        if (!isAttacking) Move(movement);
 
         if (isDead)
         {
@@ -72,14 +64,14 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    private void GetTargetDistance()        // Hedef ile düşman arasındaki mesafeyi ölçer.
+    private void GetTargetDistance() // Hedef ile düşman arasındaki mesafeyi ölçer.
     {
         inRange = Vector2.Distance(target[mainTarget].transform.position, enemyTransform.position) <= range;
     }
 
-    private void TargetDetect()        // Hedef takibini sağlar.
+    private void TargetDetect() // Hedef takibini sağlar.
     {
-        Vector3 direction = target[mainTarget].transform.position - enemyTransform.position;
+        var direction = target[mainTarget].transform.position - enemyTransform.position;
         direction.Normalize();
         movement = direction;
     }
@@ -91,19 +83,15 @@ public class Enemy : MonoBehaviour
         adamMesafesi = Vector2.Distance(target[0].transform.position, enemyTransform.position);
 
         if (kuleMesafesi > adamMesafesi)
-        {
             mainTarget = 0;
-        }
         else
-        {
             mainTarget = 1;
-        }
     }
 
     public virtual void TakeDamage(float damageAmount)
     {
         health -= damageAmount;
-        
+
         if (health <= 0)
         {
             Destroy(enemySprite);
@@ -115,15 +103,12 @@ public class Enemy : MonoBehaviour
 
     public void Attack()
     {
-        if(inRange)
-        {
-            characterStats.TakeDamage(attackDamage);
-        }
+        if (inRange) characterStats.TakeDamage(attackDamage);
     }
 
     public void LookAtTarget()
     {
-        Vector3 flipped = transform.localScale;
+        var flipped = transform.localScale;
         flipped.z *= -1f;
 
         if (enemyTransform.position.x < target[mainTarget].transform.position.x && isFlipped)
@@ -143,12 +128,8 @@ public class Enemy : MonoBehaviour
     public void Move(Vector2 direction) // Hedef menzilde(inRange) değilse hareket eder.
     {
         if (inRange)
-        {
             animator.SetTrigger("Attack");
-        }
         else
-        {
-            enemyTransform.position = ((Vector2)enemyTransform.position + (direction * (speed * Time.deltaTime)));
-        }
+            enemyTransform.position = (Vector2)enemyTransform.position + direction * (speed * Time.deltaTime);
     }
 }

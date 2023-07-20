@@ -1,40 +1,35 @@
-﻿using UnityEditor;
+﻿using System;
+using UnityEditor;
 using UnityEngine;
-using System.Collections;
 
-namespace Spriter2UnityDX.Importing
+namespace Source.Wraith_Karakteri.Vector_Parts.Spriter2UnityDX
 {
     public class ScmlImportOptionsWindow : EditorWindow
     {
-        public System.Action OnClose;
-        
-        void OnEnable()
+        public Action OnClose;
+
+        private void OnEnable()
         {
             titleContent = new GUIContent("Import Options");
-            if(ScmlImportOptions.options == null)
-            {
-                ScmlImportOptions.options = new ScmlImportOptions();
-            }
+            if (ScmlImportOptions.options == null) ScmlImportOptions.options = new ScmlImportOptions();
         }
 
-        void OnGUI()
-        {
-            ScmlImportOptions.options.pixelsPerUnit = EditorGUILayout.FloatField(ScmlImportOptions.options.pixelsPerUnit);
-            if(GUILayout.Button("Done"))
-            {
-                Close();
-            }
-        }
-
-        void OnDestroy()
+        private void OnDestroy()
         {
             OnClose();
+        }
+
+        private void OnGUI()
+        {
+            ScmlImportOptions.options.pixelsPerUnit =
+                EditorGUILayout.FloatField(ScmlImportOptions.options.pixelsPerUnit);
+            if (GUILayout.Button("Done")) Close();
         }
     }
 
     public class ScmlImportOptions
     {
-        public static ScmlImportOptions options = null;
+        public static ScmlImportOptions options;
 
         public float pixelsPerUnit = 100f;
     }

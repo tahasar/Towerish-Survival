@@ -1,8 +1,6 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,9 +11,9 @@ public class XpBar : MonoBehaviour
     public Image border;
     public TextMeshProUGUI xpText;
     public TextMeshProUGUI levelText;
-    
-    private Color oldFillColor;
     private Color oldBorderColor;
+
+    private Color oldFillColor;
 
     private void Start()
     {
@@ -31,11 +29,11 @@ public class XpBar : MonoBehaviour
         fill.color = Color.white;
         StartCoroutine(XpGain());
         StopCoroutine(XpGain());
-        double xpPercentage = (100 / target) * currentXp;
+        double xpPercentage = 100 / target * currentXp;
         xpPercentage = Math.Round(xpPercentage, 1);
         xpText.SetText($"%{xpPercentage}");
     }
-    
+
     public void UpdateLevelText(float level)
     {
         border.color = Color.yellow;
@@ -43,14 +41,14 @@ public class XpBar : MonoBehaviour
         StopCoroutine(LevelGain());
         levelText.SetText($"{level}");
     }
-    
-    IEnumerator XpGain()
+
+    private IEnumerator XpGain()
     {
         yield return new WaitForSeconds(0.05f);
         fill.color = oldFillColor;
     }
 
-    IEnumerator LevelGain()
+    private IEnumerator LevelGain()
     {
         yield return new WaitForSeconds(0.1f);
         border.color = oldBorderColor;

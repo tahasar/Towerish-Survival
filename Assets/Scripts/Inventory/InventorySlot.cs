@@ -7,7 +7,7 @@ public class InventorySlot : MonoBehaviour
 
     public Image removeButtonImage;
     public Button removeButton;
-    
+
     private Item item;
 
     public void AddItem(Item newItem)
@@ -19,7 +19,7 @@ public class InventorySlot : MonoBehaviour
         removeButtonImage.enabled = true;
         removeButton.interactable = true;
     }
-    
+
     public void ClearSlot()
     {
         item = null;
@@ -32,7 +32,6 @@ public class InventorySlot : MonoBehaviour
 
     public void OnRemoveButton()
     {
-        Inventory.instance.Remove(item);
+        Inventory.Instance.Remove(item);
     }
-    
 }
