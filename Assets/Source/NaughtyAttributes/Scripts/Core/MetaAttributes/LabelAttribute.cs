@@ -1,15 +1,15 @@
 ﻿using System;
 
-namespace NaughtyAttributes
+namespace NaughtyAttributes.Scripts.Core.MetaAttributes
 {
-    [AttributeUsage(AttributeTargets.Field, AllowMultiple = false, Inherited = true)]
+    [AttributeUsage(AttributeTargets.Field)]
     public class LabelAttribute : MetaAttribute
     {
-        public string Label { get; private set; }
-
         public LabelAttribute(string label)
         {
             Label = label;
         }
+
+        public string Label { get; private set; }
     }
 }

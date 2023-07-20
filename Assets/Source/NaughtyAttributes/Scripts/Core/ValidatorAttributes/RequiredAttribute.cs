@@ -1,15 +1,15 @@
 ﻿using System;
 
-namespace NaughtyAttributes
+namespace NaughtyAttributes.Scripts.Core.ValidatorAttributes
 {
-    [AttributeUsage(AttributeTargets.Field, AllowMultiple = false, Inherited = true)]
+    [AttributeUsage(AttributeTargets.Field)]
     public class RequiredAttribute : ValidatorAttribute
     {
-        public string Message { get; private set; }
-
         public RequiredAttribute(string message = null)
         {
             Message = message;
         }
+
+        public string Message { get; private set; }
     }
 }

@@ -1,12 +1,10 @@
 ﻿using System;
 
-namespace NaughtyAttributes
+namespace NaughtyAttributes.Scripts.Core.ValidatorAttributes
 {
-    [AttributeUsage(AttributeTargets.Field, AllowMultiple = false, Inherited = true)]
+    [AttributeUsage(AttributeTargets.Field)]
     public class MaxValueAttribute : ValidatorAttribute
     {
-        public float MaxValue { get; private set; }
-
         public MaxValueAttribute(float maxValue)
         {
             MaxValue = maxValue;
@@ -16,5 +14,7 @@ namespace NaughtyAttributes
         {
             MaxValue = maxValue;
         }
+
+        public float MaxValue { get; private set; }
     }
 }

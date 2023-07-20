@@ -1,8 +1,9 @@
 ﻿using System;
+using NaughtyAttributes.Scripts.Core.Utility;
 
-namespace NaughtyAttributes
+namespace NaughtyAttributes.Scripts.Core.MetaAttributes
 {
-    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Method, AllowMultiple = false, Inherited = true)]
+    [AttributeUsage(AttributeTargets.Field | AttributeTargets.Method)]
     public class EnableIfAttribute : EnableIfAttributeBase
     {
         public EnableIfAttribute(string condition)

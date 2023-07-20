@@ -1,14 +1,16 @@
-﻿using UnityEngine;
+﻿using NaughtyAttributes.Scripts.Core.DrawerAttributes;
+using NaughtyAttributes.Scripts.Core.Utility;
 using UnityEditor;
+using UnityEngine;
 
-namespace NaughtyAttributes.Editor
+namespace NaughtyAttributes.Scripts.Editor.PropertyDrawers
 {
     [CustomPropertyDrawer(typeof(CurveRangeAttribute))]
     public class CurveRangePropertyDrawer : PropertyDrawerBase
     {
         protected override float GetPropertyHeight_Internal(SerializedProperty property, GUIContent label)
         {
-            float propertyHeight = property.propertyType == SerializedPropertyType.AnimationCurve
+            var propertyHeight = property.propertyType == SerializedPropertyType.AnimationCurve
                 ? GetPropertyHeight(property)
                 : GetPropertyHeight(property) + GetHelpBoxHeight();
 
@@ -22,7 +24,7 @@ namespace NaughtyAttributes.Editor
             // Check user error
             if (property.propertyType != SerializedPropertyType.AnimationCurve)
             {
-                string message = string.Format("Field {0} is not an AnimationCurve", property.name);
+                var message = string.Format("Field {0} is not an AnimationCurve", property.name);
                 DrawDefaultPropertyAndHelpBox(rect, property, message, MessageType.Warning);
                 return;
             }

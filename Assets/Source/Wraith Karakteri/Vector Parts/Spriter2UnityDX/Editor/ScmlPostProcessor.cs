@@ -4,7 +4,6 @@
 //https://github.com/Dharengo/Spriter2UnityDX and share your suggestions by creating a fork
 //-Dengar/Dharengo
 
-using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Xml.Serialization;
@@ -12,20 +11,26 @@ using UnityEditor;
 using UnityEditor.Animations;
 using UnityEngine;
 
-namespace Source.Wraith_Karakteri.Vector_Parts.Spriter2UnityDX
+//Detects when a .scml file has been imported, then begins the process to create the prefab
+public class ScmlPostProcessor : AssetPostprocessor
 {
-    //Detects when a .scml file has been imported, then begins the process to create the prefab
-    public class ScmlPostProcessor : AssetPostprocessor
+    private static readonly IList<string> cachedPaths = new List<string>();
+
+
+    //Called after an import, detects if imported files end in .scml
+    private static void OnPostprocessAllAssets(string[] importedAssets, string[] deletedAssets,
+        string[] movedAssets, string[] movedFromAssetPaths)
     {
-        private static readonly IList<string> cachedPaths = new List<string>();
+        var filesToProcess = new List<string>();
+        var optionsNeedUpdated = false;
 
         //Called after an import, detects if imported files end in .scml
-        [Obsolete("Obsolete")]
-        private static void OnPostprocessAllAssets(string[] importedAssets, string[] deletedAssets,
+        static void OnPostprocessAllAssets(string[] importedAssets, string[] deletedAssets,
             string[] movedAssets, string[] movedFromAssetPaths)
         {
             var filesToProcess = new List<string>();
             var optionsNeedUpdated = false;
+
             foreach (var path in importedAssets)
                 if (path.EndsWith(".scml") && !path.Contains("autosave"))
                 {
@@ -52,8 +57,7 @@ namespace Source.Wraith_Karakteri.Vector_Parts.Spriter2UnityDX
             }
         }
 
-        [Obsolete("Obsolete")]
-        private static void ProcessFiles(IList<string> paths)
+        static void ProcessFiles(IList<string> paths)
         {
             var info = new ScmlProcessingInfo();
             var builder = new PrefabBuilder(info);
@@ -67,7 +71,7 @@ namespace Source.Wraith_Karakteri.Vector_Parts.Spriter2UnityDX
             PostProcess(info);
         }
 
-        private static ScmlObject Deserialize(string path)
+        static ScmlObject Deserialize(string path)
         {
             var serializer = new XmlSerializer(typeof(ScmlObject));
             using (var reader = new StreamReader(path))
@@ -76,7 +80,7 @@ namespace Source.Wraith_Karakteri.Vector_Parts.Spriter2UnityDX
             }
         }
 
-        private static void PostProcess(ScmlProcessingInfo info)
+        static void PostProcess(ScmlProcessingInfo info)
         {
             //You can put your own code or references to your own code here
             //If you want to do any work on these assets

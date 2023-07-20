@@ -1,10 +1,9 @@
 ﻿using System;
 
-namespace NaughtyAttributes
+namespace NaughtyAttributes.Scripts.Core.MetaAttributes
 {
-    [AttributeUsage(AttributeTargets.Field, AllowMultiple = false, Inherited = true)]
+    [AttributeUsage(AttributeTargets.Field)]
     public class ReadOnlyAttribute : MetaAttribute
     {
-
     }
 }

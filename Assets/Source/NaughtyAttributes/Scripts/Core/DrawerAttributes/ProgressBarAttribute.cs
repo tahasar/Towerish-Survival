@@ -1,15 +1,11 @@
 ﻿using System;
+using NaughtyAttributes.Scripts.Core.Utility;
 
-namespace NaughtyAttributes
+namespace NaughtyAttributes.Scripts.Core.DrawerAttributes
 {
-    [AttributeUsage(AttributeTargets.Field, AllowMultiple = false, Inherited = true)]
+    [AttributeUsage(AttributeTargets.Field)]
     public class ProgressBarAttribute : DrawerAttribute
     {
-        public string Name { get; private set; }
-        public float MaxValue { get; set; }
-        public string MaxValueName { get; private set; }
-        public EColor Color { get; private set; }
-
         public ProgressBarAttribute(string name, float maxValue, EColor color = EColor.Blue)
         {
             Name = name;
@@ -33,5 +29,10 @@ namespace NaughtyAttributes
             : this("", maxValueName, color)
         {
         }
+
+        public string Name { get; private set; }
+        public float MaxValue { get; set; }
+        public string MaxValueName { get; private set; }
+        public EColor Color { get; private set; }
     }
 }

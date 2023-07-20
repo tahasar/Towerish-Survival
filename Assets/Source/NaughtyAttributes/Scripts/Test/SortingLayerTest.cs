@@ -1,14 +1,15 @@
-﻿using UnityEngine;
+﻿using System;
+using NaughtyAttributes.Scripts.Core.DrawerAttributes;
+using NaughtyAttributes.Scripts.Core.DrawerAttributes_SpecialCase;
+using UnityEngine;
 
-namespace NaughtyAttributes.Test
+namespace NaughtyAttributes.Scripts.Test
 {
     public class SortingLayerTest : MonoBehaviour
     {
-        [SortingLayer]
-        public int layerNumber0;
+        [SortingLayer] public int layerNumber0;
 
-        [SortingLayer]
-        public string layerName0;
+        [SortingLayer] public string layerName0;
 
         public SortingLayerNest1 nest1;
 
@@ -22,25 +23,21 @@ namespace NaughtyAttributes.Test
         }
     }
 
-    [System.Serializable]
+    [Serializable]
     public class SortingLayerNest1
     {
-        [SortingLayer]
-        public int layerNumber1;
+        [SortingLayer] public int layerNumber1;
 
-        [SortingLayer]
-        public string layerName1;
+        [SortingLayer] public string layerName1;
 
         public SortingLayerNest2 nest2;
     }
 
-    [System.Serializable]
+    [Serializable]
     public struct SortingLayerNest2
     {
-        [SortingLayer]
-        public int layerNumber2;
+        [SortingLayer] public int layerNumber2;
 
-        [SortingLayer]
-        public string layerName2;
+        [SortingLayer] public string layerName2;
     }
 }

@@ -1,4 +1,5 @@
 using NaughtyAttributes;
+using NaughtyAttributes.Scripts.Core.DrawerAttributes;
 using UnityEngine;
 
 public class EnemyFallenAngel1 : Enemy

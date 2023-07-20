@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using NaughtyAttributes.Scripts.Core.ValidatorAttributes;
 using UnityEditor;
 
-namespace NaughtyAttributes.Editor
+namespace NaughtyAttributes.Scripts.Editor.PropertyValidators
 {
     public abstract class PropertyValidatorBase
     {
@@ -11,7 +12,7 @@ namespace NaughtyAttributes.Editor
 
     public static class ValidatorAttributeExtensions
     {
-        private static Dictionary<Type, PropertyValidatorBase> _validatorsByAttributeType;
+        private static readonly Dictionary<Type, PropertyValidatorBase> _validatorsByAttributeType;
 
         static ValidatorAttributeExtensions()
         {
@@ -26,13 +27,8 @@ namespace NaughtyAttributes.Editor
         {
             PropertyValidatorBase validator;
             if (_validatorsByAttributeType.TryGetValue(attr.GetType(), out validator))
-            {
                 return validator;
-            }
-            else
-            {
-                return null;
-            }
+            return null;
         }
     }
 }

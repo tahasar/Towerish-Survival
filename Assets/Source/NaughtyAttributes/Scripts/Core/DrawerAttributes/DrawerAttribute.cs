@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 
-namespace NaughtyAttributes
+namespace NaughtyAttributes.Scripts.Core.DrawerAttributes
 {
     /// <summary>
-    /// Base class for all drawer attributes
+    ///     Base class for all drawer attributes
     /// </summary>
     public class DrawerAttribute : PropertyAttribute, INaughtyAttribute
     {

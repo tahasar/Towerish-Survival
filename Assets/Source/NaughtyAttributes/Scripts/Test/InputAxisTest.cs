@@ -1,11 +1,13 @@
-﻿using UnityEngine;
+﻿using System;
+using NaughtyAttributes.Scripts.Core.DrawerAttributes;
+using NaughtyAttributes.Scripts.Core.DrawerAttributes_SpecialCase;
+using UnityEngine;
 
-namespace NaughtyAttributes.Test
+namespace NaughtyAttributes.Scripts.Test
 {
     public class InputAxisTest : MonoBehaviour
     {
-        [InputAxis]
-        public string inputAxis0;
+        [InputAxis] public string inputAxis0;
 
         public InputAxisNest1 nest1;
 
@@ -16,19 +18,17 @@ namespace NaughtyAttributes.Test
         }
     }
 
-    [System.Serializable]
+    [Serializable]
     public class InputAxisNest1
     {
-        [InputAxis]
-        public string inputAxis1;
+        [InputAxis] public string inputAxis1;
 
         public InputAxisNest2 nest2;
     }
 
-    [System.Serializable]
+    [Serializable]
     public struct InputAxisNest2
     {
-        [InputAxis]
-        public string inputAxis2;
+        [InputAxis] public string inputAxis2;
     }
 }

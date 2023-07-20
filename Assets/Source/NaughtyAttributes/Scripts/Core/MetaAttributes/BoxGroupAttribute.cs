@@ -1,15 +1,15 @@
 ﻿using System;
 
-namespace NaughtyAttributes
+namespace NaughtyAttributes.Scripts.Core.MetaAttributes
 {
-    [AttributeUsage(AttributeTargets.Field, AllowMultiple = false, Inherited = true)]
+    [AttributeUsage(AttributeTargets.Field)]
     public class BoxGroupAttribute : MetaAttribute, IGroupAttribute
     {
-        public string Name { get; private set; }
-
         public BoxGroupAttribute(string name = "")
         {
             Name = name;
         }
+
+        public string Name { get; private set; }
     }
 }

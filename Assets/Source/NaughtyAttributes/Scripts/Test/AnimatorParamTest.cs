@@ -1,16 +1,17 @@
-﻿using UnityEngine;
+﻿using System;
+using NaughtyAttributes.Scripts.Core.DrawerAttributes;
+using NaughtyAttributes.Scripts.Core.DrawerAttributes_SpecialCase;
+using UnityEngine;
 
-namespace NaughtyAttributes.Test
+namespace NaughtyAttributes.Scripts.Test
 {
     public class AnimatorParamTest : MonoBehaviour
     {
         public Animator animator0;
 
-        [AnimatorParam("animator0")]
-        public int hash0;
+        [AnimatorParam("animator0")] public int hash0;
 
-        [AnimatorParam("animator0")]
-        public string name0;
+        [AnimatorParam("animator0")] public string name0;
 
         public AnimatorParamNest1 nest1;
 
@@ -23,11 +24,10 @@ namespace NaughtyAttributes.Test
         }
     }
 
-    [System.Serializable]
+    [Serializable]
     public class AnimatorParamNest1
     {
         public Animator animator1;
-        private Animator Animator1 => animator1;
 
         [AnimatorParam("Animator1", AnimatorControllerParameterType.Bool)]
         public int hash1;
@@ -36,18 +36,23 @@ namespace NaughtyAttributes.Test
         public string name1;
 
         public AnimatorParamNest2 nest2;
+        private Animator Animator1 => animator1;
     }
 
-    [System.Serializable]
+    [Serializable]
     public class AnimatorParamNest2
     {
         public Animator animator2;
-        private Animator GetAnimator2() => animator2;
 
         [AnimatorParam("GetAnimator2", AnimatorControllerParameterType.Int)]
         public int hash1;
 
         [AnimatorParam("GetAnimator2", AnimatorControllerParameterType.Trigger)]
         public string name1;
+
+        private Animator GetAnimator2()
+        {
+            return animator2;
+        }
     }
 }

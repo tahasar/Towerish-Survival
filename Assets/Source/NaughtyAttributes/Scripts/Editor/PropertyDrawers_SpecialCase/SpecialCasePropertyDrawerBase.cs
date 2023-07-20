@@ -1,42 +1,38 @@
 ﻿using System;
 using System.Collections.Generic;
+using NaughtyAttributes.Scripts.Core.DrawerAttributes_SpecialCase;
+using NaughtyAttributes.Scripts.Core.ValidatorAttributes;
+using NaughtyAttributes.Scripts.Editor.PropertyValidators;
+using NaughtyAttributes.Scripts.Editor.Utility;
 using UnityEditor;
 using UnityEngine;
 
-namespace NaughtyAttributes.Editor
+namespace NaughtyAttributes.Scripts.Editor.PropertyDrawers_SpecialCase
 {
     public abstract class SpecialCasePropertyDrawerBase
     {
         public void OnGUI(Rect rect, SerializedProperty property)
         {
             // Check if visible
-            bool visible = PropertyUtility.IsVisible(property);
-            if (!visible)
-            {
-                return;
-            }
+            var visible = PropertyUtility.IsVisible(property);
+            if (!visible) return;
 
             // Validate
-            ValidatorAttribute[] validatorAttributes = PropertyUtility.GetAttributes<ValidatorAttribute>(property);
+            var validatorAttributes = PropertyUtility.GetAttributes<ValidatorAttribute>(property);
             foreach (var validatorAttribute in validatorAttributes)
-            {
                 validatorAttribute.GetValidator().ValidateProperty(property);
-            }
 
             // Check if enabled and draw
             EditorGUI.BeginChangeCheck();
-            bool enabled = PropertyUtility.IsEnabled(property);
+            var enabled = PropertyUtility.IsEnabled(property);
 
-            using (new EditorGUI.DisabledScope(disabled: !enabled))
+            using (new EditorGUI.DisabledScope(!enabled))
             {
                 OnGUI_Internal(rect, property, PropertyUtility.GetLabel(property));
             }
 
             // Call OnValueChanged callbacks
-            if (EditorGUI.EndChangeCheck())
-            {
-                PropertyUtility.CallOnValueChangedCallbacks(property);
-            }
+            if (EditorGUI.EndChangeCheck()) PropertyUtility.CallOnValueChangedCallbacks(property);
         }
 
         public float GetPropertyHeight(SerializedProperty property)
@@ -50,7 +46,7 @@ namespace NaughtyAttributes.Editor
 
     public static class SpecialCaseDrawerAttributeExtensions
     {
-        private static Dictionary<Type, SpecialCasePropertyDrawerBase> _drawersByAttributeType;
+        private static readonly Dictionary<Type, SpecialCasePropertyDrawerBase> _drawersByAttributeType;
 
         static SpecialCaseDrawerAttributeExtensions()
         {
@@ -62,13 +58,8 @@ namespace NaughtyAttributes.Editor
         {
             SpecialCasePropertyDrawerBase drawer;
             if (_drawersByAttributeType.TryGetValue(attr.GetType(), out drawer))
-            {
                 return drawer;
-            }
-            else
-            {
-                return null;
-            }
+            return null;
         }
     }
 }

@@ -1,15 +1,15 @@
 ﻿using System;
 
-namespace NaughtyAttributes
+namespace NaughtyAttributes.Scripts.Core.MetaAttributes
 {
-    [AttributeUsage(AttributeTargets.Field, AllowMultiple = false, Inherited = true)]
+    [AttributeUsage(AttributeTargets.Field)]
     public class FoldoutAttribute : MetaAttribute, IGroupAttribute
     {
-        public string Name { get; private set; }
-
         public FoldoutAttribute(string name)
         {
             Name = name;
         }
+
+        public string Name { get; private set; }
     }
 }

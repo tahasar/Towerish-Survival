@@ -1,7 +1,8 @@
 using System.Collections;
+using NaughtyAttributes.Scripts.Core.DrawerAttributes_SpecialCase;
 using UnityEngine;
 
-namespace NaughtyAttributes.Test
+namespace NaughtyAttributes.Scripts.Test
 {
     public class ButtonTest : MonoBehaviour
     {
@@ -28,8 +29,8 @@ namespace NaughtyAttributes.Test
         [Button("StartCoroutine")]
         private IEnumerator IncrementMyIntCoroutine()
         {
-            int seconds = 5;
-            for (int i = 0; i < seconds; i++)
+            var seconds = 5;
+            for (var i = 0; i < seconds; i++)
             {
                 myInt++;
                 yield return new WaitForSeconds(1.0f);
