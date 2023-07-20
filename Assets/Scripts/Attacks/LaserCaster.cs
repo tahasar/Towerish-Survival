@@ -29,6 +29,7 @@ public class LaserCaster : MonoBehaviour
     private void Update()
     {
         targetEnemy = attackManager.FindClosestEnemy(range);
+        
         if (targetEnemy != null)
         {
             enemy = targetEnemy.GetComponent<Transform>();

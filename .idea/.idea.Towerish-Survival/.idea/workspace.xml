@@ -5,30 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f6f3ac2-ce11-45e6-b24c-5d0208fabbd2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Towerish-Survival.dir/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Towerish-Survival.dir/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Towerish-Survival/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Towerish-Survival/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/.idea/.idea.Assets.dir/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/.idea/.idea.Assets.dir/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Editor.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Editor/OdinModuleConfig.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Editor/OdinModuleConfig.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AttackManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AttackManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Attacks/AttackManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Attacks/AttackManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Düşmanlar/Fallen_Angels_1/AI/Fallen_Angels.ai.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Düşmanlar/Fallen_Angels_1/AI/Fallen_Angels.ai.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Düşmanlar/Fallen_Angels_1/EPS/Fallen_Angels_Body.eps.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Düşmanlar/Fallen_Angels_1/EPS/Fallen_Angels_Body.eps.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Wraith Karakteri/Vector Parts/Animations.autosave.scml.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Wraith Karakteri/Vector Parts/Animations.autosave.scml.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Wraith Karakteri/Vector Parts/Spriter2UnityDX/Editor/PrefabBuilder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Wraith Karakteri/Vector Parts/Spriter2UnityDX/Editor/PrefabBuilder.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Wraith Karakteri/Vector Parts/Spriter2UnityDX/Editor/ScmlPostProcessor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Wraith Karakteri/Vector Parts/Spriter2UnityDX/Editor/ScmlPostProcessor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AttackManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Attacks/AttackManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AttackManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Attacks/AttackManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Attacks/LaserCaster.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Attacks/LaserCaster.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +109,7 @@
       <workItem from="1689852638076" duration="388000" />
       <workItem from="1689853160529" duration="5715000" />
       <workItem from="1689860561476" duration="1930000" />
-      <workItem from="1689862549201" duration="2023000" />
+      <workItem from="1689862549201" duration="2474000" />
     </task>
     <servers />
   </component>
