@@ -1,5 +1,4 @@
 using System.Net.Mime;
-using Unity.Mathematics;
 using UnityEngine;
 
 public class AttackManager : MonoBehaviour

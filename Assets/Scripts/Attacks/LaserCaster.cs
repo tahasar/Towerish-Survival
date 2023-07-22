@@ -1,4 +1,5 @@
 using System.Collections;
+using DG.Tweening;
 using UnityEngine;
 
 public class LaserCaster : MonoBehaviour
@@ -43,10 +44,12 @@ public class LaserCaster : MonoBehaviour
 
     private void TurnOfLaser()
     {
+        lineRenderer.DOColor(new Color2(Color.white, Color.white), new Color2(Color.green, Color.black), 1);
+        
         lineRenderer.SetPosition(0, transform.position);
         lineRenderer.SetPosition(1, transform.position);
     }
-
+//
     public void Laser()
     {
         GiveDamage(enemy.GetComponent<Enemy>());

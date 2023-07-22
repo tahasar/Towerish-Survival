@@ -4,6 +4,7 @@
 //https://github.com/Dharengo/Spriter2UnityDX and share your suggestions by creating a fork
 //-Dengar/Dharengo
 
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Xml.Serialization;
@@ -18,6 +19,7 @@ public class ScmlPostProcessor : AssetPostprocessor
 
 
     //Called after an import, detects if imported files end in .scml
+    [Obsolete("Obsolete")]
     private static void OnPostprocessAllAssets(string[] importedAssets, string[] deletedAssets,
         string[] movedAssets, string[] movedFromAssetPaths)
     {

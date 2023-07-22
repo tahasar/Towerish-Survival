@@ -5,7 +5,7 @@ public class Enemy : MonoBehaviour
 {
     [Header("Hedefler")] public GameObject[] target; // Oyuncu karakteri
 
-    public CharacterStats characterStats;
+    public Player player;
 
     public bool isAttacking;
     public Vector2 damageTextLocation;
@@ -56,7 +56,7 @@ public class Enemy : MonoBehaviour
 
         if (isDead)
         {
-            characterStats.GetComponent<Level>().AddExperience(xpReward);
+            player.GetComponent<Level>().AddExperience(xpReward);
             Instantiate(explotionEffect, enemyTransform.position, quaternion.identity);
             dropOnDestroy.Drop();
             Destroy(gameObject, 0.12f);
@@ -103,7 +103,7 @@ public class Enemy : MonoBehaviour
 
     public void Attack()
     {
-        if (inRange) characterStats.TakeDamage(attackDamage);
+        if (inRange) player.TakeDamage(attackDamage);
     }
 
     public void LookAtTarget()
