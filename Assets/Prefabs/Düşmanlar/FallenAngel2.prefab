@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 7647931025036014279}
   - component: {fileID: 7647931025036014278}
   - component: {fileID: 7647931025036014393}
+  - component: {fileID: -7855020985479474376}
+  - component: {fileID: -1268370554532208705}
   m_Layer: 8
   m_Name: FallenAngel2
   m_TagString: Enemy
@@ -55,6 +57,12 @@ Rigidbody2D:
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
   m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -69,6 +77,25 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -120,16 +147,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55c065b3d2489764c8c7d48209b48f5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  list:
-    list:
-    - {fileID: 11400000, guid: 4ef0d88a71beb264f8ef2b875075aa36, type: 2}
-    - {fileID: 11400000, guid: 661c069bfdd052a4c8d186ede963c92f, type: 2}
-    - {fileID: 11400000, guid: 1f55ef3b06c933246a21121f68caf5b8, type: 2}
-    - {fileID: 11400000, guid: 4bd74d98ccb775b4ba8b645757d642b9, type: 2}
   droppedItemPrefab: {fileID: 407418536726590295, guid: 42f3ed3ab47fb564d81359b2771ea186, type: 3}
   player: {fileID: 0}
   level: {fileID: 0}
   playerScript: {fileID: 0}
+  enemyManager: {fileID: 0}
+  weightedRandomList: {fileID: 0}
 --- !u!82 &7647931025036014393
 AudioSource:
   m_ObjectHideFlags: 0
@@ -226,11 +249,54 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-7855020985479474376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7647931025036014392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 777a66c2f62a74e448b192504197297d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attributes:
+    attributes: []
+  stats:
+    stats: []
+  health:
+    maxValue:
+      statisticType: 0
+      value: 0
+    currentValue: 0
+--- !u!114 &-1268370554532208705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7647931025036014392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 777a66c2f62a74e448b192504197297d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attributes:
+    attributes: []
+  stats:
+    stats: []
+  health:
+    maxValue:
+      statisticType: 0
+      value: 0
+    currentValue: 100
 --- !u!1001 &4078647654465171098
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 7647931025036014275}
     m_Modifications:
     - target: {fileID: 1577502023061052, guid: 438423df18ba0f64ab984b82da4eefee, type: 3}
@@ -282,6 +348,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 438423df18ba0f64ab984b82da4eefee, type: 3}
 --- !u!4 &4077387114752147678 stripped
 Transform:

@@ -5,7 +5,7 @@ public class Enemy : MonoBehaviour
 {
     [Header("Hedefler")] public GameObject[] target; // Oyuncu karakteri
 
-    public Player player;
+    public Stats player;
 
     public bool isAttacking;
     public Vector2 damageTextLocation;
@@ -105,7 +105,6 @@ public class Enemy : MonoBehaviour
     {
         if (inRange) player.TakeDamage(attackDamage);
     }
-
     public void LookAtTarget()
     {
         var flipped = transform.localScale;

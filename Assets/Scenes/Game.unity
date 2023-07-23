@@ -385,7 +385,7 @@ GameObject:
   - component: {fileID: 35951474}
   - component: {fileID: 35951481}
   - component: {fileID: 35951479}
-  - component: {fileID: 35951480}
+  - component: {fileID: 35951482}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -508,22 +508,6 @@ MonoBehaviour:
   level: 1
   skillPoints: 3
   experience: 0
---- !u!114 &35951480
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 35951471}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79675eb2ba31a2843a3b0a30b58ed660, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthBar: {fileID: 1229147012}
-  maxHealth: 3333
-  currentHealth: 0
-  inventory: {fileID: 0}
 --- !u!114 &35951481
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -541,6 +525,41 @@ MonoBehaviour:
   targetEnemy: {fileID: 0}
   enemies: []
   target: {fileID: 0}
+--- !u!114 &35951482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 35951471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 777a66c2f62a74e448b192504197297d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attributes:
+    attributes: []
+  statistics:
+    statistics:
+    - statistic: 0
+      value: 100
+    - statistic: 1
+      value: 100
+    - statistic: 2
+      value: 10
+    - statistic: 3
+      value: 10
+    - statistic: 4
+      value: 10
+    - statistic: 5
+      value: 10
+    - statistic: 6
+      value: 10
+    - statistic: 7
+      value: 10
+  healthBar: {fileID: 1229147012}
+  maxHealth: 3333
+  currentHealth: 0
 --- !u!224 &60887064 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3916715602148657664, guid: 193f69aea8c4bc34191bf36d950d9b7e, type: 3}
@@ -5701,10 +5720,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28c4b07b1b2bfb8448ea6e8173c7e025, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventoryHolder: {fileID: 566788363}
-  itemsParent: {fileID: 1184429319}
-  inventory: {fileID: 0}
-  slots: []
 --- !u!1001 &1883766331
 PrefabInstance:
   m_ObjectHideFlags: 0
