@@ -1,0 +1,142 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6193814049527546936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ccadb2e1e5d484299736b920e6ed703, type: 3}
+  m_Name: Scalar
+  m_EditorClassIdentifier: 
+  position: {x: 56.320007, y: 353}
+  guid: 46b47f72df7691c4fb6096388578fc33
+  m_Value: 0
+--- !u!114 &-5304493961410637515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2122fcfc488a4fcca14b4df857adc6aa, type: 3}
+  m_Name: Stat
+  m_EditorClassIdentifier: 
+  position: {x: 96, y: 213}
+  guid: 2363178f188bb03469d861d8bbe40a4a
+  m_StatName: Strength
+--- !u!114 &-1745216251331313901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ccadb2e1e5d484299736b920e6ed703, type: 3}
+  m_Name: Scalar
+  m_EditorClassIdentifier: 
+  position: {x: -11, y: 161}
+  guid: 1e1ab31433a8d7549966d01ec0094108
+  m_Value: 3
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0a975b0cbc349179973f925c78266fc, type: 3}
+  m_Name: PhysicalAttacjFormula
+  m_EditorClassIdentifier: 
+  rootNode: {fileID: 4974486319027033477}
+  nodes:
+  - {fileID: 4974486319027033477}
+  - {fileID: 6980189302291785457}
+  - {fileID: -1745216251331313901}
+  - {fileID: 1608843622462493198}
+--- !u!114 &812111561110275155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e87ba54f5ed54f6c9ebb437d7f544f9a, type: 3}
+  m_Name: Divide
+  m_EditorClassIdentifier: 
+  position: {x: 228, y: 208.5}
+  guid: 57dae4d8b56154249a932870881aafd9
+  dividend: {fileID: 0}
+  divisor: {fileID: 0}
+--- !u!114 &1608843622462493198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dad4a6f2a5d459789900f46f0dd77d7, type: 3}
+  m_Name: Multiply
+  m_EditorClassIdentifier: 
+  position: {x: 209, y: 313}
+  guid: 8d32b0f5f8cd00a448ebd23f705348f7
+  factorA: {fileID: 0}
+  factorB: {fileID: 0}
+--- !u!114 &4974486319027033477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7a638d13c2743a4b918f4812e7e60c5, type: 3}
+  m_Name: ResultNode
+  m_EditorClassIdentifier: 
+  position: {x: 334, y: 209}
+  guid: 7f71fddcea9ca27449072a404b717769
+  child: {fileID: 0}
+--- !u!114 &6450955751574705965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ccadb2e1e5d484299736b920e6ed703, type: 3}
+  m_Name: Scalar
+  m_EditorClassIdentifier: 
+  position: {x: 38.440002, y: 202.5}
+  guid: 3a85defb59c60e1459c1e0bb48d2fcca
+  m_Value: 56
+--- !u!114 &6980189302291785457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2122fcfc488a4fcca14b4df857adc6aa, type: 3}
+  m_Name: Stat
+  m_EditorClassIdentifier: 
+  position: {x: 0, y: 286}
+  guid: dcc1d332f600df741af2d96586756cab
+  m_StatName: Strength

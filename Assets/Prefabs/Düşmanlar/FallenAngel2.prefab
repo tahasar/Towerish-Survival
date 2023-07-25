@@ -11,11 +11,9 @@ GameObject:
   - component: {fileID: 7647931025036014275}
   - component: {fileID: 7647931025036014274}
   - component: {fileID: 7647931025036014277}
-  - component: {fileID: 7647931025036014276}
   - component: {fileID: 7647931025036014279}
   - component: {fileID: 7647931025036014278}
   - component: {fileID: 7647931025036014393}
-  - component: {fileID: -7855020985479474376}
   - component: {fileID: -1268370554532208705}
   m_Layer: 8
   m_Name: FallenAngel2
@@ -102,27 +100,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0.07799032}
   m_Size: {x: 0.47301584, y: 0.7529159}
   m_Direction: 0
---- !u!114 &7647931025036014276
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7647931025036014392}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e6f5ce119e89b054ba5ff265ea1e6b13, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: []
-  player: {fileID: 0}
-  isAttacking: 0
-  damageTextLocation: {x: 0, y: 0}
-  damageText: {fileID: 0}
-  dropOnDestroy: {fileID: 7647931025036014279}
-  explotionEffect: {fileID: 8233841665134959326, guid: 51dd64d2bd2a5984096d648b7636e82c, type: 3}
-  enemyBase: {fileID: 11400000, guid: 7953212cfef4531449851898347e57db, type: 2}
-  anim: {fileID: 4163800049059969654}
 --- !u!114 &7647931025036014279
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -249,27 +226,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &-7855020985479474376
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7647931025036014392}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 777a66c2f62a74e448b192504197297d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attributes:
-    attributes: []
-  stats:
-    stats: []
-  health:
-    maxValue:
-      statisticType: 0
-      value: 0
-    currentValue: 0
 --- !u!114 &-1268370554532208705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -283,7 +239,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attributes:
-    attributes: []
+    attributeValues:
+    - attributeType: 2
+      value: 23432
   stats:
     stats: []
   health:
@@ -355,10 +313,5 @@ PrefabInstance:
 --- !u!4 &4077387114752147678 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4377795655298628, guid: 438423df18ba0f64ab984b82da4eefee, type: 3}
-  m_PrefabInstance: {fileID: 4078647654465171098}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &4163800049059969654 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 95295204677473516, guid: 438423df18ba0f64ab984b82da4eefee, type: 3}
   m_PrefabInstance: {fileID: 4078647654465171098}
   m_PrefabAsset: {fileID: 0}

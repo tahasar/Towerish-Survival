@@ -6,7 +6,7 @@ public class Collectable : MonoBehaviour
     public float xpAmount;
     public float healAmount;
     public Level level;
-    public Stats player;
+    public Character player;
 
     private void OnTriggerEnter2D(Collider2D other)
     {

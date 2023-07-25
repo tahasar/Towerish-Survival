@@ -52,12 +52,12 @@ public class LaserCaster : MonoBehaviour
 //
     public void Laser()
     {
-        GiveDamage(enemy.GetComponent<Enemy>());
+        GiveDamage(enemy.GetComponent<Character>());
         lineRenderer.SetPosition(0, transform.position);
         lineRenderer.SetPosition(1, enemy.position);
     }
 
-    private void GiveDamage(Enemy other)
+    private void GiveDamage(Character other)
     {
         if (!canDamage) return;
         other.TakeDamage(damage);

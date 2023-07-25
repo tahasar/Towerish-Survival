@@ -25,7 +25,7 @@ public class RotatingBlade : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        var enemy = other.GetComponent<Enemy>();
+        var enemy = other.GetComponent<Character>();
         enemy.TakeDamage(damage);
     }
 }

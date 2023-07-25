@@ -54,7 +54,7 @@ public class PurpleBaseAttack : MonoBehaviour
         //Enemy enemy = other.GetComponent<Enemy>();
         //enemy.TakeDamage(damage);
 
-        if (other.TryGetComponent(out Enemy enemy))
+        if (other.TryGetComponent(out Character enemy))
         {
             enemy.TakeDamage(damage);
             speed = 0;

@@ -7,7 +7,7 @@ public class LootBag : MonoBehaviour
     public GameObject droppedItemPrefab;
     public GameObject player;
     public Level level;
-    public Stats playerScript;
+    public Character playerScript;
     public GameObject enemyManager;
     public WeightedRandomList weightedRandomList;
 
@@ -15,7 +15,7 @@ public class LootBag : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player");
         level = player.GetComponent<Level>();
-        playerScript = player.GetComponent<Stats>();
+        playerScript = player.GetComponent<Character>();
         enemyManager = GameObject.FindGameObjectWithTag("EnemyManager");
         weightedRandomList = enemyManager.GetComponent<WeightedRandomList>();
     }

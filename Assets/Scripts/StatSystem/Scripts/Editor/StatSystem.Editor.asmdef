@@ -1,0 +1,4 @@
+﻿{
+  "name": "StatSystem.Editor",
+  "references":[ "GUID:0d58cc6dca426734fad7ce3bfef947b8", "GUID:7e8a1d9ed67747cb80cb8fbe7c85d868", "GUID:4400c8d5c9c34b25a6e2b706ec86c097" ]
+}
