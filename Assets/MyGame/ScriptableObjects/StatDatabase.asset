@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_BaseValue: 0
   m_Cap: -1
+  m_Formula: {fileID: 0}
 --- !u!114 &-7558777512119111227
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28,6 +29,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_BaseValue: 34
   m_Cap: -1
+  m_Formula: {fileID: 0}
 --- !u!114 &-3767810287560884768
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -42,6 +44,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_BaseValue: 0
   m_Cap: -1
+  m_Formula: {fileID: 0}
 --- !u!114 &-3355216672381196601
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -56,6 +59,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_BaseValue: 0
   m_Cap: -1
+  m_Formula: {fileID: 0}
 --- !u!114 &-1112206096080624081
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -70,6 +74,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_BaseValue: 4124
   m_Cap: -1
+  m_Formula: {fileID: 0}
+--- !u!114 &-742218223952971827
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5ea61d1f5ec4132b01cb94ff2784450, type: 3}
+  m_Name: New Item
+  m_EditorClassIdentifier: 
+  m_BaseValue: 0
+  m_Cap: -1
+  m_Formula: {fileID: 0}
 --- !u!114 &-508909725238121952
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -84,6 +104,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_BaseValue: 0
   m_Cap: -1
+  m_Formula: {fileID: 0}
 --- !u!114 &-220203188472573331
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -98,6 +119,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_BaseValue: 0
   m_Cap: -1
+  m_Formula: {fileID: 0}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -127,6 +149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_BaseValue: 0
   m_Cap: -1
+  m_Formula: {fileID: 0}
 --- !u!114 &834659221362922017
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -141,6 +164,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_BaseValue: 4
   m_Cap: -1
+  m_Formula: {fileID: 0}
 --- !u!114 &1324092430468137078
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -155,6 +179,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_BaseValue: 343
   m_Cap: -1
+  m_Formula: {fileID: 0}
 --- !u!114 &1982940164011605107
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -169,6 +194,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_BaseValue: 0
   m_Cap: -1
+  m_Formula: {fileID: 0}
 --- !u!114 &2443815064636655965
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -183,6 +209,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_BaseValue: 0
   m_Cap: -1
+  m_Formula: {fileID: 0}
 --- !u!114 &2932782648958603046
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -197,6 +224,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_BaseValue: 0
   m_Cap: -1
+  m_Formula: {fileID: 0}
 --- !u!114 &4556328965869304230
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -211,6 +239,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_BaseValue: 0
   m_Cap: -1
+  m_Formula: {fileID: 0}
 --- !u!114 &4875713005412714393
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -225,6 +254,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_BaseValue: 32423
   m_Cap: -1
+  m_Formula: {fileID: 0}
 --- !u!114 &6744956098857822937
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -239,6 +269,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_BaseValue: 0
   m_Cap: -1
+  m_Formula: {fileID: 0}
 --- !u!114 &8302505418602523669
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -253,6 +284,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_BaseValue: 0
   m_Cap: -1
+  m_Formula: {fileID: 0}
 --- !u!114 &8406207414372418582
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -267,6 +299,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_BaseValue: 0
   m_Cap: -1
+  m_Formula: {fileID: 0}
 --- !u!114 &8582133374925563209
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -281,3 +314,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_BaseValue: 0
   m_Cap: -1
+  m_Formula: {fileID: 0}

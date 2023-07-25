@@ -7,7 +7,7 @@ namespace StatSystem
 {
     public class StatController : MonoBehaviour
     {
-        PrimaryStats m_PrimaryStats;
+        PrimaryStat _mPrimaryStat;
         
         [SerializeField] private StatDatabase m_StatDatabase;
         protected Dictionary<string, Stat> m_Stats = new Dictionary<string, Stat>(StringComparer.OrdinalIgnoreCase);
@@ -45,7 +45,7 @@ namespace StatSystem
 
             foreach (StatDefinition definition in m_StatDatabase.primaryStats)
             {
-                m_Stats.Add(definition.name, new PrimaryStats(definition));
+                m_Stats.Add(definition.name, new PrimaryStat(definition));
             }
             
             InitializeStatFormulas();

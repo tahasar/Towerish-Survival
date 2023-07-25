@@ -1,17 +1,17 @@
 ﻿namespace StatSystem
 {
-    public class PrimaryStats : Stat
+    public class PrimaryStat : Stat
     {
         private int m_BaseValue;
         public override int baseValue => m_BaseValue;
         
-        public PrimaryStats(StatDefinition definition) : base(definition)
+        public PrimaryStat(StatDefinition definition) : base(definition)
         {
             m_BaseValue = definition.baseValue;
             CalculateValue();
         }
-        
-        internal void Add(int amount)
+
+        public void Add(int amount)
         {
             m_BaseValue += amount;
             CalculateValue();
