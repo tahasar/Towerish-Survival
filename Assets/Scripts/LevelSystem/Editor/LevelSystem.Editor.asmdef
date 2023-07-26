@@ -1,7 +1,7 @@
 {
-    "name": "StatSystem",
+    "name": "LevelSystem.Editor",
     "rootNamespace": "",
-    "references": ["GUID:7e8a1d9ed67747cb80cb8fbe7c85d868","GUID:bbd0db380ed1bfd44a342d2c34bc9f2b"],
+    "references": ["GUID:4400c8d5c9c34b25a6e2b706ec86c097","GUID:bbd0db380ed1bfd44a342d2c34bc9f2b","GUID:7e8a1d9ed67747cb80cb8fbe7c85d868"],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,

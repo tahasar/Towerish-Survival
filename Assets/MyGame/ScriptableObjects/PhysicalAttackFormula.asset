@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2122fcfc488a4fcca14b4df857adc6aa, type: 3}
   m_Name: Stat
   m_EditorClassIdentifier: 
-  position: {x: 116, y: 234}
+  position: {x: 77, y: 195.5}
   guid: d354aaacee73a464ba784a87ac5ffe65
   m_StatName: Strength
 --- !u!114 &-6461089828810945662
@@ -27,7 +27,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ccadb2e1e5d484299736b920e6ed703, type: 3}
   m_Name: Scalar
   m_EditorClassIdentifier: 
-  position: {x: 115, y: 91}
+  position: {x: 73, y: 94.5}
   guid: 6124ef2835ed5bd47ae5614500469165
   m_Value: 3
 --- !u!114 &11400000
@@ -75,7 +75,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dad4a6f2a5d459789900f46f0dd77d7, type: 3}
   m_Name: Multiply
   m_EditorClassIdentifier: 
-  position: {x: 241, y: 133}
+  position: {x: 228, y: 133}
   guid: 4f07ca915de078b43a68bb6e8d70412a
   factorA: {fileID: -6461089828810945662}
   factorB: {fileID: -7063039510934235619}

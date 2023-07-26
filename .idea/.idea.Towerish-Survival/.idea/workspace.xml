@@ -5,12 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f6f3ac2-ce11-45e6-b24c-5d0208fabbd2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/MyGame/ScriptableObjects/PhysicalAttackFormula.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/MyGame/ScriptableObjects/PhysicalAttackFormula.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyGame/ScriptableObjects/PhysicalAttacjFormula.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyGame/ScriptableObjects/PhysicalAttacjFormula.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyGame/ScriptableObjects/StatDatabase.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyGame/ScriptableObjects/StatDatabase.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StatSystem/Tests/Runtime/StatTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StatSystem/Tests/Runtime/StatTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/LevelSystem/Editor.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/LevelSystem/Editor/LevelNodeView.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/LevelSystem/Editor/LevelNodeView.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/LevelSystem/Editor/LevelSystem.Editor.asmdef" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/LevelSystem/Editor/LevelSystem.Editor.asmdef.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/LevelSystem/Scripts.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/LevelSystem/Scripts/Runtime.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/LevelSystem/Scripts/Runtime/ILevelable.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/LevelSystem/Scripts/Runtime/ILevelable.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/LevelSystem/Scripts/Runtime/LevelController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/LevelSystem/Scripts/Runtime/LevelController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/LevelSystem/Scripts/Runtime/LevelSystem.asmdef" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/LevelSystem/Scripts/Runtime/LevelSystem.asmdef.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/LevelSystem/Scripts/Runtime/Nodes.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/LevelSystem/Scripts/Runtime/Nodes/LevelNode.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/LevelSystem/Scripts/Runtime/Nodes/LevelNode.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/StatSystem/Scripts/Runtime/PlayerStatController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/StatSystem/Scripts/Runtime/PlayerStatController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LevelSystem.csproj.DotSettings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Towerish-Survival/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Towerish-Survival/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj.DotSettings" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj.DotSettings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StatSystem/Scripts/Runtime/StatSystem.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StatSystem/Scripts/Runtime/StatSystem.asmdef" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
