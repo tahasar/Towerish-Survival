@@ -1,7 +1,7 @@
 {
     "name": "StatSystem",
     "rootNamespace": "",
-    "references": ["GUID:7e8a1d9ed67747cb80cb8fbe7c85d868","GUID:bbd0db380ed1bfd44a342d2c34bc9f2b"],
+    "references": ["GUID:7e8a1d9ed67747cb80cb8fbe7c85d868","GUID:bbd0db380ed1bfd44a342d2c34bc9f2b","GUID:1251ddf0ad3e03f498ea5a7d87104ecc"],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,

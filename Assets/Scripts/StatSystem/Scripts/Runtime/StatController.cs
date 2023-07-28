@@ -1,14 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using SaveSystem.Scripts.Runtime;
 using StatSystem.Nodes;
 using UnityEngine;
 
 namespace StatSystem
 {
-    public class StatController : MonoBehaviour
+    public class StatController : MonoBehaviour, ISavable
     {
-        PrimaryStat _mPrimaryStat;
-        
         [SerializeField] private StatDatabase m_StatDatabase;
         protected Dictionary<string, Stat> m_Stats = new Dictionary<string, Stat>(StringComparer.OrdinalIgnoreCase);
         public Dictionary<string, Stat> stats => m_Stats;
@@ -31,21 +30,28 @@ namespace StatSystem
             willUninitialize?.Invoke();
         }
 
-        private void Initialize()
+        protected void Initialize()
         {
             foreach (StatDefinition definition in m_StatDatabase.stats)
             {
-                m_Stats.Add(definition.name, new Stat(definition));
+                m_Stats.Add(definition.name, new Stat(definition, this));
             }
 
             foreach (StatDefinition definition in m_StatDatabase.attributes)
             {
-                m_Stats.Add(definition.name, new Attribute(definition));
+                if (definition.name.Equals("Health", StringComparison.OrdinalIgnoreCase))
+                {
+                    m_Stats.Add(definition.name, new Health(definition, this));
+                }
+                else
+                {
+                    m_Stats.Add(definition.name, new Attribute(definition, this));   
+                }
             }
 
             foreach (StatDefinition definition in m_StatDatabase.primaryStats)
             {
-                m_Stats.Add(definition.name, new PrimaryStat(definition));
+                m_Stats.Add(definition.name, new PrimaryStat(definition, this));
             }
             
             InitializeStatFormulas();
@@ -82,5 +88,48 @@ namespace StatSystem
                 }
             }
         }
+
+        #region Stat System
+
+        public virtual object data
+        {
+            get
+            {
+                Dictionary<string, object> stats = new Dictionary<string, object>();
+                foreach (Stat stat in m_Stats.Values)
+                {
+                    if (stat is ISavable savable)
+                    {
+                        stats.Add(stat.definition.name, savable.data);
+                    }
+                }
+
+                return new StatControllerData
+                {
+                    stats = stats
+                };
+            }
+        }
+        public virtual void Load(object data)
+        {
+            StatControllerData statControllerData = (StatControllerData)data;
+            foreach (Stat stat in m_Stats.Values)
+            {
+                if (stat is ISavable savable)
+                {
+                    savable.Load(statControllerData.stats[stat.definition.name]);
+                }
+            }
+        }
+
+        [Serializable]
+        protected class StatControllerData
+        {
+            public Dictionary<string, object> stats;
+        }
+
+        #endregion
+
+        
     }
 }

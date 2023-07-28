@@ -1,4 +1,4 @@
-﻿﻿using System;
+﻿using System;
 using System.Collections.Generic;
 using LevelSystem;
 using LevelSystem.Nodes;
@@ -59,7 +59,7 @@ namespace StatSystem
         {
             m_Levelable.levelChanged += OnLevelChanged;
         }
-
+        
         private void UnregisterEvents()
         {
             m_Levelable.levelChanged -= OnLevelChanged;
@@ -86,5 +86,39 @@ namespace StatSystem
                 }
             }
         }
+
+        #region Stat System
+
+        public override object data
+        {
+            get
+            {
+                return new PlayerStatControllerData(base.data as StatControllerData)
+                {
+                    statPoints = m_StatPoints
+                };
+            }
+        }
+
+        public override void Load(object data)
+        {
+            base.Load(data);
+            PlayerStatControllerData playerStatControllerData = (PlayerStatControllerData)data;
+            m_StatPoints = playerStatControllerData.statPoints;
+            statPointsChanged?.Invoke();
+        }
+
+        [Serializable]
+        protected class PlayerStatControllerData : StatControllerData
+        {
+            public int statPoints;
+
+            public PlayerStatControllerData(StatControllerData statControllerData)
+            {
+                stats = statControllerData.stats;
+            }
+        }
+
+        #endregion
     }
 }

@@ -4,7 +4,7 @@ using Core.Editor.Nodes;
 using LevelSystem.Nodes;
 using UnityEngine;
 
-namespace LevelSystem.Scripts.Editor
+namespace LevelSystem.Editor
 {
     [NodeType(typeof(LevelNode))]
     [Title("Level System", "Level")]

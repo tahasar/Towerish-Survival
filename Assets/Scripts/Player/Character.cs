@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using StatSystem;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
 
@@ -7,7 +8,9 @@ using UnityEngine.PlayerLoop;
 public class Character : MonoBehaviour
 {
     public HealthBar healthBar;
+    public StatController statController;
 
+    public Stat attackPower;
     public float maxHealth = 3333;
     public float currentHealth;
 
@@ -15,6 +18,17 @@ public class Character : MonoBehaviour
     {
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
+        attackPower = statController.stats["AttackPower"] as Stat;
+        
+        attackPower.AddModifier(new StatModifier() {magnitude = 10, type = ModifierOperationType.Additive});
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.E)) 
+        {
+            Debug.Log("Attack Power: " + attackPower.value);
+        }
     }
 
     public void Heal(float heal)
