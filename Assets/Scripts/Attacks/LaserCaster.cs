@@ -2,72 +2,75 @@ using System.Collections;
 using DG.Tweening;
 using UnityEngine;
 
-public class LaserCaster : MonoBehaviour
+namespace Attacks
 {
-    public Texture2D Icon;
-
-    public float range = 5;
-    public float damage = 50;
-    public float damageTime = 0.5f;
-    private AttackManager attackManager;
-    private bool canDamage = true;
-    private Transform enemy;
-    private LineRenderer lineRenderer;
-    private GameObject player;
-    private Rigidbody2D rb;
-
-    private Transform targetEnemy;
-
-
-    private void Start()
+    public class LaserCaster : MonoBehaviour
     {
-        lineRenderer = GetComponent<LineRenderer>();
-        player = GameObject.FindGameObjectWithTag("Player");
-        attackManager = player.GetComponent<AttackManager>();
-    }
+        public Texture2D Icon;
 
-    // Update is called once per frame
-    private void Update()
-    {
-        targetEnemy = attackManager.FindClosestEnemy(range);
-        
-        if (targetEnemy != null)
+        public float range = 5;
+        public float damage = 50;
+        public float damageTime = 0.5f;
+        private AttackManager attackManager;
+        private bool canDamage = true;
+        private Transform enemy;
+        private LineRenderer lineRenderer;
+        private GameObject player;
+        private Rigidbody2D rb;
+
+        private Transform targetEnemy;
+
+
+        private void Start()
         {
-            enemy = targetEnemy.GetComponent<Transform>();
-            Laser();
+            lineRenderer = GetComponent<LineRenderer>();
+            player = GameObject.FindGameObjectWithTag("Player");
+            attackManager = player.GetComponent<AttackManager>();
         }
-        else
-        {
-            TurnOfLaser();
-        }
-    }
 
-    private void TurnOfLaser()
-    {
-        lineRenderer.DOColor(new Color2(Color.white, Color.white), new Color2(Color.green, Color.black), 1);
+        // Update is called once per frame
+        private void Update()
+        {
+            targetEnemy = attackManager.FindClosestEnemy(range);
         
-        lineRenderer.SetPosition(0, transform.position);
-        lineRenderer.SetPosition(1, transform.position);
-    }
+            if (targetEnemy != null)
+            {
+                enemy = targetEnemy.GetComponent<Transform>();
+                Laser();
+            }
+            else
+            {
+                TurnOfLaser();
+            }
+        }
+
+        private void TurnOfLaser()
+        {
+            lineRenderer.DOColor(new Color2(Color.white, Color.white), new Color2(Color.green, Color.black), 1);
+        
+            lineRenderer.SetPosition(0, transform.position);
+            lineRenderer.SetPosition(1, transform.position);
+        }
 //
-    public void Laser()
-    {
-        GiveDamage(enemy.GetComponent<Enemy>());
-        lineRenderer.SetPosition(0, transform.position);
-        lineRenderer.SetPosition(1, enemy.position);
-    }
+        public void Laser()
+        {
+            GiveDamage(enemy.GetComponent<Enemy.Enemy>());
+            lineRenderer.SetPosition(0, transform.position);
+            lineRenderer.SetPosition(1, enemy.position);
+        }
 
-    private void GiveDamage(Enemy other)
-    {
-        if (!canDamage) return;
-        other.TakeDamage(damage);
-        canDamage = false;
-        StartCoroutine(Cooldown());
-    }
+        private void GiveDamage(Enemy.Enemy other)
+        {
+            if (!canDamage) return;
+            other.TakeDamage(damage);
+            canDamage = false;
+            StartCoroutine(Cooldown());
+        }
 
-    private IEnumerator Cooldown()
-    {
-        yield return new WaitForSeconds(damageTime);
-        canDamage = true;
+        private IEnumerator Cooldown()
+        {
+            yield return new WaitForSeconds(damageTime);
+            canDamage = true;
+        }
     }
 }

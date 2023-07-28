@@ -1,9 +1,12 @@
 using UnityEngine;
 
-public class DropOnDestroy : MonoBehaviour
+namespace LootSystem
 {
-    public void Drop()
+    public class DropOnDestroy : MonoBehaviour
     {
-        GetComponent<LootBag>().InstantiateLoot(transform.position);
+        public void Drop()
+        {
+            GetComponent<LootBag>().InstantiateLoot(transform.position);
+        }
     }
 }

@@ -14,6 +14,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Utilities;
+using UnityEngine.XR;
+using InputDevice = UnityEngine.InputSystem.InputDevice;
 
 namespace GameInput
 {
@@ -321,8 +323,8 @@ namespace GameInput
         private readonly InputAction m_Player_ThrowItem;
         public struct PlayerActions
         {
-            private @InputActions m_Wrapper;
-            public PlayerActions(@InputActions wrapper) { m_Wrapper = wrapper; }
+            private global::GameInput.InputActions m_Wrapper;
+            public PlayerActions(global::GameInput.InputActions wrapper) { m_Wrapper = wrapper; }
             public InputAction @Walk => m_Wrapper.m_Player_Walk;
             public InputAction @Attack => m_Wrapper.m_Player_Attack;
             public InputAction @PreviousItem => m_Wrapper.m_Player_PreviousItem;

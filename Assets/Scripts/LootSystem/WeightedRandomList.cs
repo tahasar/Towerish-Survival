@@ -2,53 +2,56 @@ using System;
 using UnityEngine;
 using Random = System.Random;
 
-[Serializable]
-public class LootProbabilities
+namespace LootSystem
 {
-    [Range(0f, 100f)] public float chance = 100;
-
-    [HideInInspector] public double _weight;
-
-    public Loot loot;
-}
-
-public class WeightedRandomList : MonoBehaviour
-{
-    [SerializeField] private LootProbabilities[] loots;
-
-    private float accumulatedWeights;
-    private readonly Random rand = new();
-
-    private void Awake()
+    [Serializable]
+    public class LootProbabilities
     {
-        CalculateWeights();
+        [Range(0f, 100f)] public float chance = 100;
+
+        [HideInInspector] public double _weight;
+
+        public Loot loot;
     }
 
-    public LootProbabilities SpawnRandomLoot()
+    public class WeightedRandomList : MonoBehaviour
     {
-        var randomLoot = loots[GetRandomLootIndex()];
+        [SerializeField] private LootProbabilities[] loots;
 
-        return randomLoot;
-    }
+        private float accumulatedWeights;
+        private readonly Random rand = new();
 
-    private int GetRandomLootIndex()
-    {
-        var r = rand.NextDouble() * accumulatedWeights;
-
-        for (var i = 0; i < loots.Length; i++)
-            if (loots[i].chance >= r)
-                return i;
-
-        return 0;
-    }
-
-    private void CalculateWeights()
-    {
-        accumulatedWeights = 0f;
-        foreach (var loot in loots)
+        private void Awake()
         {
-            accumulatedWeights += loot.chance;
-            loot.chance = accumulatedWeights;
+            CalculateWeights();
+        }
+
+        public LootProbabilities SpawnRandomLoot()
+        {
+            var randomLoot = loots[GetRandomLootIndex()];
+
+            return randomLoot;
+        }
+
+        private int GetRandomLootIndex()
+        {
+            var r = rand.NextDouble() * accumulatedWeights;
+
+            for (var i = 0; i < loots.Length; i++)
+                if (loots[i].chance >= r)
+                    return i;
+
+            return 0;
+        }
+
+        private void CalculateWeights()
+        {
+            accumulatedWeights = 0f;
+            foreach (var loot in loots)
+            {
+                accumulatedWeights += loot.chance;
+                loot.chance = accumulatedWeights;
+            }
         }
     }
 }

@@ -1,13 +1,16 @@
 using UnityEngine;
 
-[CreateAssetMenu]
-public class Loot : ScriptableObject
+namespace LootSystem
 {
-    public Sprite lootSprite;
-    public Color color;
+    [CreateAssetMenu]
+    public class Loot : ScriptableObject
+    {
+        public Sprite lootSprite;
+        public Color color;
 
-    [Space] public string lootType;
+        [Space] public string lootType;
 
-    public float xpAmount;
-    public float healAmount;
+        public float xpAmount;
+        public float healAmount;
+    }
 }

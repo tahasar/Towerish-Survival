@@ -1,31 +1,34 @@
 using UnityEngine;
 
-public class RotatingBlade : MonoBehaviour
+namespace Attacks
 {
-    public Texture2D Icon;
-
-    public float rotationSpeed = 10f;
-    public float rotateAroundSpeed = 50f;
-    public float damage = 50;
-
-    public GameObject rotateAround;
-
-    private void Start()
+    public class RotatingBlade : MonoBehaviour
     {
-        rotateAround = GameObject.FindGameObjectWithTag("RotatingBlade");
-    }
+        public Texture2D Icon;
 
-    // Update is called once per frame
-    private void FixedUpdate()
-    {
-        transform.Rotate(0, 0, rotationSpeed);
-        transform.RotateAround(rotateAround.transform.position, Vector3.forward,
-            rotateAroundSpeed * Time.deltaTime);
-    }
+        public float rotationSpeed = 10f;
+        public float rotateAroundSpeed = 50f;
+        public float damage = 50;
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        var enemy = other.GetComponent<Enemy>();
-        enemy.TakeDamage(damage);
+        public GameObject rotateAround;
+
+        private void Start()
+        {
+            rotateAround = GameObject.FindGameObjectWithTag("RotatingBlade");
+        }
+
+        // Update is called once per frame
+        private void FixedUpdate()
+        {
+            transform.Rotate(0, 0, rotationSpeed);
+            transform.RotateAround(rotateAround.transform.position, Vector3.forward,
+                rotateAroundSpeed * Time.deltaTime);
+        }
+
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            var enemy = other.GetComponent<Enemy.Enemy>();
+            enemy.TakeDamage(damage);
+        }
     }
 }

@@ -1,37 +1,40 @@
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+namespace Player
 {
-    [SerializeField] private float characterSpeed;
-
-    public Rigidbody2D rb;
-    public Animator animator;
-    public Transform characterSprite;
-    private Vector2 movement;
-
-    // Update is called once per frame
-    private void Update()
+    public class PlayerMovement : MonoBehaviour
     {
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
+        [SerializeField] private float characterSpeed;
 
-        animator.SetFloat("Horizontal", movement.x);
-        animator.SetFloat("Vertical", movement.y);
-        animator.SetFloat("Speed", movement.sqrMagnitude);
+        public Rigidbody2D rb;
+        public Animator animator;
+        public Transform characterSprite;
+        private Vector2 movement;
 
-        //Karakter durduğu zaman, bakacağı yönü belirler.
-        if (animator.GetFloat("Horizontal") > 0)
+        // Update is called once per frame
+        private void Update()
         {
-            //pr.rotation.y = 180f;
+            movement.x = Input.GetAxisRaw("Horizontal");
+            movement.y = Input.GetAxisRaw("Vertical");
+
+            animator.SetFloat("Horizontal", movement.x);
+            animator.SetFloat("Vertical", movement.y);
+            animator.SetFloat("Speed", movement.sqrMagnitude);
+
+            //Karakter durduğu zaman, bakacağı yönü belirler.
+            if (animator.GetFloat("Horizontal") > 0)
+            {
+                //pr.rotation.y = 180f;
+            }
+
+            if (animator.GetFloat("Horizontal") < 0)
+            {
+            }
         }
 
-        if (animator.GetFloat("Horizontal") < 0)
+        private void FixedUpdate()
         {
+            rb.MovePosition(rb.position + movement * (characterSpeed * Time.fixedDeltaTime));
         }
-    }
-
-    private void FixedUpdate()
-    {
-        rb.MovePosition(rb.position + movement * (characterSpeed * Time.fixedDeltaTime));
     }
 }

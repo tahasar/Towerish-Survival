@@ -1,38 +1,41 @@
 using UnityEngine;
 
-public class Player : MonoBehaviour
+namespace Player
 {
-    public HealthBar healthBar;
-
-    public float maxHealth = 3333;
-    public float currentHealth;
-
-    private void Awake()
+    public class Player : MonoBehaviour
     {
-        currentHealth = maxHealth;
-        healthBar.SetMaxHealth(maxHealth);
-    }
+        public HealthBar healthBar;
 
-    public void Heal(float heal)
-    {
-        currentHealth += heal;
+        public float maxHealth = 3333;
+        public float currentHealth;
 
-        healthBar.SetHealth(currentHealth);
+        private void Awake()
+        {
+            currentHealth = maxHealth;
+            healthBar.SetMaxHealth(maxHealth);
+        }
 
-        if (currentHealth > maxHealth) currentHealth = maxHealth;
-    }
+        public void Heal(float heal)
+        {
+            currentHealth += heal;
 
-    public void TakeDamage(float damage)
-    {
-        currentHealth -= damage;
+            healthBar.SetHealth(currentHealth);
 
-        healthBar.SetHealth(currentHealth);
+            if (currentHealth > maxHealth) currentHealth = maxHealth;
+        }
 
-        if (currentHealth <= 0) Die();
-    }
+        public void TakeDamage(float damage)
+        {
+            currentHealth -= damage;
 
-    public virtual void Die()
-    {
-        Destroy(gameObject);
+            healthBar.SetHealth(currentHealth);
+
+            if (currentHealth <= 0) Die();
+        }
+
+        public virtual void Die()
+        {
+            Destroy(gameObject);
+        }
     }
 }

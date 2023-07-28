@@ -1,21 +1,25 @@
+using Player;
 using UnityEngine;
 
-public class Collectable : MonoBehaviour
+namespace LootSystem
 {
-    public string lootType;
-    public float xpAmount;
-    public float healAmount;
-    public Level level;
-    public Player player;
-
-    private void OnTriggerEnter2D(Collider2D other)
+    public class Collectable : MonoBehaviour
     {
-        if (other.CompareTag("Player"))
+        public string lootType;
+        public float xpAmount;
+        public float healAmount;
+        public Level level;
+        public Player.Player player;
+
+        private void OnTriggerEnter2D(Collider2D other)
         {
-            if (lootType == "XP")
-                level.AddExperience(xpAmount);
-            else if (lootType == "HEAL") player.Heal(healAmount);
-            Destroy(gameObject);
+            if (other.CompareTag("Player"))
+            {
+                if (lootType == "XP")
+                    level.AddExperience(xpAmount);
+                else if (lootType == "HEAL") player.Heal(healAmount);
+                Destroy(gameObject);
+            }
         }
     }
 }

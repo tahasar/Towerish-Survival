@@ -1,18 +1,21 @@
 using UnityEngine;
 
-public class AttackCaster : MonoBehaviour
+namespace Attacks
 {
-    public AttackManager attackManager;
-    public GameObject purpleBaseAttack;
-    public GameObject attackPosition;
-
-    private void Update()
+    public class AttackCaster : MonoBehaviour
     {
-        if (Input.GetKeyDown(KeyCode.Space)) Attack();
-    }
+        public AttackManager attackManager;
+        public GameObject purpleBaseAttack;
+        public GameObject attackPosition;
 
-    public void Attack()
-    {
-        Instantiate(purpleBaseAttack, attackPosition.transform.position, Quaternion.identity);
+        private void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.Space)) Attack();
+        }
+
+        public void Attack()
+        {
+            Instantiate(purpleBaseAttack, attackPosition.transform.position, Quaternion.identity);
+        }
     }
 }

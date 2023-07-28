@@ -1,22 +1,26 @@
+using LootSystem;
 using UnityEngine;
 
-public class Attractor : MonoBehaviour
+namespace Player
 {
-    public Transform player;
-    private readonly float attractorSpeed = 10f;
-    private Collectable collectable;
-    private Transform item;
-
-    private void OnTriggerStay2D(Collider2D collision)
+    public class Attractor : MonoBehaviour
     {
-        if (collision.CompareTag("Collectable"))
-        {
-            collectable = collision.GetComponent<Collectable>();
+        public Transform player;
+        private readonly float attractorSpeed = 10f;
+        private Collectable collectable;
+        private Transform item;
 
-            if (collectable.lootType is "XP" or "HEAL")
+        private void OnTriggerStay2D(Collider2D collision)
+        {
+            if (collision.CompareTag("Collectable"))
             {
-                item = collision.GetComponent<Transform>();
-                item.position = Vector2.Lerp(item.position, player.position, attractorSpeed * Time.fixedDeltaTime);
+                collectable = collision.GetComponent<Collectable>();
+
+                if (collectable.lootType is "XP" or "HEAL")
+                {
+                    item = collision.GetComponent<Transform>();
+                    item.position = Vector2.Lerp(item.position, player.position, attractorSpeed * Time.fixedDeltaTime);
+                }
             }
         }
     }
