@@ -1,34 +1,31 @@
 using NaughtyAttributes.Scripts.Core.DrawerAttributes;
 using UnityEngine;
 
-namespace Enemy
+public class EnemyFallenAngel1 : Enemy.Enemy
 {
-    public class EnemyFallenAngel1 : Enemy
+    [Expandable] public EnemyBase enemyBase;
+    public Animator anim;
+
+    private void Start()
     {
-        [Expandable] public EnemyBase enemyBase;
-        public Animator anim;
+        EnemyTransform = gameObject.GetComponent<Transform>();
+        target = GameObject.FindGameObjectsWithTag("Player");
+        player = target[MainTarget].GetComponent<Player.Player>();
+        DeathSound = GetComponent<AudioSource>();
+        EnemySprite = gameObject.GetComponent<SpriteRenderer>();
+        Collider2D = GetComponent<Collider2D>();
+        EnemyName = enemyBase.enemyName;
+        EnemyInfo = enemyBase.enemyInfo;
+        Health = enemyBase.health;
+        MaxHealth = enemyBase.maxHealth;
+        AttackDamage = enemyBase.attackDamage;
+        Range = enemyBase.range;
+        Speed = enemyBase.speed;
+        SpeedMultiplier = enemyBase.speedMultiplier;
+        XpReward = enemyBase.xpReward;
+        Sprite = enemyBase.sprite;
+        EnemyTransform = GetComponent<Transform>();
 
-        private void Start()
-        {
-            enemyTransform = gameObject.GetComponent<Transform>();
-            target = GameObject.FindGameObjectsWithTag("Player");
-            player = target[mainTarget].GetComponent<Player.Player>();
-            deathSound = GetComponent<AudioSource>();
-            enemySprite = gameObject.GetComponent<SpriteRenderer>();
-            collider2D = GetComponent<Collider2D>();
-            enemyName = enemyBase.enemyName;
-            enemyInfo = enemyBase.enemyInfo;
-            health = enemyBase.health;
-            maxHealth = enemyBase.maxHealth;
-            attackDamage = enemyBase.attackDamage;
-            range = enemyBase.range;
-            speed = enemyBase.speed;
-            speedMultiplier = enemyBase.speedMultiplier;
-            xpReward = enemyBase.xpReward;
-            sprite = enemyBase.sprite;
-            enemyTransform = GetComponent<Transform>();
-
-            animator = anim;
-        }
+        Animator = anim;
     }
 }

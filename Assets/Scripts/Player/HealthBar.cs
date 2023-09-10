@@ -1,28 +1,25 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Player
+public class HealthBar : MonoBehaviour
 {
-    public class HealthBar : MonoBehaviour
+    public Slider slider;
+    public Gradient gradient;
+    public Image fill;
+
+    public void SetMaxHealth(float health)
     {
-        public Slider slider;
-        public Gradient gradient;
-        public Image fill;
-
-        public void SetMaxHealth(float health)
-        {
-            slider.maxValue = health;
-            slider.value = health;
+        slider.maxValue = health;
+        slider.value = health;
 
 
-            fill.color = gradient.Evaluate(1f);
-        }
+        fill.color = gradient.Evaluate(1f);
+    }
 
-        public void SetHealth(float health)
-        {
-            slider.value = health;
+    public void SetHealth(float health)
+    {
+        slider.value = health;
 
-            fill.color = gradient.Evaluate(slider.normalizedValue);
-        }
+        fill.color = gradient.Evaluate(slider.normalizedValue);
     }
 }

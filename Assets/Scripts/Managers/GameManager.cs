@@ -1,8 +1,22 @@
+using System;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
     public static bool GameIsPaused;
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            StatsManager.Instance.SetStatValue("MaxHealth", 100);
+        }
+        
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            StatsManager.Instance.ResetStats();
+        }
+    }
 
     public void PauseToggle()
     {

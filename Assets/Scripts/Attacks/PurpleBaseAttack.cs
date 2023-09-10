@@ -12,19 +12,19 @@ namespace Attacks
         public Rigidbody2D rb;
         public Transform targetEnemy;
         public GameObject player;
-        private AttackManager attackManager;
-        private Transform enemy;
-        private SpriteRenderer spellSprite;
-        private float xEkseni;
+        private AttackManager _attackManager;
+        private Transform _enemy;
+        private SpriteRenderer _spellSprite;
+        private float _xEkseni;
 
         private void Start()
         {
             player = GameObject.FindGameObjectWithTag("Player");
-            attackManager = player.GetComponent<AttackManager>();
+            _attackManager = player.GetComponent<AttackManager>();
             var characterSprite = player.GetComponent<PlayerMovement>().characterSprite;
-            xEkseni = characterSprite.localScale.x;
+            _xEkseni = characterSprite.localScale.x;
 
-            spellSprite = GetComponent<SpriteRenderer>();
+            _spellSprite = GetComponent<SpriteRenderer>();
         }
 
         private void FixedUpdate()
@@ -33,19 +33,19 @@ namespace Attacks
 
             if (targetEnemy != null)
             {
-                enemy = targetEnemy.GetComponent<Transform>();
-                var direction = (Vector2)enemy.position - rb.position;
+                _enemy = targetEnemy.GetComponent<Transform>();
+                var direction = (Vector2)_enemy.position - rb.position;
                 direction.Normalize();
                 var rotateAmount = Vector3.Cross(direction, transform.right).z;
 
-                if (xEkseni > 0) //karakter sağa bakıyorsa
+                if (_xEkseni > 0) //karakter sağa bakıyorsa
                 {
                     rb.angularVelocity = -rotateAmount * rotateSpeed;
                     rb.velocity = transform.right * speed;
                 }
-                else if (xEkseni < 0) //karakter sola bakıyorsa
+                else if (_xEkseni < 0) //karakter sola bakıyorsa
                 {
-                    spellSprite.flipX = true;
+                    _spellSprite.flipX = true;
                     rb.angularVelocity = rotateAmount * rotateSpeed;
                     rb.velocity = -transform.right * speed;
                 }
@@ -61,7 +61,7 @@ namespace Attacks
             {
                 enemy.TakeDamage(damage);
                 speed = 0;
-                spellSprite.enabled = false;
+                _spellSprite.enabled = false;
                 Destroy(gameObject, 1f);
             }
         }

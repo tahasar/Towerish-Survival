@@ -7,12 +7,12 @@ namespace Enemy
     [Serializable]
     public class EnemyProbabilities
     {
-        public string Name;
+        public string name;
 
-        public GameObject Prefab;
+        public GameObject prefab;
         [Range(0f, 100f)] public float chance = 100;
 
-        [HideInInspector] public double _weight; //
+        [HideInInspector] public double weight; //
     }
 
     public class EnemySpawnManager : MonoBehaviour
@@ -25,9 +25,9 @@ namespace Enemy
 
         [SerializeField] private Vector2 spawnArea;
 
-        private double accumulatedWeights;
-        private GameObject player;
-        private readonly Random rand = new();
+        private double _accumulatedWeights;
+        private GameObject _player;
+        private readonly Random _rand = new();
 
         private void Awake()
         {
@@ -36,7 +36,7 @@ namespace Enemy
 
         private void Start()
         {
-            player = GameObject.FindGameObjectWithTag("Player");
+            _player = GameObject.FindGameObjectWithTag("Player");
             if (isNight) InvokeRepeating("SpawnRandomEnemy", 2, spawnTime);
         }
 
@@ -44,7 +44,7 @@ namespace Enemy
         {
             var randomEnemy = enemies[GetRandomEnemyIndex()];
 
-            Instantiate(randomEnemy.Prefab, GenerateRandomPosition(), Quaternion.identity, transform);
+            Instantiate(randomEnemy.prefab, GenerateRandomPosition(), Quaternion.identity, transform);
         }
 
         private Vector2 GenerateRandomPosition()
@@ -63,17 +63,17 @@ namespace Enemy
                 position.x = spawnArea.x * f;
             }
 
-            position += (Vector2)player.transform.position;
+            position += (Vector2)_player.transform.position;
 
             return position;
         }
 
         private int GetRandomEnemyIndex()
         {
-            var r = rand.NextDouble() * accumulatedWeights;
+            var r = _rand.NextDouble() * _accumulatedWeights;
 
             for (var i = 0; i < enemies.Length; i++)
-                if (enemies[i]._weight >= r)
+                if (enemies[i].weight >= r)
                     return i;
 
             return 0;
@@ -81,11 +81,11 @@ namespace Enemy
 
         private void CalculateWeights()
         {
-            accumulatedWeights = 0f;
+            _accumulatedWeights = 0f;
             foreach (var enemy in enemies)
             {
-                accumulatedWeights += enemy.chance;
-                enemy._weight = accumulatedWeights;
+                _accumulatedWeights += enemy.chance;
+                enemy.weight = _accumulatedWeights;
             }
         }
     }

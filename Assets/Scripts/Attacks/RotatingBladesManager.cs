@@ -5,15 +5,15 @@ namespace Attacks
 {
     public class RotatingBladesManager : MonoBehaviour
     {
-        public GameObject OriginalSurrounderObject;
+        public GameObject originalSurrounderObject;
         public GameObject newSurrounderObject;
         public List<GameObject> surrounderObject = new();
         public float distanceFromCenter;
         public float rotateAroundSpeed;
 
         //private readonly float AppearWaitDuration = 0.3f;
-        private bool inCooldown;
-        private RotatingBlade rotatingBlade;
+        private bool _inCooldown;
+        private RotatingBlade _rotatingBlade;
 
         private void Start()
         {
@@ -35,8 +35,10 @@ namespace Attacks
 
         private void FixedUpdate()
         {
-            if (!inCooldown) inCooldown = true;
+            if (!_inCooldown) _inCooldown = true;
         }
+
+        #region old code
 
         //IEnumerator SurroundStepAnimated()
         //{
@@ -55,10 +57,11 @@ namespace Attacks
         //    }
         //}
 
-
+        #endregion
+        
         private void AddSurround()
         {
-            newSurrounderObject = Instantiate(OriginalSurrounderObject, transform);
+            newSurrounderObject = Instantiate(originalSurrounderObject, transform);
             newSurrounderObject.SetActive(false);
 
             surrounderObject.Add(newSurrounderObject);
@@ -74,12 +77,12 @@ namespace Attacks
 
         private void SurroundOn()
         {
-            float AngleStep = 360 / surrounderObject.Count;
+            float angleStep = 360 / surrounderObject.Count;
 
             for (var i = 0; i < surrounderObject.Count; i++)
             {
                 surrounderObject[i].transform.localPosition = new Vector2(distanceFromCenter, 0);
-                surrounderObject[i].transform.RotateAround(transform.position, Vector3.forward, AngleStep * i);
+                surrounderObject[i].transform.RotateAround(transform.position, Vector3.forward, angleStep * i);
                 surrounderObject[i].SetActive(true);
 
                 surrounderObject[i].GetComponent<RotatingBlade>().rotateAroundSpeed = rotateAroundSpeed;

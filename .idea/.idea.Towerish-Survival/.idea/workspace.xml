@@ -5,38 +5,60 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f6f3ac2-ce11-45e6-b24c-5d0208fabbd2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Tahasar.csproj.DotSettings" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Stats/fdfs.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Stats/fdfs.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Araba.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Araba.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Managers.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/New Stat.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/New Stat.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Stats.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/StatsManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Towerish-Survival/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Towerish-Survival/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Input.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Input/GameInputActions.inputactions" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Input/GameInputActions.inputactions.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Item 1.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Item 1.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Item 2.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Item 2.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Item.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Item.asset.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/DOTweenSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/DOTweenSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animation/FallanAngel1_Attack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Animation/FallanAngel1_Attack.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animation/FallanAngel2_Attack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Animation/FallanAngel2_Attack.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animation/FallanAngel3_Attack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Animation/FallanAngel3_Attack.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animation/Wraith_Attack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Animation/Wraith_Attack.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Attacks/AttackCaster.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Attacks/AttackCaster.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Attacks/AttackManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Attacks/AttackManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Attacks/LaserCaster.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Attacks/LaserCaster.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Attacks/PurpleBaseAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Attacks/PurpleBaseAttack.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Attacks/RotatingBlade.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Attacks/RotatingBlade.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Attacks/RotatingBladesManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Attacks/RotatingBladesManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBase.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyFallenAngel1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyFallenAngel1.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemySpawnManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemySpawnManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameInput/InputActions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameInput/InputActions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LootSystem/Collectable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LootSystem/Collectable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LootSystem/DropOnDestroy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LootSystem/DropOnDestroy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LootSystem/Loot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LootSystem/Loot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameInput.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Stats.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameInput/InputActions.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameInput/InputActions.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Stats/StatsManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameInput/InputActions.ext.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameInput/InputActions.ext.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InputProvider.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InputProvider.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/LootSystem/LootBag.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LootSystem/LootBag.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/LootSystem/WeightedRandomList.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LootSystem/WeightedRandomList.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MyScripts.asmdef" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MyScripts.asmdef.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Attractor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Attractor.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/HealthBar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/HealthBar.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Level.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Level.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/XpBar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/XpBar.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StatsManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StatsManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tahasar.asmdef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tahasar.asmdef.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +70,10 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Attacks/AttackManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/StatsManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c2d036c16ca64e0eb93703a3b13e733a171c00/09/70721789/PlayerPrefs.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c2d036c16ca64e0eb93703a3b13e733a171c00/13/0df0398d/ISerializationCallbackReceiver.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/da4980be16ef46fc8876152cad08afd427800/f4/b9e150cd/Animator.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d44b17e136d09081da1e8fd0e8c83fde60e11818b9f2442d7ed8cb733fae895e/System.Collections.Generic.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -81,7 +106,7 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;ml.llm.LLMConfigurable&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editing.templates&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -148,6 +173,16 @@
       <workItem from="1690062593403" duration="2256000" />
       <workItem from="1690561865706" duration="134000" />
       <workItem from="1690562011819" duration="2665000" />
+      <workItem from="1690619433032" duration="8836000" />
+      <workItem from="1690635141740" duration="1000" />
+      <workItem from="1690646510727" duration="380000" />
+      <workItem from="1690654032381" duration="1276000" />
+      <workItem from="1691326492986" duration="1198000" />
+      <workItem from="1693837908504" duration="693000" />
+      <workItem from="1693838742902" duration="1269000" />
+      <workItem from="1694130403276" duration="127000" />
+      <workItem from="1694202997058" duration="453000" />
+      <workItem from="1694368185211" duration="2141000" />
     </task>
     <servers />
   </component>

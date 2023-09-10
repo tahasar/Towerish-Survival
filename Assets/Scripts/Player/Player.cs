@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace Player
@@ -5,37 +6,63 @@ namespace Player
     public class Player : MonoBehaviour
     {
         public HealthBar healthBar;
+        
+        public Stat MaxHealth;
+        public Stat CurrentHealth;
 
-        public float maxHealth = 3333;
-        public float currentHealth;
-
-        private void Awake()
+        private void Start()
         {
-            currentHealth = maxHealth;
-            healthBar.SetMaxHealth(maxHealth);
+            GetStats();
+            CurrentHealth.Value = MaxHealth.Value;
+            healthBar.SetMaxHealth(MaxHealth.Value);
+            healthBar.SetHealth(CurrentHealth.Value);
+            SetStats();
+
         }
 
         public void Heal(float heal)
         {
-            currentHealth += heal;
+            if (CurrentHealth == null)
+            {
+                Debug.Log("Current health is null");
+            }
 
-            healthBar.SetHealth(currentHealth);
+            if (CurrentHealth != null)
+            {
+                CurrentHealth.Value += heal;
 
-            if (currentHealth > maxHealth) currentHealth = maxHealth;
+                healthBar.SetHealth(CurrentHealth.Value);
+
+                if (CurrentHealth.Value > MaxHealth.Value) CurrentHealth.Value = MaxHealth.Value;
+            }
+
+            SetStats();
         }
 
         public void TakeDamage(float damage)
         {
-            currentHealth -= damage;
+            CurrentHealth.Value -= damage;
 
-            healthBar.SetHealth(currentHealth);
+            healthBar.SetHealth(CurrentHealth.Value);
 
-            if (currentHealth <= 0) Die();
+            if (CurrentHealth.Value <= 0) Die();
         }
 
         public virtual void Die()
         {
             Destroy(gameObject);
+        }
+        
+        public void SetStats()
+        {
+            StatsManager.Instance.SetStatValue("MaxHealth", MaxHealth.Value);
+            StatsManager.Instance.SetStatValue("CurrentHealth", CurrentHealth.Value);
+        }
+
+        public void GetStats()
+        {
+            MaxHealth.Value = StatsManager.Instance.stats.list.Find(element => element.key.Equals("MaxHealth")).value;
+            CurrentHealth.Value = StatsManager.Instance.GetStatValue("CurrentHealth");
         }
     }
 }

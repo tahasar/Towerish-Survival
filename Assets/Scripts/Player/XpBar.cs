@@ -13,14 +13,14 @@ namespace Player
         public Image border;
         public TextMeshProUGUI xpText;
         public TextMeshProUGUI levelText;
-        private Color oldBorderColor;
+        private Color _oldBorderColor;
 
-        private Color oldFillColor;
+        private Color _oldFillColor;
 
         private void Start()
         {
-            oldFillColor = fill.color;
-            oldBorderColor = border.color;
+            _oldFillColor = fill.color;
+            _oldBorderColor = border.color;
             UpdateLevelText(1);
         }
 
@@ -47,13 +47,13 @@ namespace Player
         private IEnumerator XpGain()
         {
             yield return new WaitForSeconds(0.05f);
-            fill.color = oldFillColor;
+            fill.color = _oldFillColor;
         }
 
         private IEnumerator LevelGain()
         {
             yield return new WaitForSeconds(0.1f);
-            border.color = oldBorderColor;
+            border.color = _oldBorderColor;
         }
     }
 }

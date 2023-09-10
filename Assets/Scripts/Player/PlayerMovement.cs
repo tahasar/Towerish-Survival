@@ -9,32 +9,28 @@ namespace Player
         public Rigidbody2D rb;
         public Animator animator;
         public Transform characterSprite;
-        private Vector2 movement;
+        private Vector2 _movement;
+        private static readonly int Horizontal = Animator.StringToHash("Horizontal");
+        private static readonly int Vertical = Animator.StringToHash("Vertical");
+        private static readonly int Speed = Animator.StringToHash("Speed");
 
         // Update is called once per frame
-        private void Update()
+        private void Update()//
         {
-            movement.x = Input.GetAxisRaw("Horizontal");
-            movement.y = Input.GetAxisRaw("Vertical");
+            
+            _movement.x = Input.GetAxisRaw("Horizontal");
+            _movement.y = Input.GetAxisRaw("Vertical");
+            _movement = _movement.normalized;
+            
 
-            animator.SetFloat("Horizontal", movement.x);
-            animator.SetFloat("Vertical", movement.y);
-            animator.SetFloat("Speed", movement.sqrMagnitude);
-
-            //Karakter durduğu zaman, bakacağı yönü belirler.
-            if (animator.GetFloat("Horizontal") > 0)
-            {
-                //pr.rotation.y = 180f;
-            }
-
-            if (animator.GetFloat("Horizontal") < 0)
-            {
-            }
+            animator.SetFloat(Horizontal, _movement.x);
+            animator.SetFloat(Vertical, _movement.y);
+            animator.SetFloat(Speed, _movement.sqrMagnitude);
         }
 
         private void FixedUpdate()
         {
-            rb.MovePosition(rb.position + movement * (characterSpeed * Time.fixedDeltaTime));
+            rb.MovePosition(rb.position + _movement * (characterSpeed * Time.fixedDeltaTime));
         }
     }
 }
