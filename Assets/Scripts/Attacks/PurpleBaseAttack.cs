@@ -52,20 +52,6 @@ namespace Attacks
             }
         }
 
-        private void OnTriggerEnter2D(Collider2D other)
-        {
-            //Enemy enemy = other.GetComponent<Enemy>();
-            //enemy.TakeDamage(damage);
-
-            if (other.TryGetComponent(out Enemy.Enemy enemy))
-            {
-                enemy.TakeDamage(damage);
-                speed = 0;
-                _spellSprite.enabled = false;
-                Destroy(gameObject, 1f);
-            }
-        }
-
         public void FindClosestEnemy()
         {
             var enemies = GameObject.FindGameObjectsWithTag("Enemy");

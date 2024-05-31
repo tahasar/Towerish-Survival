@@ -39,8 +39,7 @@ namespace Attacks
                 return;
             }
             
-            _enemy = _targetEnemy.GetComponent<Transform>();
-            Laser();
+            //_enemy = _targetEnemy.GetComponent<Transform>();
             
         }
 
@@ -51,21 +50,6 @@ namespace Attacks
             var position = transform.position;
             _lineRenderer.SetPosition(0, position);
             _lineRenderer.SetPosition(1, position);
-        }
-        
-        public void Laser()
-        {
-            GiveDamage(_enemy.GetComponent<Enemy.Enemy>());
-            _lineRenderer.SetPosition(0, transform.position);
-            _lineRenderer.SetPosition(1, _enemy.position);
-        }
-
-        private void GiveDamage(Enemy.Enemy other)
-        {
-            if (!_canDamage) return;
-            other.TakeDamage(damage);
-            _canDamage = false;
-            StartCoroutine(Cooldown());
         }
 
         private IEnumerator Cooldown()

@@ -24,11 +24,5 @@ namespace Attacks
             transform.RotateAround(rotateAround.transform.position, Vector3.forward,
                 rotateAroundSpeed * Time.deltaTime);
         }
-
-        private void OnTriggerEnter2D(Collider2D other)
-        {
-            var enemy = other.GetComponent<Enemy.Enemy>();
-            enemy.TakeDamage(damage);
-        }
     }
 }

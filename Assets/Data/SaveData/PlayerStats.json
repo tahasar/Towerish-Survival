@@ -1,0 +1,7 @@
+{
+	"PlayerStats" : {
+		"__type" : "System.Collections.Generic.Dictionary`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]],mscorlib",
+		"value" : {"Damage":10,"MaxHealth":100,"AttackSpeed":1,"MoveSpeed":5
+		}
+	}
+}
