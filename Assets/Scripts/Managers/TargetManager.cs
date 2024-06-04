@@ -4,7 +4,15 @@ using System.Linq;
 
 public class TargetManager : MonoBehaviour
 {
-    public Transform GetTarget(GameObject seeker, List<string> targetTags)
+    
+    public static TargetManager Instance { get; set; }
+    
+    private void Awake()
+    {
+        Instance = this;
+    }
+    
+    public Transform GetClosestTarget(Transform seeker, List<string> targetTags)
     {
         Transform closestTarget = null;
         float shortestDistance = Mathf.Infinity;
@@ -15,7 +23,7 @@ public class TargetManager : MonoBehaviour
 
             foreach (var potentialTarget in potentialTargets)
             {
-                var distanceToPotentialTarget = Vector2.Distance(seeker.transform.position, potentialTarget.transform.position);
+                var distanceToPotentialTarget = Vector2.Distance(seeker.position, potentialTarget.transform.position);
                 if (distanceToPotentialTarget < shortestDistance)
                 {
                     shortestDistance = distanceToPotentialTarget;

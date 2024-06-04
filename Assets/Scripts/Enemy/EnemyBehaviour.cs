@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using System.Linq;
 using NaughtyAttributes.Scripts.Core.DrawerAttributes;
 using UnityEngine;
@@ -11,25 +10,41 @@ public class EnemyBehaviour : MonoBehaviour
     
     [Tag]
     public string[] targetTags; 
+    
+    public GameEvent onEnemyDied;
+    private Transform _transform;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        targetManager = FindObjectOfType<TargetManager>();
-        target = targetManager.GetTarget(gameObject, targetTags.ToList());
+        _transform = transform;
+        targetManager = TargetManager.Instance;
+        
+        target = targetManager.GetClosestTarget(transform, targetTags.ToList());
     }
 
     // Update is called once per frame
     void Update()
     {
+        Move();
+    }
+
+    private void Move()
+    {
         if (target != null)
         {
             MoveTowardsTarget();
         }
-        else
-        {
-            target = targetManager.GetTarget(gameObject, targetTags.ToList());
-        }
+    }
+
+    private void FixedUpdate()
+    {
+        GetClosestTarget();
+    }
+    
+    private void GetClosestTarget()
+    {
+        target = targetManager.GetClosestTarget(transform, targetTags.ToList());
     }
 
     void MoveTowardsTarget()
@@ -41,15 +56,18 @@ public class EnemyBehaviour : MonoBehaviour
         // If the enemy reaches the target
         if (Vector3.Distance(transform.position, target.position) < 0.1f)
         {
-            ReachTarget();
+            Die();
         }
+    }
+    
+    private void Die()
+    {
+        onEnemyDied.TriggerEvent(_transform, _transform);
+        //gameObject.SetActive(false);
     }
 
     void ReachTarget()
     {
-        // Implement the action when the enemy reaches the target
-        // This could be damaging the target, destroying the enemy itself, etc.
-        // For now, let's just destroy the enemy itself
-        Destroy(gameObject);
+        // 
     }
 }
