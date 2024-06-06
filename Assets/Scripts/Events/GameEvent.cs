@@ -6,11 +6,11 @@ public class GameEvent : ScriptableObject
 {
     List<GameEventListener> listeners = new List<GameEventListener>();
     
-    public void TriggerEvent(Transform sender, Transform receiver)
+    public void TriggerEvent(Transform sender, object data)
     {
         for (int i = listeners.Count - 1; i >= 0; i--)
         {
-            listeners[i].OnEventTriggered(sender, receiver);
+            listeners[i].OnEventTriggered(sender, data);
         }
     }
     

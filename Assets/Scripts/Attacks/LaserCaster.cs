@@ -31,7 +31,7 @@ namespace Attacks
         // Update is called once per frame
         private void Update()
         {
-            _targetEnemy = _attackManager.FindClosestEnemy(range);
+            //_targetEnemy = _attackManager.FindClosestEnemy(range);
 
             if (_targetEnemy != null)
             {

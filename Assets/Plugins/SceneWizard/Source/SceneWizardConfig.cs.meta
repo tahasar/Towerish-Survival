@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: e351e006534f8c547bd5ae4df35bf142
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 211088
+  packageName: Scene Wizard
+  packageVersion: 1.02
+  assetPath: Assets/SceneWizard/Source/SceneWizardConfig.cs
+  uploadId: 500139

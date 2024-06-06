@@ -1,3 +1,5 @@
+using System.Linq;
+using NaughtyAttributes.Scripts.Core.DrawerAttributes;
 using Player;
 using UnityEngine;
 
@@ -11,26 +13,38 @@ namespace Attacks
         public float damage = 50;
         public Rigidbody2D rb;
         public Transform targetEnemy;
-        public GameObject player;
-        private AttackManager _attackManager;
+        
+        
+        [SerializeField] public GameObject player;
         private Transform _enemy;
-        private SpriteRenderer _spellSprite;
+        
         private float _xEkseni;
+        private SpriteRenderer _spellSprite;
+        private TargetManager _targetManager;
 
+        [Tag] [SerializeField]
+        private string[] targetTag;
+ 
         private void Start()
         {
+            _targetManager = TargetManager.Instance;
             player = GameObject.FindGameObjectWithTag("Player");
-            _attackManager = player.GetComponent<AttackManager>();
-            var characterSprite = player.GetComponent<PlayerMovement>().characterSprite;
-            _xEkseni = characterSprite.localScale.x;
-
+            _xEkseni = player.transform.localScale.x;
             _spellSprite = GetComponent<SpriteRenderer>();
+            
+            targetEnemy = _targetManager.GetClosestTarget(transform, targetTag.ToList());
+        }
+        
+        private void Update()
+        {
+            if (targetEnemy == null)
+            {
+                targetEnemy = _targetManager.GetClosestTarget(transform, targetTag.ToList());
+            }
         }
 
         private void FixedUpdate()
         {
-            FindClosestEnemy();
-
             if (targetEnemy != null)
             {
                 _enemy = targetEnemy.GetComponent<Transform>();
@@ -52,27 +66,15 @@ namespace Attacks
             }
         }
 
-        public void FindClosestEnemy()
+        private void OnTriggerEnter2D(Collider2D other)
         {
-            var enemies = GameObject.FindGameObjectsWithTag("Enemy");
-            var shortestDistance = Mathf.Infinity;
-            GameObject nearestEnemy = null;
-
-            foreach (var enemy in enemies)
+            if (other.TryGetComponent(out EnemyBehaviour enemy))
             {
-                var distanceToEnemy = Vector2.Distance(transform.position, enemy.transform.position);
-                if (distanceToEnemy < shortestDistance)
-                {
-                    shortestDistance = distanceToEnemy;
-                    nearestEnemy = enemy;
-                }
+                enemy.TakeDamage(damage);
+                speed = 0;
+                _spellSprite.enabled = false;
+                Destroy(gameObject, 1f);
             }
-
-
-            if (nearestEnemy != null && shortestDistance <= range)
-                targetEnemy = nearestEnemy.transform;
-            else
-                targetEnemy = null;
         }
     }
 }

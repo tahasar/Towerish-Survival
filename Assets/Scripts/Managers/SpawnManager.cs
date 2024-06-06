@@ -12,7 +12,7 @@ public class SpawnManager : MonoBehaviour
 
     private PoolManager poolManager;
     
-    public List<Transform> activeEnemies = new List<Transform>(); // active enemies list
+    public static List<Transform> activeEnemies = new List<Transform>(); // active enemies list
     public List<EnemyProbablity> enemies;
     
     public Vector2 centerPoint;
@@ -58,10 +58,11 @@ public class SpawnManager : MonoBehaviour
         activeEnemies.Add(enemy); // add the enemy to the list
     }
     
-    public void EnemyDied(Transform sender, Transform receiver)
+    public void EnemyDied(Transform sender, object data)
     {
-        activeEnemies.Remove(receiver);
-        poolManager.ReturnObjectToPool(receiver.name, receiver);
+        var enemy = data as Transform;
+        activeEnemies.Remove(sender);
+        poolManager.ReturnObjectToPool(sender.name, enemy);
     }
     
     private EnemyProbablity FindEnemyBasedOnWeight(double weight)

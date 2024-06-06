@@ -1,3 +1,7 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using NaughtyAttributes.Scripts.Core.DrawerAttributes;
 using UnityEngine;
 
 namespace Attacks
@@ -5,63 +9,41 @@ namespace Attacks
     public class AttackManager : MonoBehaviour
     {
         public Transform sprite;
-        public Vector3 enemyPosition;
-        public Transform targetEnemy;
-        public GameObject[] enemies;
-        public Transform target;
+        public Vector3 localScale;
+        private Transform targetEnemy;
+        
+        private TargetManager _targetManager;
 
-        private void Update()
+        private void Start()
         {
+            _targetManager = TargetManager.Instance;
+            
+            localScale = sprite.localScale;
+        }
         
-        
-            lookEnemy();
+        private void FixedUpdate()
+        {
+            targetEnemy = _targetManager.GetClosestTarget(transform);
+            
             if (targetEnemy == null)
-            {
                 return;
-            }
-        }
-    
-        public Transform FindClosestEnemy(float range)
-        {
-            GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
-            float shortestDistance = Mathf.Infinity;
-            GameObject nearestEnemy = null;
-
-            foreach (GameObject enemy in enemies)
-            {
-                float distanceToEnemy = Vector2.Distance (transform.position, enemy.transform.position);
-                if (distanceToEnemy < shortestDistance) {
-                    shortestDistance = distanceToEnemy;
-                    nearestEnemy = enemy;
-                }
-            }
-        
-        
-            if (nearestEnemy != null && shortestDistance <= range)
-            {
-                return targetEnemy = nearestEnemy.transform;
-            }
-            else
-            {
-                return targetEnemy = null;
-            }
+            
+            LookEnemy();
         }
 
-        void lookEnemy()
+        private void LookEnemy()
         {
-            GetInstanceID();
-            if (targetEnemy)
-            {
-                enemyPosition = targetEnemy.GetComponent<Transform>().position;
-            }
+            var enemyPosition = targetEnemy.position;
+            
+            var direction = enemyPosition - sprite.position;
 
-            if (enemyPosition.x > sprite.position.x)
+            if (direction.x > 0)
             {
-                sprite.localScale = new Vector2(0.35f, sprite.localScale.y);
+                sprite.localScale = new Vector3(localScale.x, localScale.y, localScale.z);
             }
-            else
+            else if (direction.x < 0)
             {
-                sprite.localScale = new Vector2(-0.35f, sprite.localScale.y);
+                sprite.localScale = new Vector3(-localScale.x, localScale.y, localScale.z);
             }
         }
     }

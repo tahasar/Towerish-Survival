@@ -4,7 +4,7 @@ using UnityEngine.Events;
 using Action = System.Action;
 
 [System.Serializable]
-public class CustomGameEvent : UnityEvent<Transform, Transform> { }
+public class CustomGameEvent : UnityEvent<Transform, object> { }
 
 public class GameEventListener : MonoBehaviour
 {
@@ -21,8 +21,8 @@ public class GameEventListener : MonoBehaviour
         gameEvent.RemoveListener(this);
     }
     
-    public void OnEventTriggered(Transform sender, Transform receiver)
+    public void OnEventTriggered(Transform sender, object data)
     {
-        onEventTriggered.Invoke(sender, receiver);
+        onEventTriggered.Invoke(sender, data);
     }
 }

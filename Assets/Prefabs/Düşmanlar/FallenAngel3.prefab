@@ -209,10 +209,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28be660deead1a24ca750ab9961dbd0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 3
   targetTags:
   - Player
   onEnemyDied: {fileID: 11400000, guid: 848241debe34bfd44bfb561f12b83085, type: 2}
+  DebugMessage: 
 --- !u!1001 &3703148958610262961
 PrefabInstance:
   m_ObjectHideFlags: 0

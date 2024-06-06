@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 9bb7b7155b5a3f945a0ad697ec2829ea
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 211088
+  packageName: Scene Wizard
+  packageVersion: 1.02
+  assetPath: Assets/SceneWizard/Sample/SceneWizard Scene.unity
+  uploadId: 500139

@@ -5,91 +5,192 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f6f3ac2-ce11-45e6-b24c-5d0208fabbd2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Data/ScriptableObjects/EventSO.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Data/ScriptableObjects/EventSO/OnEnemyDied.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Data/ScriptableObjects/EventSO/OnEnemyDied.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Büyüler.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Büyüler/PurpleBaseAttack.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Büyüler/PurpleBaseAttack.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Büyüler/RotatingBlades.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Büyüler/RotatingBlades.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Collectables.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Collectables/Item.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Collectables/Item.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Collectables/Loot.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Collectables/Loot.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/DamageText.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/DamageText.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Düşmanlar.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Düşmanlar/FallenAngel1.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Düşmanlar/FallenAngel1.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Düşmanlar/FallenAngel2.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Düşmanlar/FallenAngel2.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Düşmanlar/FallenAngel3.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Düşmanlar/FallenAngel3.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Effects.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Effects/Explotion Effect.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Effects/Explotion Effect.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Ground.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Ground.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/InventorySlot.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/InventorySlot.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Wraith.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Wraith.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Events.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Events/GameEvent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Events/GameEvent.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Events/GameEventListener.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Events/GameEventListener.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/BurstAotSettings_Android.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/BurstAotSettings_StandaloneWindows.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/CommonBurstAotSettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Collector.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Collector.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Data/ScriptableObjects/EventSO/OnItemCollected.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Data/ScriptableObjects/EventSO/OnItemCollected.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Data/ScriptableObjects/Loots/Heal100.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Data/ScriptableObjects/Loots/Heal100.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Data/ScriptableObjects/Loots/XP50.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Data/ScriptableObjects/Loots/XP50.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/DropManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/DropManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ItemInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ItemInfo.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Changelog.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Changelog.txt.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Editor.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Editor/GraphyDebuggerEditor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Editor/GraphyDebuggerEditor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Editor/GraphyEditorStyle.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Editor/GraphyEditorStyle.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Editor/GraphyManagerEditor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Editor/GraphyManagerEditor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Editor/GraphyMenuItem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Editor/GraphyMenuItem.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Editor/Tayx.Graphy.Editor.asmdef" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Editor/Tayx.Graphy.Editor.asmdef.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Font.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Font/Northwest-Bold.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Font/Northwest-Bold/ERIC-TIRADO-NORTHWEST-LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Font/Northwest-Bold/ERIC-TIRADO-NORTHWEST-LICENSE.txt.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Font/Northwest-Bold/NORTHWEST-B.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Font/Northwest-Bold/NORTHWEST-B.otf.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Font/Roboto.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Font/Roboto/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Font/Roboto/LICENSE.txt.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Font/Roboto/Roboto-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Font/Roboto/Roboto-Bold.ttf.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Font/Roboto/Roboto-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Font/Roboto/Roboto-Regular.ttf.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/GUI.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/GUI/GraphyGUISkin.guiskin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/GUI/GraphyGUISkin.guiskin.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Graphy_CustomizationScene.unitypackage.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/LICENSE.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Materials.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Materials/Audio_Spectrum_Graph.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Materials/Audio_Spectrum_Graph.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Materials/Audio_Spectrum_Highest_Values_Graph.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Materials/Audio_Spectrum_Highest_Values_Graph.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Materials/FPS_Graph.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Materials/FPS_Graph.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Materials/RAM_Allocated_Graph.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Materials/RAM_Allocated_Graph.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Materials/RAM_Mono_Graph.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Materials/RAM_Mono_Graph.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Materials/RAM_Reserved_Graph.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Materials/RAM_Reserved_Graph.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Prefab/Internal.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Prefab/Internal/ADVANCED - Module.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Prefab/Internal/ADVANCED - Module.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Prefab/Internal/AUDIO - Module.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Prefab/Internal/AUDIO - Module.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Prefab/Internal/FPS - Module.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Prefab/Internal/FPS - Module.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Prefab/Internal/RAM - Module.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Prefab/Internal/RAM - Module.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Prefab/[Graphy] VR.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Prefab/[Graphy] VR.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Prefab/[Graphy].prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Prefab/[Graphy].prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/README.md.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Readme! - Graphy - Documentation.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Readme! - Graphy - Documentation.pdf.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Runtime.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Runtime/Advanced.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Runtime/Advanced/G_AdvancedData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Runtime/Advanced/G_AdvancedData.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Runtime/Audio.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Runtime/Audio/G_AudioGraph.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Runtime/Audio/G_AudioGraph.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Runtime/Audio/G_AudioManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Runtime/Audio/G_AudioManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Runtime/Audio/G_AudioMonitor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Runtime/Audio/G_AudioMonitor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Runtime/Audio/G_AudioText.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Runtime/Audio/G_AudioText.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Runtime/Fps.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Runtime/Fps/G_FpsGraph.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Runtime/Fps/G_FpsGraph.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Runtime/Fps/G_FpsManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Runtime/Fps/G_FpsManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Runtime/Fps/G_FpsMonitor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Runtime/Fps/G_FpsMonitor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Runtime/Fps/G_FpsText.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Runtime/Fps/G_FpsText.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Runtime/Graph.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Runtime/Graph/G_Graph.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Runtime/Graph/G_Graph.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Runtime/GraphyDebugger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Runtime/GraphyDebugger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Runtime/GraphyManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Runtime/GraphyManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Runtime/Ram.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Runtime/Ram/G_RamGraph.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Runtime/Ram/G_RamGraph.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Runtime/Ram/G_RamManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Runtime/Ram/G_RamManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Runtime/Ram/G_RamMonitor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Runtime/Ram/G_RamMonitor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Runtime/Ram/G_RamText.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Runtime/Ram/G_RamText.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Runtime/Shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Runtime/Shader/G_GraphShader.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Runtime/Shader/G_GraphShader.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Runtime/Tayx.Graphy.asmdef" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Runtime/Tayx.Graphy.asmdef.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Runtime/UI.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Runtime/UI/G_SafeArea.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Runtime/UI/G_SafeArea.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Runtime/UI/IModifiableState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Runtime/UI/IModifiableState.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Runtime/UI/IMovable.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Runtime/UI/IMovable.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Runtime/Util.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Runtime/Util/G_ExtensionMethods.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Runtime/Util/G_ExtensionMethods.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Runtime/Util/G_FloatString.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Runtime/Util/G_FloatString.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Runtime/Util/G_Intstring.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Runtime/Util/G_Intstring.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Runtime/Util/G_Singleton.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Runtime/Util/G_Singleton.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Shaders.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Shaders/GraphMobile.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Shaders/GraphMobile.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Shaders/GraphStandard.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Shaders/GraphStandard.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Textures.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Textures/2x2_Texture.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Textures/2x2_Texture.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Textures/Debugger_Logo_Dark.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Textures/Debugger_Logo_Dark.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Textures/Debugger_Logo_White.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Textures/Debugger_Logo_White.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Textures/Manager_Logo_Dark.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Textures/Manager_Logo_Dark.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Textures/Manager_Logo_White.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Textures/Manager_Logo_White.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Textures/Rounded_Rect_10px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/Textures/Rounded_Rect_10px.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Graphy - Ultimate Stats Monitor/package.json.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Loot and Items.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Loot and Items/Item.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Loot and Items/Item.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Loot and Items/ItemType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Loot and Items/ItemType.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Towerish-Survival/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Towerish-Survival/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Prefabs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Prefabs/Büyüler.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Prefabs/Büyüler/PurpleBaseAttack.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Prefabs/Büyüler/PurpleBaseAttack.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Prefabs/Büyüler/RotatingBlades.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Prefabs/Büyüler/RotatingBlades.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Prefabs/Collectables.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Prefabs/Collectables/Item.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Prefabs/Collectables/Item.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Prefabs/Collectables/Loot.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Prefabs/Collectables/Loot.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Prefabs/DamageText.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Prefabs/DamageText.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Prefabs/Düşmanlar.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Prefabs/Düşmanlar/FallenAngel1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Prefabs/Düşmanlar/FallenAngel1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Prefabs/Düşmanlar/FallenAngel2.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Prefabs/Düşmanlar/FallenAngel2.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Prefabs/Düşmanlar/FallenAngel3.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Prefabs/Düşmanlar/FallenAngel3.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Prefabs/Effects.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Prefabs/Effects/Explotion Effect.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Prefabs/Effects/Explotion Effect.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Prefabs/Enemy.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Prefabs/Enemy.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Prefabs/Ground.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Prefabs/Ground.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Prefabs/InventorySlot.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Prefabs/InventorySlot.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Prefabs/Wraith.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Prefabs/Wraith.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Adaptive Performance/AdaptivePerformanceGeneralSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Adaptive Performance/AdaptivePerformanceGeneralSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/ScriptableObjects/Loots/10 XP.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/ScriptableObjects/Loots/10 XP.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/ScriptableObjects/Loots/100 HEAL.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/ScriptableObjects/Loots/100 HEAL.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/ScriptableObjects/Loots/2 XP.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/ScriptableObjects/Loots/2 XP.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/ScriptableObjects/Loots/25 XP.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/ScriptableObjects/Loots/25 XP.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/ScriptableObjects/Stats.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/ScriptableObjects/Stats/fdfs.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/ScriptableObjects/Stats/fdfs.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Resources/ES3/ES3Defaults.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Resources/ES3/ES3Defaults.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Collectables/Item.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Collectables/Item.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Collectables/Item.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Collectables/Item.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Collectables/Loot.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Collectables/Loot.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Attacks/AttackManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Attacks/AttackManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Attacks/LaserCaster.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Attacks/LaserCaster.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Attacks/PurpleBaseAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Attacks/PurpleBaseAttack.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyProbability.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyProbability.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/PoolManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/PoolManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Events/GameEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Events/GameEvent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Events/GameEventListener.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Events/GameEventListener.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/SpawnManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/SpawnManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/TargetManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/TargetManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,8 +203,22 @@
   <component name="GitLabMergeRequestsSettings">{}</component>
   <component name="GithubPullRequestsUISettings">{}</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Collector.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DropManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ItemInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Attacks/AttackManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/UnityProjelerim/Towerish-Survival/Assets/Scripts/Attacks/PurpleBaseAttack.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/UnityProjelerim/Towerish-Survival/Assets/Scripts/Attacks/PurpleBaseAttack.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/UnityProjelerim/Towerish-Survival/Assets/Scripts/Attacks/PurpleBaseAttack.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/UnityProjelerim/Towerish-Survival/Assets/Scripts/Attacks/PurpleBaseAttack.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/UnityProjelerim/Towerish-Survival/Assets/Scripts/Attacks/PurpleBaseAttack.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/UnityProjelerim/Towerish-Survival/Assets/Scripts/Attacks/PurpleBaseAttack.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/UnityProjelerim/Towerish-Survival/Assets/Scripts/Attacks/PurpleBaseAttack.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/UnityProjelerim/Towerish-Survival/Assets/Scripts/Attacks/PurpleBaseAttack.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/UnityProjelerim/Towerish-Survival/Assets/Scripts/Attacks/PurpleBaseAttack.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Events/GameEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Loot and Items/Item.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Loot and Items/ItemType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/TargetManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9003796c57374fd89cb8aecf8cdea52c1db600/49/a0d8e0d7/UnityEvent`2.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9003796c57374fd89cb8aecf8cdea52c1db600/62/59f6494c/Transform.cs" root0="SKIP_HIGHLIGHTING" />
@@ -143,7 +258,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editing.templates&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -233,7 +348,10 @@
       <workItem from="1717160390088" duration="25297000" />
       <workItem from="1717289756380" duration="9768000" />
       <workItem from="1717374446146" duration="520000" />
-      <workItem from="1717427530742" duration="19548000" />
+      <workItem from="1717427530742" duration="21782000" />
+      <workItem from="1717502761166" duration="47000" />
+      <workItem from="1717503412643" duration="16030000" />
+      <workItem from="1717587370793" duration="2702000" />
     </task>
     <servers />
   </component>

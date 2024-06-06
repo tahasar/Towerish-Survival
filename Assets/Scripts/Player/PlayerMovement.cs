@@ -8,7 +8,6 @@ namespace Player
 
         public Rigidbody2D rb;
         public Animator animator;
-        public Transform characterSprite;
         private Vector2 _movement;
         private static readonly int Horizontal = Animator.StringToHash("Horizontal");
         private static readonly int Vertical = Animator.StringToHash("Vertical");
@@ -17,11 +16,9 @@ namespace Player
         // Update is called once per frame
         private void Update()//
         {
-            
             _movement.x = Input.GetAxisRaw("Horizontal");
             _movement.y = Input.GetAxisRaw("Vertical");
             _movement = _movement.normalized;
-            
 
             animator.SetFloat(Horizontal, _movement.x);
             animator.SetFloat(Vertical, _movement.y);

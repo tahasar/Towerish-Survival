@@ -36,6 +36,7 @@ MonoBehaviour:
     - NaughtyAttributes.Test
     - Plugins
     - Sources
+    - Tayx.Graphy
     - Utilities
     showAdvancedSettings: 1
   addMgrToSceneAutomatically: 0

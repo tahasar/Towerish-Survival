@@ -23,12 +23,40 @@ public class TargetManager : MonoBehaviour
 
             foreach (var potentialTarget in potentialTargets)
             {
+                if (potentialTarget != gameObject.activeSelf)
+                {
+                    continue;
+                }
                 var distanceToPotentialTarget = Vector2.Distance(seeker.position, potentialTarget.transform.position);
                 if (distanceToPotentialTarget < shortestDistance)
                 {
                     shortestDistance = distanceToPotentialTarget;
                     closestTarget = potentialTarget.transform;
                 }
+            }
+        }
+
+        return closestTarget;
+    }
+    
+    public Transform GetClosestTarget(Transform seeker)
+    {
+        Transform closestTarget = null;
+        float shortestDistance = Mathf.Infinity;
+
+        var activeTargets = SpawnManager.activeEnemies;
+            
+        foreach (var potentialTarget in activeTargets)
+        {
+            if (potentialTarget != gameObject.activeSelf)
+            {
+                continue;
+            }
+            var distanceToPotentialTarget = Vector2.Distance(seeker.position, potentialTarget.transform.position);
+            if (distanceToPotentialTarget < shortestDistance)
+            {
+                shortestDistance = distanceToPotentialTarget;
+                closestTarget = potentialTarget.transform;
             }
         }
 

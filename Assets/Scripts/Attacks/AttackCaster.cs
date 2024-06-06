@@ -16,6 +16,7 @@ namespace Attacks
         public void Attack()
         {
             Instantiate(purpleBaseAttack, attackPosition.transform.position, Quaternion.identity);
+            purpleBaseAttack.GetComponent<PurpleBaseAttack>().player = transform.parent.gameObject;
         }
     }
 }

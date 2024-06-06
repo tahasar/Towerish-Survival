@@ -1,5 +1,6 @@
 using System.Linq;
 using NaughtyAttributes.Scripts.Core.DrawerAttributes;
+using Unity.Collections;
 using UnityEngine;
 
 public class EnemyBehaviour : MonoBehaviour
@@ -8,11 +9,16 @@ public class EnemyBehaviour : MonoBehaviour
     private Transform target;
     private TargetManager targetManager;
     
-    [Tag]
-    public string[] targetTags; 
+    [Tag] [SerializeField] 
+    private string[] targetTags; 
     
     public GameEvent onEnemyDied;
     private Transform _transform;
+
+#if UNITY_EDITOR
+    [SerializeField, TextArea(3,20)]
+    private string DebugMessage;
+#endif
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -35,6 +41,12 @@ public class EnemyBehaviour : MonoBehaviour
         {
             MoveTowardsTarget();
         }
+        
+#if UNITY_EDITOR
+        DebugMessage = "Active: " + gameObject.activeSelf + "\n" +
+                       "Position: " + transform.position + "\n" +
+                       "Speed: " + speed;
+#endif
     }
 
     private void FixedUpdate()
@@ -60,10 +72,14 @@ public class EnemyBehaviour : MonoBehaviour
         }
     }
     
+    public void TakeDamage(float damage)
+    {
+        Die();
+    }
+    
     private void Die()
     {
         onEnemyDied.TriggerEvent(_transform, _transform);
-        //gameObject.SetActive(false);
     }
 
     void ReachTarget()
