@@ -12,15 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e351e006534f8c547bd5ae4df35bf142, type: 3}
   m_Name: SceneWizard_Config
   m_EditorClassIdentifier: 
-  folderPath: C:/UnityProjelerim/Towerish-Survival/Assets/Scenes
+  folderPath: 
   allowSubfolders: 0
-  scenes:
-  - name: Game
-    path: Assets/Scenes\Game.unity
-    parentFolder: Scenes
-  - name: MainMenu
-    path: Assets/Scenes\MainMenu.unity
-    parentFolder: Scenes
-  - name: SampleScene
-    path: Assets/Scenes\SampleScene.unity
-    parentFolder: Scenes
+  scenes: []

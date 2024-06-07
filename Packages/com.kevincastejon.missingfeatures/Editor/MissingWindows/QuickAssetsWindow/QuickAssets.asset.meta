@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ef4f04482fb8dfa46895c65bd2b2f060
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 283473
+  packageName: Missing Features
+  packageVersion: 1.0.1
+  assetPath: Packages/com.kevincastejon.missingfeatures/Editor/MissingWindows/QuickAssetsWindow/QuickAssets.asset
+  uploadId: 669108

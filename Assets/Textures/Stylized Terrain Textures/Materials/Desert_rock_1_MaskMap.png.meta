@@ -1,0 +1,700 @@
+fileFormatVersion: 2
+guid: 2aab98b7b6c7fd74a9984a8252bc57a1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3593360334651891638
+    second: Desert_rock_1_MaskMap_0
+  - first:
+      213: 5331564859885504416
+    second: Desert_rock_1_MaskMap_1
+  - first:
+      213: 4296318187410870108
+    second: Desert_rock_1_MaskMap_2
+  - first:
+      213: 6577407962499149058
+    second: Desert_rock_1_MaskMap_3
+  - first:
+      213: 3771696837685580092
+    second: Desert_rock_1_MaskMap_4
+  - first:
+      213: 1041931908453265080
+    second: Desert_rock_1_MaskMap_5
+  - first:
+      213: 3428366049574262450
+    second: Desert_rock_1_MaskMap_6
+  - first:
+      213: 6329338504230720985
+    second: Desert_rock_1_MaskMap_7
+  - first:
+      213: -7245207852243942500
+    second: Desert_rock_1_MaskMap_8
+  - first:
+      213: 6676761715707473719
+    second: Desert_rock_1_MaskMap_9
+  - first:
+      213: 2612180582878989099
+    second: Desert_rock_1_MaskMap_10
+  - first:
+      213: -7925698371841324766
+    second: Desert_rock_1_MaskMap_11
+  - first:
+      213: 1242406842793000816
+    second: Desert_rock_1_MaskMap_12
+  - first:
+      213: -35223417737297137
+    second: Desert_rock_1_MaskMap_13
+  - first:
+      213: -9137596799021980541
+    second: Desert_rock_1_MaskMap_14
+  - first:
+      213: 5785338449934981107
+    second: Desert_rock_1_MaskMap_15
+  - first:
+      213: -8828846201098410230
+    second: Desert_rock_1_MaskMap_16
+  - first:
+      213: 4452242641964064962
+    second: Desert_rock_1_MaskMap_17
+  - first:
+      213: -1845057467196323211
+    second: Desert_rock_1_MaskMap_18
+  - first:
+      213: 8744449494712338676
+    second: Desert_rock_1_MaskMap_19
+  - first:
+      213: 4515871319343119371
+    second: Desert_rock_1_MaskMap_20
+  - first:
+      213: -4346448126332790534
+    second: Desert_rock_1_MaskMap_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 0
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Desert_rock_1_MaskMap_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 2048
+        height: 2048
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bf97e89f2e2ed130800000000000000
+      internalID: 3593360334651891638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_rock_1_MaskMap_1
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 0
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a74e620ef58df940800000000000000
+      internalID: 5331564859885504416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_rock_1_MaskMap_2
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 0
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5fccaae0a69f9b30800000000000000
+      internalID: 4296318187410870108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_rock_1_MaskMap_3
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 0
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20d669b71b5a74b50800000000000000
+      internalID: 6577407962499149058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_rock_1_MaskMap_4
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 0
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3196b26a42c75430800000000000000
+      internalID: 3771696837685580092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_rock_1_MaskMap_5
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 0
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8be6083ec8fa57e00800000000000000
+      internalID: 1041931908453265080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_rock_1_MaskMap_6
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 0
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b612e002c0049f20800000000000000
+      internalID: 3428366049574262450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_rock_1_MaskMap_7
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 0
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d5dfd7d5d356d750800000000000000
+      internalID: 6329338504230720985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_rock_1_MaskMap_8
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 0
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c93012b58d9d37b90800000000000000
+      internalID: -7245207852243942500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_rock_1_MaskMap_9
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 0
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73febaac76f98ac50800000000000000
+      internalID: 6676761715707473719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_rock_1_MaskMap_10
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 0
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2bcca37664504420800000000000000
+      internalID: 2612180582878989099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_rock_1_MaskMap_11
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 0
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 229818da253420290800000000000000
+      internalID: -7925698371841324766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_rock_1_MaskMap_12
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 0
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07ff033e07aed3110800000000000000
+      internalID: 1242406842793000816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_rock_1_MaskMap_13
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 0
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f034ef9fc7cd28ff0800000000000000
+      internalID: -35223417737297137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_rock_1_MaskMap_14
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 0
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3846c85df1cb03180800000000000000
+      internalID: -9137596799021980541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_rock_1_MaskMap_15
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 0
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f798cd0ba6a94050800000000000000
+      internalID: 5785338449934981107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_rock_1_MaskMap_16
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 0
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a07e8f64823a97580800000000000000
+      internalID: -8828846201098410230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_rock_1_MaskMap_17
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 0
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c06d18081b89cd30800000000000000
+      internalID: 4452242641964064962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_rock_1_MaskMap_18
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 0
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57ac495520a0566e0800000000000000
+      internalID: -1845057467196323211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_rock_1_MaskMap_19
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 0
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f84ca04c768a5970800000000000000
+      internalID: 8744449494712338676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_rock_1_MaskMap_20
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 0
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0c32d0f9099bae30800000000000000
+      internalID: 4515871319343119371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_rock_1_MaskMap_21
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 0
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af8954325705ea3c0800000000000000
+      internalID: -4346448126332790534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Desert_rock_1_MaskMap_0: 3593360334651891638
+      Desert_rock_1_MaskMap_1: 5331564859885504416
+      Desert_rock_1_MaskMap_10: 2612180582878989099
+      Desert_rock_1_MaskMap_11: -7925698371841324766
+      Desert_rock_1_MaskMap_12: 1242406842793000816
+      Desert_rock_1_MaskMap_13: -35223417737297137
+      Desert_rock_1_MaskMap_14: -9137596799021980541
+      Desert_rock_1_MaskMap_15: 5785338449934981107
+      Desert_rock_1_MaskMap_16: -8828846201098410230
+      Desert_rock_1_MaskMap_17: 4452242641964064962
+      Desert_rock_1_MaskMap_18: -1845057467196323211
+      Desert_rock_1_MaskMap_19: 8744449494712338676
+      Desert_rock_1_MaskMap_2: 4296318187410870108
+      Desert_rock_1_MaskMap_20: 4515871319343119371
+      Desert_rock_1_MaskMap_21: -4346448126332790534
+      Desert_rock_1_MaskMap_3: 6577407962499149058
+      Desert_rock_1_MaskMap_4: 3771696837685580092
+      Desert_rock_1_MaskMap_5: 1041931908453265080
+      Desert_rock_1_MaskMap_6: 3428366049574262450
+      Desert_rock_1_MaskMap_7: 6329338504230720985
+      Desert_rock_1_MaskMap_8: -7245207852243942500
+      Desert_rock_1_MaskMap_9: 6676761715707473719
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
